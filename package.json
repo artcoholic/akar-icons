@@ -1,0 +1,51 @@
+{
+  "name": "juuust-icon",
+  "version": "0.1.2",
+  "description": "Icon automation workflow with Figma",
+  "main": "dist/index.js",
+  "module": "build/index.js",
+  "typings": "build/index.d.ts",
+  "files": [
+    "dist",
+    "es"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
+  "repository": "https://github.com/leadream/juuust-icon.git",
+  "author": "leadream",
+  "keywords": [
+    "react",
+    "icons",
+    "svg",
+    "inline",
+    "figma",
+    "juuust",
+    "design"
+  ],
+  "bugs": {
+    "url": "https://github.com/leadream/juuust-icon/issues"
+  },
+  "homepage": "https://github.com/leadream/juuust-icon#readme",
+  "scripts": {
+    "generate": "rm -rf src/icons && node bin/build.js",
+    "build:bundle": "rm -rf dist && rollup --config rollup.config.js",
+    "build:es": "rm -rf build && babel src --out-dir build --copy-files",
+    "build": "concurrently \"yarn:build:*\""
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-proposal-object-rest-spread": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "cheerio": "^1.0.0-rc.3",
+    "concurrently": "^4.1.1",
+    "prettier-eslint": "^9.0.0",
+    "rollup": "^1.19.4",
+    "rollup-plugin-babel": "^4.3.3",
+    "svgo": "^1.3.0",
+    "uppercamelcase": "^3.0.0"
+  }
+}
