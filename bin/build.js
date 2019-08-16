@@ -18,9 +18,9 @@ const iconsDir = path.join(rootDir, 'src/icons')
 const generateIndex = () => {
   if (!fs.existsSync(srcDir)) {
     fs.mkdirSync(srcDir)
-    if (!fs.existsSync(iconsDir)) {
-      fs.mkdirSync(iconsDir)
-    }
+    fs.mkdirSync(iconsDir)
+  } else if (!fs.existsSync(iconsDir)) {
+    fs.mkdirSync(iconsDir)
   }
 
   const initialTypeDefinitions = `/// <reference types="react" />
