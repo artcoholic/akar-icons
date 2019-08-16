@@ -1,0 +1,23 @@
+name: icon-automation
+on:
+  push:
+    branches:
+    - master
+    # file paths to consider in the event. Optional; defaults to all.
+    paths:
+      - icons.json
+
+jobs:
+  check_pr:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+
+    - name: "install"
+      run: yarn install
+
+    - name: "generate"
+      run: yarn generate
+
+    - name: "build"
+      run: yarn build
