@@ -21,3 +21,10 @@ jobs:
 
     - name: "build"
       run: yarn build
+
+    - name: "publish"
+      uses: actions/npm@master
+      env:
+        NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
+      with:
+        args: publish
