@@ -5,16 +5,25 @@ on:
     - master
     # file paths to consider in the event. Optional; defaults to all.
     paths:
-      - icons.json
+      - package.json
 
 jobs:
-  check_pr:
+  icon_automation:
+    name: figma icon automation
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
 
     - name: "install"
       run: yarn install
+
+    - name: Figma Action
+      uses: primer/figma-action@v1.0.0-alpha.2
+      with:
+        args: "format=svg outputDir=./build/"
+      env:
+        FIGMA_FILE_URL: "https://www.figma.com/file/${{ secrets.FILE_KEY }}"
+        FIGMA_TOKEN: ${{ secrets.FIGMA_TOKEN }}
 
     - name: "generate"
       run: yarn generate
