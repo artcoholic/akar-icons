@@ -1,3 +1,4 @@
 bin
 src
 .babelrc
+yarn-error.log
