@@ -22,7 +22,7 @@ jobs:
       with:
         args: "format=svg outputDir=./bin/icons/"
       env:
-        FIGMA_FILE_URL: "https://www.figma.com/file/${{ secrets.FILE_KEY }}"
+        FIGMA_FILE_URL: ${{ secrets.FIGMA_FILE_URL }}
         FIGMA_TOKEN: ${{ secrets.FIGMA_TOKEN }}
 
     - name: "generate"
