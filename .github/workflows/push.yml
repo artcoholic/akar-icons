@@ -20,7 +20,7 @@ jobs:
     - name: Figma Action
       uses: primer/figma-action@v1.0.0-alpha.2
       with:
-        args: "format=svg outputDir=./build/"
+        args: "format=svg outputDir=./bin/icons/"
       env:
         FIGMA_FILE_URL: "https://www.figma.com/file/${{ secrets.FILE_KEY }}"
         FIGMA_TOKEN: ${{ secrets.FIGMA_TOKEN }}
