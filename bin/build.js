@@ -7,7 +7,7 @@ const upperCamelCase = require('uppercamelcase')
 const processSvg = require('./processSvg')
 const style = process.env.npm_package_config_style || 'stroke'
 const { defaultAttrs, getElementCode } = require(`./template-${style}`)
-const icons = require('../src/data.json.js')
+const icons = require('../src/data.json')
 
 const rootDir = path.join(__dirname, '..')
 
