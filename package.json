@@ -9,9 +9,6 @@
     "dist",
     "es"
   ],
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org"
-  },
   "repository": "https://github.com/leadream/juuust-icon.git",
   "author": "leadream",
   "keywords": [
