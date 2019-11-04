@@ -28,9 +28,9 @@
   },
   "homepage": "https://github.com/leadream/juuust-icon#readme",
   "scripts": {
-    "generate": "sudo rm -rf src/icons && node bin/build.js",
-    "build:bundle": "sudo rm -rf dist && rollup --config rollup.config.js",
-    "build:es": "sudo rm -rf build && babel src --out-dir build --copy-files",
+    "generate": "rm -rf src/icons && node bin/build.js",
+    "build:bundle": "rm -rf dist && rollup --config rollup.config.js",
+    "build:es": "rm -rf build && babel src --out-dir build --copy-files",
     "build": "concurrently \"yarn:build:*\""
   },
   "config": {

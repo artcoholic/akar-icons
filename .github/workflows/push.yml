@@ -14,18 +14,17 @@ jobs:
     steps:
     - uses: actions/checkout@v1
 
-    - name: Figma Action
-      uses: primer/figma-action@v1.0.0-alpha.2
-      with:
-        args: "format=svg outputDir=./src/icons/"
-      env:
-        FIGMA_FILE_URL: ${{ secrets.FIGMA_FILE_URL }}
-        FIGMA_TOKEN: ${{ secrets.FIGMA_TOKEN }}
-
     - uses: actions/setup-node@v1
       with:
         node-version: '10.x'
     - run: yarn install
+    - name: Figma Action
+      uses: primer/figma-action@v1.0.0-alpha.2
+      with:
+        args: "format=svg outputDir=./src/"
+      env:
+        FIGMA_FILE_URL: ${{ secrets.FIGMA_FILE_URL }}
+        FIGMA_TOKEN: ${{ secrets.FIGMA_TOKEN }}
     - run: yarn generate
     - run: yarn build
     - run: yarn publish
