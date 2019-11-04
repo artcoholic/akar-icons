@@ -25,6 +25,7 @@ jobs:
       env:
         FIGMA_FILE_URL: ${{ secrets.FIGMA_FILE_URL }}
         FIGMA_TOKEN: ${{ secrets.FIGMA_TOKEN }}
+    - run: ls
     - run: yarn generate
     - run: yarn build
     - run: yarn publish
