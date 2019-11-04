@@ -1,6 +1,6 @@
 {
   "name": "juuust-icon",
-  "version": "0.1.16",
+  "version": "0.1.17",
   "description": "Icon automation workflow with Figma",
   "main": "dist/index.js",
   "module": "build/index.js",
@@ -33,8 +33,8 @@
     "build:es": "rm -rf build && babel src --out-dir build --copy-files",
     "build": "concurrently \"yarn:build:*\""
   },
-  "config" : {
-    "style" : "fill"
+  "config": {
+    "style": "fill"
   },
   "license": "MIT",
   "devDependencies": {
