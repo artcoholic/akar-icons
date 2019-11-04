@@ -33,6 +33,9 @@
     "build:es": "rm -rf build && babel src --out-dir build --copy-files",
     "build": "concurrently \"yarn:build:*\""
   },
+  "config" : {
+    "style" : "fill"
+  },
   "license": "MIT",
   "devDependencies": {
     "@babel/cli": "^7.5.5",

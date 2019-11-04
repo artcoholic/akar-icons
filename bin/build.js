@@ -5,8 +5,9 @@ const fs = require('fs')
 const format = require('prettier-eslint')
 const upperCamelCase = require('uppercamelcase')
 const processSvg = require('./processSvg')
-const { defaultAttrs, getElementCode } = require('./template')
-const icons = require('../icons.json')
+const style = process.env.npm_package_config_style || 'stroke'
+const { defaultAttrs, getElementCode } = require(`./template-${style}`)
+const icons = require('../src/data.json.js')
 
 const rootDir = path.join(__dirname, '..')
 
@@ -45,7 +46,8 @@ const generateIndex = () => {
 // generate attributes code
 const attrsToString = (attrs) => {
   return Object.keys(attrs).map((key) => {
-    if (key === 'width' || key === 'height' || key === 'stroke') {
+    // should distinguish fill or stroke
+    if (key === 'width' || key === 'height' || key === style) {
       return key + '={' + attrs[key] + '}';
     }
     if (key === 'otherProps') {
@@ -56,9 +58,11 @@ const attrsToString = (attrs) => {
 };
 
 // generate icon code separately
-const generateIconCode = async ({name, code}) => {
-  const location = path.join(rootDir, 'src/icons', `${name}.js`)
+const generateIconCode = async ({name}) => {
+  const location = path.join(rootDir, 'src/svg', `${name}.svg`)
+  const destination = path.join(rootDir, 'src/icons', `${name}.js`)
   const ComponentName = (name === 'github') ? 'GitHub' : upperCamelCase(name)
+  const code = fs.readFileSync(location)
   const svgCode = await processSvg(code)
   const element = getElementCode(ComponentName, attrsToString(defaultAttrs), svgCode)
   const component = format({
@@ -73,7 +77,7 @@ const generateIconCode = async ({name, code}) => {
     },
   });
 
-  fs.writeFileSync(location, component, 'utf-8');
+  fs.writeFileSync(destination, component, 'utf-8');
 
   console.log('Successfully built', ComponentName);
   return {ComponentName, name}
@@ -98,9 +102,12 @@ const appendToIndex = ({ComponentName, name}) => {
 
 generateIndex()
 
-icons.forEach(({name, code}) => {
-  generateIconCode({name, code})
-    .then(({ComponentName, name}) => {
-      appendToIndex({ComponentName, name})
-    })
-})
+Object
+  .keys(icons)
+  .map(key => icons[key])
+  .forEach(({name}) => {
+    generateIconCode({name})
+      .then(({ComponentName, name}) => {
+        appendToIndex({ComponentName, name})
+      })
+  })

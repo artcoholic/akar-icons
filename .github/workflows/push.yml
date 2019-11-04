@@ -14,9 +14,6 @@ jobs:
     steps:
     - uses: actions/checkout@v1
 
-    - name: "install"
-      run: yarn install
-
     - name: Figma Action
       uses: primer/figma-action@v1.0.0-alpha.2
       with:
@@ -25,15 +22,12 @@ jobs:
         FIGMA_FILE_URL: ${{ secrets.FIGMA_FILE_URL }}
         FIGMA_TOKEN: ${{ secrets.FIGMA_TOKEN }}
 
-    - name: "generate"
-      run: yarn generate
-
-    - name: "build"
-      run: yarn build
-
-    - name: "publish"
-      uses: actions/npm@master
-      env:
-        NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
+    - uses: actions/setup-node@v1
       with:
-        args: publish
+        node-version: '10.x'
+    - run: yarn install
+    - run: yarn generate
+    - run: yarn build
+    - run: yarn publish
+      env:
+        NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
