@@ -2,6 +2,15 @@ const Svgo = require('svgo');
 const cheerio = require('cheerio')
 
 /**
+ * Convert string to CamelCase.
+ * @param {string} str - A string.
+ * @returns {string}
+ */
+function CamelCase(str) {
+  return str.replace(/(^|-)([a-z])/g, (_, __, c) => c.toUpperCase())
+}
+
+/**
  * Optimize SVG with `svgo`.
  * @param {string} svg - An SVG string.
  * @returns {Promise<string>}
@@ -41,6 +50,7 @@ async function processSvg(svg) {
     // remove semicolon inserted by prettier
     // because prettier thinks it's formatting JSX not HTML
     .then(svg => svg.replace(/;/g, ''))
+    .then(svg = svg.replace(/([a-z]+)-([a-z]+)=/g, (_, a, b) => `${a}${CamelCase(b)}=`))
     .then(removeSVGElement)
   return optimized;
 }

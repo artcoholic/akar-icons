@@ -6,7 +6,7 @@ const format = require('prettier-eslint')
 const upperCamelCase = require('uppercamelcase')
 const processSvg = require('./processSvg')
 const style = process.env.npm_package_config_style || 'stroke'
-const { defaultAttrs, getElementCode } = require(`./template-${style}`)
+const { getAttrs, getElementCode } = require('./template')
 const icons = require('../src/data.json')
 
 const rootDir = path.join(__dirname, '..')
@@ -64,7 +64,7 @@ const generateIconCode = async ({name}) => {
   const ComponentName = (name === 'github') ? 'GitHub' : upperCamelCase(name)
   const code = fs.readFileSync(location)
   const svgCode = await processSvg(code)
-  const element = getElementCode(ComponentName, attrsToString(defaultAttrs), svgCode)
+  const element = getElementCode(ComponentName, attrsToString(getAttrs(style)), svgCode)
   const component = format({
     text: element,
     eslintConfig: {

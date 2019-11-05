@@ -1,10 +1,22 @@
-const defaultAttrs = {
-  xmlns: 'http://www.w3.org/2000/svg',
-  width: 'size',
-  height: 'size',
-  viewBox: '0 0 24 24',
-  fill: 'color',
-  otherProps: '...otherProps',
+const getAttrs = (style) => {
+  const baseAttrs = {
+    xmlns: 'http://www.w3.org/2000/svg',
+    width: 'size',
+    height: 'size',
+    viewBox: '0 0 24 24',
+  }
+  const fillAttrs = {
+    fill: 'color',
+    otherProps: '...otherProps'
+  }
+  const strokeAttrs = {
+    stroke: 'color',
+    strokeWidth: 2,
+    strokeLinecap: 'round',
+    strokeLinejoin: 'round',
+    otherProps: '...otherProps'
+  }
+  return Object.assign({}, baseAttrs, style==='fill' ? fillAttrs : strokeAttrs)
 }
 
 const getElementCode = (ComponentName, attrs, svgCode) => `
@@ -36,4 +48,4 @@ const getElementCode = (ComponentName, attrs, svgCode) => `
   export default ${ComponentName}
 `
 
-module.exports = { defaultAttrs, getElementCode }
+module.exports = { getAttrs, getElementCode }
