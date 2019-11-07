@@ -3,9 +3,9 @@
 const path = require('path')
 const fs = require('fs')
 const format = require('prettier-eslint')
-const upperCamelCase = require('uppercamelcase')
 const processSvg = require('./processSvg')
-const style = process.env.npm_package_config_style || 'stroke'
+const { parseName } = require('./utils')
+const defaultStyle = process.env.npm_package_config_style || 'stroke'
 const { getAttrs, getElementCode } = require('./template')
 const icons = require('../src/data.json')
 
@@ -47,7 +47,7 @@ const generateIndex = () => {
 const attrsToString = (attrs) => {
   return Object.keys(attrs).map((key) => {
     // should distinguish fill or stroke
-    if (key === 'width' || key === 'height' || key === style) {
+    if (key === 'width' || key === 'height' || key === 'fill' || key === 'stroke') {
       return key + '={' + attrs[key] + '}';
     }
     if (key === 'otherProps') {
@@ -59,12 +59,14 @@ const attrsToString = (attrs) => {
 
 // generate icon code separately
 const generateIconCode = async ({name}) => {
-  const location = path.join(rootDir, 'src/svg', `${name}.svg`)
-  const destination = path.join(rootDir, 'src/icons', `${name}.js`)
-  const ComponentName = (name === 'github') ? 'GitHub' : upperCamelCase(name)
+  const names = parseName(name, defaultStyle)
+  console.log(names)
+  const location = path.join(rootDir, 'src/svg', `${names.name}.svg`)
+  const destination = path.join(rootDir, 'src/icons', `${names.name}.js`)
   const code = fs.readFileSync(location)
   const svgCode = await processSvg(code)
-  const element = getElementCode(ComponentName, attrsToString(getAttrs(style)), svgCode)
+  const ComponentName = names.componentName
+  const element = getElementCode(ComponentName, attrsToString(getAttrs(names.style)), svgCode)
   const component = format({
     text: element,
     eslintConfig: {
@@ -80,7 +82,7 @@ const generateIconCode = async ({name}) => {
   fs.writeFileSync(destination, component, 'utf-8');
 
   console.log('Successfully built', ComponentName);
-  return {ComponentName, name}
+  return {ComponentName, name: names.name}
 }
 
 // append export code to index.js

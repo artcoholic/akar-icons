@@ -17,6 +17,7 @@ jobs:
     - uses: actions/setup-node@v1
       with:
         node-version: '10.x'
+        always-auth: true
     - run: yarn install
     - name: Figma Action
       uses: primer/figma-action@v1.0.0-alpha.2
@@ -27,7 +28,7 @@ jobs:
         FIGMA_TOKEN: ${{ secrets.FIGMA_TOKEN }}
     - run: yarn generate
     - run: yarn build
-    - run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_AUTH_TOKEN }}" > ~/.npmrc
+    # - run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_AUTH_TOKEN }}" > ~/.npmrc
     - run: yarn publish
       env:
         NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
