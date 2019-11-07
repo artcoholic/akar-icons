@@ -50,8 +50,8 @@ async function processSvg(svg) {
     // remove semicolon inserted by prettier
     // because prettier thinks it's formatting JSX not HTML
     .then(svg => svg.replace(/;/g, ''))
-    .then(svg => svg.replace(/([a-z]+)-([a-z]+)=/g, (_, a, b) => `${a}${CamelCase(b)}=`))
     .then(removeSVGElement)
+    .then(svg => svg.replace(/([a-z]+)-([a-z]+)=/g, (_, a, b) => `${a}${CamelCase(b)}=`))
   return optimized;
 }
 

@@ -44,10 +44,11 @@ const generateIndex = () => {
 }
 
 // generate attributes code
-const attrsToString = (attrs) => {
+const attrsToString = (attrs, style) => {
+  console.log(style)
   return Object.keys(attrs).map((key) => {
     // should distinguish fill or stroke
-    if (key === 'width' || key === 'height' || key === 'fill' || key === 'stroke') {
+    if (key === 'width' || key === 'height' || key === style) {
       return key + '={' + attrs[key] + '}';
     }
     if (key === 'otherProps') {
@@ -66,7 +67,7 @@ const generateIconCode = async ({name}) => {
   const code = fs.readFileSync(location)
   const svgCode = await processSvg(code)
   const ComponentName = names.componentName
-  const element = getElementCode(ComponentName, attrsToString(getAttrs(names.style)), svgCode)
+  const element = getElementCode(ComponentName, attrsToString(getAttrs(names.style), names.style), svgCode)
   const component = format({
     text: element,
     eslintConfig: {
