@@ -1,6 +1,6 @@
 {
   "name": "juuust-icon",
-  "version": "0.1.27",
+  "version": "0.1.28",
   "description": "Icon automation workflow with Figma",
   "main": "dist/index.js",
   "module": "build/index.js",
