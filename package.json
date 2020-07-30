@@ -1,6 +1,6 @@
 {
-  "name": "juuust-icon",
-  "version": "0.2.0",
+  "name": "juuust-react-icon",
+  "version": "0.2.1",
   "description": "Icon automation workflow with Figma",
   "main": "dist/index.js",
   "module": "src/icons.js",
@@ -9,7 +9,7 @@
     "dist",
     "es"
   ],
-  "repository": "https://github.com/leadream/juuust-icon.git",
+  "repository": "https://github.com/leadream/juuust-react-icon.git",
   "author": "leadream",
   "keywords": [
     "react",
@@ -21,9 +21,9 @@
     "design"
   ],
   "bugs": {
-    "url": "https://github.com/leadream/juuust-icon/issues"
+    "url": "https://github.com/leadream/juuust-react-icon/issues"
   },
-  "homepage": "https://github.com/leadream/juuust-icon#readme",
+  "homepage": "https://github.com/leadream/juuust-react-icon#readme",
   "scripts": {
     "fetch": "node bin/fetchSVG.js",
     "generate": "sudo rm -rf src/icons && node bin/build.js",
