@@ -15,8 +15,8 @@ const rootDir = path.join(__dirname, '..')
 const srcDir = path.join(rootDir, 'src')
 const iconsDir = path.join(rootDir, 'src/icons')
 
-// generate index and d.ts file
-const generateIndex = () => {
+// generate icons.js and icons.d.ts file
+const generateIconsIndex = () => {
   if (!fs.existsSync(srcDir)) {
     fs.mkdirSync(srcDir)
     fs.mkdirSync(iconsDir)
@@ -35,9 +35,9 @@ const generateIndex = () => {
   type Icon = ComponentType<Props>;
   `;
 
-  fs.writeFileSync(path.join(rootDir, 'src', 'index.js'), '', 'utf-8');
+  fs.writeFileSync(path.join(rootDir, 'src', 'icons.js'), '', 'utf-8');
   fs.writeFileSync(
-    path.join(rootDir, 'src', 'index.d.ts'),
+    path.join(rootDir, 'src', 'icons.d.ts'),
     initialTypeDefinitions,
     'utf-8',
   );
@@ -45,7 +45,7 @@ const generateIndex = () => {
 
 // generate attributes code
 const attrsToString = (attrs, style) => {
-  console.log(style)
+  console.log('style: ', style)
   return Object.keys(attrs).map((key) => {
     // should distinguish fill or stroke
     if (key === 'width' || key === 'height' || key === style) {
@@ -86,24 +86,24 @@ const generateIconCode = async ({name}) => {
   return {ComponentName, name: names.name}
 }
 
-// append export code to index.js
-const appendToIndex = ({ComponentName, name}) => {
+// append export code to icons.js
+const appendToIconsIndex = ({ComponentName, name}) => {
   const exportString = `export { default as ${ComponentName} } from './icons/${name}';\r\n`;
   fs.appendFileSync(
-    path.join(rootDir, 'src', 'index.js'),
+    path.join(rootDir, 'src', 'icons.js'),
     exportString,
     'utf-8',
   );
 
   const exportTypeString = `export const ${ComponentName}: Icon;\n`;
   fs.appendFileSync(
-    path.join(rootDir, 'src', 'index.d.ts'),
+    path.join(rootDir, 'src', 'icons.d.ts'),
     exportTypeString,
     'utf-8',
   );
 }
 
-generateIndex()
+generateIconsIndex()
 
 Object
   .keys(icons)
@@ -111,6 +111,6 @@ Object
   .forEach(({name}) => {
     generateIconCode({name})
       .then(({ComponentName, name}) => {
-        appendToIndex({ComponentName, name})
+        appendToIconsIndex({ComponentName, name})
       })
   })
