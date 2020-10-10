@@ -3,11 +3,9 @@
   "version": "0.2.4",
   "description": "Icon automation workflow with Figma",
   "main": "dist/index.js",
-  "module": "src/icons.js",
-  "typings": "src/icons.d.ts",
+  "typings": "dist/icons.d.ts",
   "files": [
-    "dist",
-    "src"
+    "dist"
   ],
   "repository": "https://github.com/leadream/juuust-react-icon.git",
   "author": "leadream",

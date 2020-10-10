@@ -4,7 +4,7 @@ const postcss = require('rollup-plugin-postcss')
 const { nodeResolve } = require('@rollup/plugin-node-resolve');
 const commonjs = require('@rollup/plugin-commonjs');
 const replace = require('@rollup/plugin-replace');
-const copy = require('rollup-plugin-copy')
+const copy = require('rollup-plugin-copy');
 
 const resolveFile = function(filePath) {
   return path.join(__dirname, '..', filePath)
