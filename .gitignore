@@ -5,3 +5,4 @@ node_modules
 dist
 docs
 yarn-error.log
+.DS_Store
