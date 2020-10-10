@@ -7,7 +7,7 @@
   "typings": "src/icons.d.ts",
   "files": [
     "dist",
-    "es"
+    "src"
   ],
   "repository": "https://github.com/leadream/juuust-react-icon.git",
   "author": "leadream",
