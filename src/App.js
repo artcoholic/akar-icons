@@ -18,7 +18,7 @@ class List extends React.Component {
   render() {
     return (
       <div>
-        <Header/>
+        <Header />
         <Container>
           {
             Object.keys(icons)
@@ -26,7 +26,7 @@ class List extends React.Component {
                 const Icon = icons[key]
                 return <li key={index}>
                   <IconWrapper>
-                    <Icon/>
+                    <Icon />
                     <span>{key}</span>
                   </IconWrapper>
                 </li>

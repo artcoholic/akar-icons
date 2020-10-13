@@ -6,7 +6,7 @@ const commonjs = require('@rollup/plugin-commonjs');
 const replace = require('@rollup/plugin-replace');
 const copy = require('rollup-plugin-copy');
 
-const resolveFile = function(filePath) {
+const resolveFile = function (filePath) {
   return path.join(__dirname, '..', filePath)
 }
 
@@ -37,8 +37,8 @@ module.exports = [
       }),
       babel(babelOptions),
       replace({
-        'process.env.NODE_ENV': JSON.stringify( 'production' )
-      })
+        'process.env.NODE_ENV': JSON.stringify('production')
+      }),
     ],
   },
 ]
