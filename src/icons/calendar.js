@@ -16,7 +16,7 @@ const Calendar = props => {
       strokeLinejoin="round"
       {...otherProps}
     >
-      <rect x="3" y="7" width="18" height="14"></rect>
+      <rect x="3" y="7" width="18" height="14" rx="2"></rect>
       <path d="M8 3v7"></path>
       <path d="M16 3v7"></path>
     </svg>

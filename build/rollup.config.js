@@ -1,6 +1,6 @@
 const path = require('path');
 const { babel } = require('@rollup/plugin-babel');
-const postcss = require('rollup-plugin-postcss')
+const postcss = require('rollup-plugin-postcss');
 const { nodeResolve } = require('@rollup/plugin-node-resolve');
 const commonjs = require('@rollup/plugin-commonjs');
 const replace = require('@rollup/plugin-replace');

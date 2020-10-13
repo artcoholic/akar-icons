@@ -17,7 +17,7 @@ const Paper = props => {
       {...otherProps}
     >
       <path d="M4 4v16a2 2 0 002 2h12a2 2 0 002-2V7.5L14.375 2H6a2 2 0 00-2 2z"></path>
-      <path d="M14 8V2l6 6h-6z"></path>
+      <path d="M14 6V2l6 6h-4a2 2 0 01-2-2z"></path>
     </svg>
   );
 };

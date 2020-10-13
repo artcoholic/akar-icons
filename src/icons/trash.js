@@ -16,11 +16,10 @@ const Trash = props => {
       strokeLinejoin="round"
       {...otherProps}
     >
-      <path d="M2 7a2 2 0 012-2h16a2 2 0 012 2v2H2V7z"></path>
-      <path d="M7 4a2 2 0 012-2h6a2 2 0 012 2v1H7V4z"></path>
-      <path d="M4 12v8a2 2 0 002 2h12a2 2 0 002-2v-8"></path>
-      <path d="M9 13v5"></path>
-      <path d="M15 13v5"></path>
+      <path d="M3 7a2 2 0 012-2h14a2 2 0 012 2v2H3V7z"></path>
+      <path d="M9 4a2 2 0 012-2h2a2 2 0 012 2v1H9V4z"></path>
+      <path d="M5 9v11a2 2 0 002 2h10a2 2 0 002-2V9"></path>
+      <path d="M12 10v4"></path>
     </svg>
   );
 };

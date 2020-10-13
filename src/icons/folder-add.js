@@ -16,8 +16,8 @@ const FolderAdd = props => {
       strokeLinejoin="round"
       {...otherProps}
     >
-      <path d="M22 21V7H12l-2-4H2v18h20z"></path>
-      <path d="M12 12v2m0 0v2m0-2h2m-2 0h-2"></path>
+      <path d="M22 19V9a2 2 0 00-2-2h-6.764a2 2 0 01-1.789-1.106l-.894-1.788A2 2 0 008.763 3H4a2 2 0 00-2 2v14a2 2 0 002 2h16a2 2 0 002-2z"></path>
+      <path d="M12 11v3m0 0v3m0-3h3m-3 0H9"></path>
     </svg>
   );
 };
