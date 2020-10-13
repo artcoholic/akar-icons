@@ -3,8 +3,7 @@
     [
       "@babel/env",
       {
-        "modules": false,
-        "compact": false
+        "modules": false
       }
     ],
     "@babel/react"
