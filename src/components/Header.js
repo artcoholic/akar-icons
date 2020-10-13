@@ -3,7 +3,6 @@ import styled from 'styled-components';
 
 const Header = styled.header`
   display: block;
-  background: black;
 `
 
 export default () =>
