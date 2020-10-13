@@ -9,14 +9,16 @@ const Bell = props => {
       width={size}
       height={size}
       viewBox="0 0 24 24"
-      fill={color}
+      fill="none"
+      stroke={color}
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
       {...otherProps}
     >
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M12 3a6 6 0 00-6 6v5a4 4 0 01-.536 2h13.072A4 4 0 0118 14V9a6 6 0 00-6-6zm10 13a2 2 0 01-2-2V9A8 8 0 004 9v5a2 2 0 01-2 2 1 1 0 100 2h20v-2zM9.768 20.135a1 1 0 011.367.363 1 1 0 001.73 0 1 1 0 011.73 1.004 3 3 0 01-5.19 0 1 1 0 01.363-1.367z"
-      ></path>
+      <path d="M5.278 9.944a6 6 0 016-5.944h1.444a6 6 0 016 5.944L18.778 16h.973c.477 0 .881.352.947.825A1.912 1.912 0 0118.804 19H5.196a1.912 1.912 0 01-1.894-2.175A.956.956 0 014.25 16h.973l.056-6.056z"></path>
+      <path d="M12 22a3 3 0 003-3H9a3 3 0 003 3z"></path>
+      <path d="M12 4V2"></path>
     </svg>
   );
 };
