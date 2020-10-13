@@ -7,7 +7,7 @@
   "files": [
     "dist"
   ],
-  "repository": "https://github.com/leadream/juuust-react-icon.git",
+  "repository": "https://github.com/artcoholic/akar-icon.git",
   "author": "artcoholic",
   "keywords": [
     "react",
@@ -19,9 +19,9 @@
     "design"
   ],
   "bugs": {
-    "url": "https://github.com/leadream/juuust-react-icon/issues"
+    "url": "https://github.com/artcoholic/akar-icon/issues"
   },
-  "homepage": "https://github.com/leadream/juuust-react-icon#readme",
+  "homepage": "https://github.com/artcoholic/akar-icon#readme",
   "scripts": {
     "fetch": "node bin/fetchSVG.js",
     "generate": "sudo rm -rf src/icons && node bin/build.js",
