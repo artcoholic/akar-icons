@@ -3,10 +3,14 @@ import styled from 'styled-components';
 
 const Header = styled.header`
   display: block;
+  padding: 24px;
+`
+const Title = styled.h1`
+  margin: 0;
 `
 
 export default () =>
   <Header>
-    <h1>Akar Icons</h1>
+    <Title>Akar Icons</Title>
   </Header>
 

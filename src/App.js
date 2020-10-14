@@ -17,7 +17,7 @@ const Container = styled.ul`
 class List extends React.Component {
   render() {
     return (
-      <div>
+      <>
         <Header />
         <Container>
           {
@@ -33,7 +33,7 @@ class List extends React.Component {
               })
           }
         </Container>
-      </div>
+      </>
     )
   }
 }

@@ -16,7 +16,7 @@ const Pause = props => {
       strokeLinejoin="round"
       {...otherProps}
     >
-      <path d="M6 4v16M18 4v16"></path>
+      <path d="M7 5v14M17 5v14"></path>
     </svg>
   );
 };

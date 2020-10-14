@@ -2,7 +2,7 @@ import babel from '@rollup/plugin-babel';
 import path from 'path';
 import copy from 'rollup-plugin-copy';
 
-const resolveFile = function(filePath) {
+const resolveFile = function (filePath) {
   return path.join(__dirname, '..', filePath)
 }
 
