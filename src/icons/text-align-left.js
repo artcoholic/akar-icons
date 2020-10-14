@@ -16,7 +16,7 @@ const TextAlignLeft = props => {
       strokeLinejoin="round"
       {...otherProps}
     >
-      <path d="M2 5h20M2 12h12M2 19h16"></path>
+      <path d="M2 6h20M2 12h12M2 18h16"></path>
     </svg>
   );
 };

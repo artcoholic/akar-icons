@@ -17,7 +17,8 @@ const AlignHorizontalCenter = props => {
       {...otherProps}
     >
       <path d="M12 2v20"></path>
-      <path d="M2 9h20M7 15h10"></path>
+      <rect x="4" y="6" width="16" height="4"></rect>
+      <rect x="7" y="14" width="10" height="4"></rect>
     </svg>
   );
 };

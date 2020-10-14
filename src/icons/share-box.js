@@ -17,7 +17,7 @@ const ShareBox = props => {
       {...otherProps}
     >
       <path d="M12 3v13m0-13L8 7m4-4l4 4"></path>
-      <path d="M17.625 11H21v8a2 2 0 01-2 2H5a2 2 0 01-2-2v-8h3.375"></path>
+      <path d="M17.625 11H19a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2h1.375"></path>
     </svg>
   );
 };

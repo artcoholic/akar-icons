@@ -17,7 +17,8 @@ const AlignLeft = props => {
       {...otherProps}
     >
       <path d="M2 2v20"></path>
-      <path d="M8 9h14M8 15h7"></path>
+      <rect x="6" y="6" width="16" height="4"></rect>
+      <rect x="6" y="14" width="10" height="4"></rect>
     </svg>
   );
 };

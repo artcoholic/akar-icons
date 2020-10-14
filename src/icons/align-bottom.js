@@ -17,7 +17,8 @@ const AlignBottom = props => {
       {...otherProps}
     >
       <path d="M22 22H2"></path>
-      <path d="M9 16V2m6 14V9"></path>
+      <path d="M6 18V2h4v16H6z"></path>
+      <path d="M14 18V8h4v10h-4z"></path>
     </svg>
   );
 };

@@ -16,7 +16,7 @@ const TextAlignJustified = props => {
       strokeLinejoin="round"
       {...otherProps}
     >
-      <path d="M2 5h20M2 12h20M2 19h20"></path>
+      <path d="M2 6h20M2 12h20M2 18h20"></path>
     </svg>
   );
 };
