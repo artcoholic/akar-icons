@@ -16,8 +16,8 @@ const Download = props => {
       strokeLinejoin="round"
       {...otherProps}
     >
-      <path d="M12 16V3m0 13l-4-4m4 4l4-4"></path>
-      <path d="M17.625 7H19a2 2 0 012 2v10a2 2 0 01-2 2H5a2 2 0 01-2-2V9a2 2 0 012-2h1.375"></path>
+      <path d="M12 16V2m0 14l-4-4m4 4l4-4"></path>
+      <path d="M18.25 7H20a2 2 0 012 2v11a2 2 0 01-2 2H4a2 2 0 01-2-2V9a2 2 0 012-2h1.75"></path>
     </svg>
   );
 };

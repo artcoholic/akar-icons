@@ -16,8 +16,8 @@ const ShareBox = props => {
       strokeLinejoin="round"
       {...otherProps}
     >
-      <path d="M12 3v13m0-13L8 7m4-4l4 4"></path>
-      <path d="M17.625 11H19a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2h1.375"></path>
+      <path d="M12 2v14m0-14L8 6m4-4l4 4"></path>
+      <path d="M18.25 11H20a2 2 0 012 2v7a2 2 0 01-2 2H4a2 2 0 01-2-2v-7a2 2 0 012-2h1.75"></path>
     </svg>
   );
 };

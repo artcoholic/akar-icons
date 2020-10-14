@@ -16,7 +16,7 @@ const Thunder = props => {
       strokeLinejoin="round"
       {...otherProps}
     >
-      <path d="M19 2h-9L4 13.455h5L5.916 20.52c-.445 1.02.76 1.953 1.57 1.215L20 10.331h-6.539L19 2z"></path>
+      <path d="M19 2h-9L4 12.455h5L5.916 20.52c-.445 1.02.76 1.953 1.57 1.215L20 9.331h-6.539L19 2z"></path>
     </svg>
   );
 };
