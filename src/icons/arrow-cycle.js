@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Trash = props => {
+const ArrowCycle = props => {
   const { color, size, ...otherProps } = props;
   return (
     <svg
@@ -16,22 +16,22 @@ const Trash = props => {
       strokeLinejoin="round"
       {...otherProps}
     >
-      <path d="M4 7a2 2 0 012-2h12a2 2 0 012 2v2H4V7z"></path>
-      <path d="M10 4a2 2 0 012-2v0a2 2 0 012 2v1h-4V4z"></path>
-      <path d="M5 12v8a2 2 0 002 2h10a2 2 0 002-2v-8"></path>
-      <path d="M12 13v4"></path>
+      <path d="M22 12c0 6-4.39 10-9.806 10C7.792 22 4.24 19.665 3 16"></path>
+      <path d="M2 12C2 6 6.39 2 11.806 2 16.209 2 19.76 4.335 21 8"></path>
+      <path d="M7 17l-4-1-1 4"></path>
+      <path d="M17 7l4 1 1-4"></path>
     </svg>
   );
 };
 
-Trash.propTypes = {
+ArrowCycle.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
 };
 
-Trash.defaultProps = {
+ArrowCycle.defaultProps = {
   color: 'currentColor',
   size: '24'
 };
 
-export default Trash;
+export default ArrowCycle;

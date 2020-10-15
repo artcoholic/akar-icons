@@ -1,8 +1,8 @@
 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <circle r="4" transform="matrix(-1 0 0 1 18 6)" stroke="black" stroke-width="2"/>
 <circle cx="6" cy="6" r="4" stroke="black" stroke-width="2"/>
-<path d="M14 6L14 21C14 21.5523 14.4477 22 15 22H16C16.5523 22 17 21.5509 17 20.9986C17 17.0671 17 14.7999 17 10.5714" stroke="black" stroke-width="2" stroke-linecap="round"/>
-<path d="M10 6L10 21C10 21.5523 9.55228 22 9 22H8C7.44772 22 7 21.5509 7 20.9986C7 17.0671 7 14.7999 7 10.5714" stroke="black" stroke-width="2" stroke-linecap="round"/>
+<path d="M14 6L14 21C14 21.5523 14.4477 22 15 22H17C17.5523 22 18 21.5509 18 20.9986C18 17.0671 18 14.7999 18 10.5714" stroke="black" stroke-width="2" stroke-linecap="round"/>
+<path d="M10 6L10 21C10 21.5523 9.55228 22 9 22H7C6.44772 22 6 21.5509 6 20.9986C6 17.0671 6 14.7999 6 10.5714" stroke="black" stroke-width="2" stroke-linecap="round"/>
 <line y1="-1" x2="3" y2="-1" transform="matrix(-1 0 0 1 17 19)" stroke="black" stroke-width="2"/>
 <line x1="7" y1="18" x2="10" y2="18" stroke="black" stroke-width="2"/>
 <path d="M20 3V3C18.7889 4.81665 18.7889 7.18335 20 9V9" stroke="black" stroke-width="2"/>

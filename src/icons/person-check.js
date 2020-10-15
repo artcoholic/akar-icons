@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const X = props => {
+const PersonCheck = props => {
   const { color, size, ...otherProps } = props;
   return (
     <svg
@@ -16,19 +16,21 @@ const X = props => {
       strokeLinejoin="round"
       {...otherProps}
     >
-      <path d="M20 20L4 4m16 0L4 20"></path>
+      <circle cx="12" cy="7" r="5"></circle>
+      <path d="M17 22H5a2 2 0 01-2-2v-3a3 3 0 013-3h1"></path>
+      <path d="M16 16l2.25 2L22 14"></path>
     </svg>
   );
 };
 
-X.propTypes = {
+PersonCheck.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
 };
 
-X.defaultProps = {
+PersonCheck.defaultProps = {
   color: 'currentColor',
   size: '24'
 };
 
-export default X;
+export default PersonCheck;

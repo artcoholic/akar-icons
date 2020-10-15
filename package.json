@@ -1,13 +1,13 @@
 {
   "name": "akar-icon",
-  "version": "0.1.4",
+  "version": "0.1.7",
   "description": "Icon automation workflow with Figma",
   "main": "dist/index.js",
   "typings": "dist/icons.d.ts",
   "files": [
     "dist"
   ],
-  "repository": "https://github.com/artcoholic/akar-icon.git",
+  "repository": "https://github.com/artcoholic/akar-icons.git",
   "author": "artcoholic",
   "keywords": [
     "react",
@@ -19,9 +19,9 @@
     "design"
   ],
   "bugs": {
-    "url": "https://github.com/artcoholic/akar-icon/issues"
+    "url": "https://github.com/artcoholic/akar-icons/issues"
   },
-  "homepage": "https://github.com/artcoholic/akar-icon#readme",
+  "homepage": "https://github.com/artcoholic/akar-icons#readme",
   "scripts": {
     "fetch": "node bin/fetchSVG.js",
     "generate": "sudo rm -rf src/icons && node bin/build.js",
@@ -68,3 +68,4 @@
     "uppercamelcase": "^3.0.0"
   }
 }
+
