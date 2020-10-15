@@ -6,16 +6,42 @@ import IconWrapper from './components/IconWrapper'
 
 const Container = styled.ul`
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 8px;
   justify-items: stretch;
   align-items: stretch;
   margin: 0;
-  padding: 0%;
+  padding: 16px;
   list-style: none;
+  li {
+    background: #f6f6f6;
+    padding: 24px;
+    border-radius: 4px;
+  }
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 12px;
+    padding: 24px;
+  }
+  @media (min-width: 1152px) {
+    grid-template-columns: repeat(8, 1fr);
+  }
+  @media (min-width: 2560px) {
+    grid-template-columns: repeat(12, 1fr);
+  }
+`
+const IconLabel = styled.span`
+  font-size: .75em;
+  text-align: center;
 `
 
 class List extends React.Component {
   render() {
+
+    const camelToDash = str => str
+      .replace(/(^[A-Z])/, ([first]) => first.toLowerCase())
+      .replace(/([A-Z])/g, ([letter]) => `-${letter.toLowerCase()}`)
+
     return (
       <>
         <Header />
@@ -27,7 +53,7 @@ class List extends React.Component {
                 return <li key={index}>
                   <IconWrapper>
                     <Icon />
-                    <span>{key}</span>
+                    <IconLabel>{camelToDash(key)}</IconLabel>
                   </IconWrapper>
                 </li>
               })

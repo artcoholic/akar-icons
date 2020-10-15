@@ -5,6 +5,7 @@ const { nodeResolve } = require('@rollup/plugin-node-resolve');
 const commonjs = require('@rollup/plugin-commonjs');
 const replace = require('@rollup/plugin-replace');
 const copy = require('rollup-plugin-copy');
+const json = require('@rollup/plugin-json');
 
 const resolveFile = function (filePath) {
   return path.join(__dirname, '..', filePath)
@@ -39,6 +40,7 @@ module.exports = [
       replace({
         'process.env.NODE_ENV': JSON.stringify('production')
       }),
+      json(),
     ],
   },
 ]

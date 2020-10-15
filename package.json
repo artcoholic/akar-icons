@@ -1,6 +1,6 @@
 {
   "name": "akar-icons",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Open source icon library for Akar design system",
   "main": "dist/index.js",
   "typings": "dist/icons.d.ts",
@@ -22,7 +22,7 @@
   "bugs": {
     "url": "https://github.com/artcoholic/akar-icons/issues"
   },
-  "homepage": "https://github.com/artcoholic/akar-icons#readme",
+  "homepage": "artcoholic.github.io/akar-icons",
   "scripts": {
     "fetch": "node bin/fetchSVG.js",
     "generate": "sudo rm -rf src/icons && node bin/build.js",
@@ -38,7 +38,7 @@
     "normalize.css": "^8.0.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "styled-components": "^5.1.1"
+    "styled-components": "^4.2.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.5.5",
@@ -48,8 +48,10 @@
     "@babel/preset-react": "^7.0.0",
     "@rollup/plugin-babel": "^5.1.0",
     "@rollup/plugin-commonjs": "^14.0.0",
+    "@rollup/plugin-json": "^4.1.0",
     "@rollup/plugin-node-resolve": "^8.4.0",
     "@rollup/plugin-replace": "^2.3.3",
+    "babel-plugin-styled-components": "^1.11.1",
     "cheerio": "^1.0.0-rc.3",
     "concurrently": "^4.1.1",
     "dotenv": "^8.2.0",
