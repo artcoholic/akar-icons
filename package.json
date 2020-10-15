@@ -1,7 +1,7 @@
 {
   "name": "akar-icon",
-  "version": "0.1.7",
-  "description": "Icon automation workflow with Figma",
+  "version": "0.0.1",
+  "description": "Open source icon library for Akar design system",
   "main": "dist/index.js",
   "typings": "dist/icons.d.ts",
   "files": [
@@ -16,7 +16,8 @@
     "inline",
     "figma",
     "akar",
-    "design"
+    "design",
+    "library"
   ],
   "bugs": {
     "url": "https://github.com/artcoholic/akar-icons/issues"
@@ -68,4 +69,3 @@
     "uppercamelcase": "^3.0.0"
   }
 }
-
