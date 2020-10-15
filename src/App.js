@@ -1,8 +1,9 @@
 import React from 'react';
-import styled from 'styled-components'
-import * as icons from './icons'
-import Header from './components/Header'
-import IconWrapper from './components/IconWrapper'
+import styled from 'styled-components';
+import * as icons from './icons';
+import Header from './components/Header';
+import IconWrapper from './components/IconWrapper';
+import Footer from './components/Footer';
 
 const Container = styled.ul`
   display: grid;
@@ -59,6 +60,7 @@ class List extends React.Component {
               })
           }
         </Container>
+        <Footer />
       </>
     )
   }
