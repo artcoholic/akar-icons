@@ -1,6 +1,6 @@
 {
   "name": "akar-icons",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Open source icon library for Akar design system",
   "main": "dist/index.js",
   "typings": "dist/icons.d.ts",
@@ -38,7 +38,7 @@
     "normalize.css": "^8.0.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "styled-components": "^4.2.0"
+    "styled-components": "^5.1.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.5.5",

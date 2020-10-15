@@ -2,7 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Footer = styled.footer`
-  display: block;
+  display: flex;
+  justify-content: flex-end;
   padding: 12px 24px;
   border-top: 1px solid #f2f2f2;
   a {
