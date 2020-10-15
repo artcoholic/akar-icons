@@ -1,6 +1,10 @@
 {
   "name": "akar-icon",
+<<<<<<< HEAD
   "version": "0.1.7",
+=======
+  "version": "0.1.6",
+>>>>>>> 27b12cbb0b58c771adfbeb28977f8e9f1083f259
   "description": "Icon automation workflow with Figma",
   "main": "dist/index.js",
   "typings": "dist/icons.d.ts",
