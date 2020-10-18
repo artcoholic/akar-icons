@@ -1,6 +1,6 @@
 {
   "name": "akar-icons",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Open source icon library for Akar design system",
   "main": "dist/index.js",
   "typings": "dist/icons.d.ts",
