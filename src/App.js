@@ -60,7 +60,7 @@ class List extends React.Component {
               })
           }
         </Container>
-        <Footer />
+        <Footer numberOfIcons={Object.keys(icons).length} />
       </>
     )
   }

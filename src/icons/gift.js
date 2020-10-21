@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const ShareArrow = props => {
+const Gift = props => {
   const { color, size, ...otherProps } = props;
   return (
     <svg
@@ -16,19 +16,23 @@ const ShareArrow = props => {
       strokeLinejoin="round"
       {...otherProps}
     >
-      <path d="M22 10.981L15.027 2v4.99C3.075 6.99 1.711 16.678 2.043 22l.007-.041c.502-2.685.712-6.986 12.977-6.986v4.99L22 10.98z"></path>
+      <rect x="3" y="8" width="18" height="14" rx="2"></rect>
+      <path d="M12 5a3 3 0 10-3 3"></path>
+      <path d="M15 8a3 3 0 10-3-3"></path>
+      <path d="M12 5v17"></path>
+      <path d="M21 15H3"></path>
     </svg>
   );
 };
 
-ShareArrow.propTypes = {
+Gift.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
 };
 
-ShareArrow.defaultProps = {
+Gift.defaultProps = {
   color: 'currentColor',
   size: '24'
 };
 
-export default ShareArrow;
+export default Gift;

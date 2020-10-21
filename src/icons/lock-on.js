@@ -17,7 +17,7 @@ const LockOn = props => {
       {...otherProps}
     >
       <rect x="3" y="10" width="18" height="12" rx="2"></rect>
-      <path d="M6 8a6 6 0 016-6v0a6 6 0 016 6v2H6V8z"></path>
+      <path d="M6 6a3 3 0 013-3h6a3 3 0 013 3v4H6V6z"></path>
     </svg>
   );
 };

@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Reply = props => {
+const ArrowUpThick = props => {
   const { color, size, ...otherProps } = props;
   return (
     <svg
@@ -16,19 +16,19 @@ const Reply = props => {
       strokeLinejoin="round"
       {...otherProps}
     >
-      <path d="M2 10.981L8.973 2v4.99c11.952 0 13.316 9.688 12.984 15.01l-.007-.041c-.502-2.685-.712-6.986-12.977-6.986v4.99L2 10.98z"></path>
+      <path d="M12 3l9 7h-4.99L16 21H8V10H3l9-7z"></path>
     </svg>
   );
 };
 
-Reply.propTypes = {
+ArrowUpThick.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
 };
 
-Reply.defaultProps = {
+ArrowUpThick.defaultProps = {
   color: 'currentColor',
   size: '24'
 };
 
-export default Reply;
+export default ArrowUpThick;

@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Bookmark = props => {
+const TriangleDown = props => {
   const { color, size, ...otherProps } = props;
   return (
     <svg
@@ -16,19 +16,19 @@ const Bookmark = props => {
       strokeLinejoin="round"
       {...otherProps}
     >
-      <path d="M4 4v18l8-8 8 8V4a2 2 0 00-2-2H6a2 2 0 00-2 2z"></path>
+      <path d="M12 17L6 9h12l-6 8z"></path>
     </svg>
   );
 };
 
-Bookmark.propTypes = {
+TriangleDown.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
 };
 
-Bookmark.defaultProps = {
+TriangleDown.defaultProps = {
   color: 'currentColor',
   size: '24'
 };
 
-export default Bookmark;
+export default TriangleDown;
