@@ -15,6 +15,7 @@ const Globe = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
+      id="Globe"
     >
       <circle cx="12" cy="12" r="10"></circle>
       <ellipse cx="12" cy="12" rx="10" ry="3"></ellipse>
@@ -22,7 +23,7 @@ const Globe = props => {
         cx="12"
         cy="12"
         rx="10"
-        ry="6"
+        ry="5"
         transform="rotate(90 12 12)"
       ></ellipse>
       <path d="M12 2v20"></path>

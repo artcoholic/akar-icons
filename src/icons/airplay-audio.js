@@ -15,6 +15,7 @@ const AirplayAudio = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
+      id="AirplayAudio"
     >
       <path d="M12 16l6 5H6l6-5z"></path>
       <path d="M4 18a9.956 9.956 0 01-2-6C2 6.477 6.477 2 12 2s10 4.477 10 10a9.956 9.956 0 01-2 6"></path>

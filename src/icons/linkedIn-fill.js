@@ -11,6 +11,7 @@ const LinkedInFill = props => {
       viewBox="0 0 24 24"
       fill={color}
       {...otherProps}
+      id="LinkedInFill"
     >
       <path
         fillRule="evenodd"

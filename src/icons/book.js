@@ -15,6 +15,7 @@ const Book = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
+      id="Book"
     >
       <path d="M2 6s1.5-2 5-2 5 2 5 2v14s-1.5-1-5-1-5 1-5 1V6z"></path>
       <path d="M12 6s1.5-2 5-2 5 2 5 2v14s-1.5-1-5-1-5 1-5 1V6z"></path>

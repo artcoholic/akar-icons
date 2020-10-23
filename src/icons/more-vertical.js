@@ -15,6 +15,7 @@ const MoreVertical = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
+      id="MoreVertical"
     >
       <circle cx="12" cy="4" r="1" transform="rotate(90 12 4)"></circle>
       <circle cx="12" cy="12" r="1" transform="rotate(90 12 12)"></circle>

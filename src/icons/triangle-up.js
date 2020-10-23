@@ -15,6 +15,7 @@ const TriangleUp = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
+      id="TriangleUp"
     >
       <path d="M12 7l-6 8h12l-6-8z"></path>
     </svg>

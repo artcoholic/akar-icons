@@ -15,6 +15,7 @@ const Send = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
+      id="Send"
     >
       <path d="M9.912 12H4L2.023 4.135A.662.662 0 012 3.995c-.022-.721.772-1.221 1.46-.891L22 12 3.46 20.896c-.68.327-1.464-.159-1.46-.867a.66.66 0 01.033-.186L3.5 15"></path>
     </svg>

@@ -15,6 +15,7 @@ const Alarm = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
+      id="Alarm"
     >
       <circle cx="12" cy="13" r="9"></circle>
       <path d="M12 8v5H8.5"></path>

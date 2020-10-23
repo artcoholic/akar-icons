@@ -5,7 +5,7 @@ import Header from './components/Header';
 import IconWrapper from './components/IconWrapper';
 import Footer from './components/Footer';
 
-const Container = styled.ul`
+const Container = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 8px;
@@ -14,11 +14,6 @@ const Container = styled.ul`
   margin: 0;
   padding: 16px;
   list-style: none;
-  li {
-    background: #f6f6f6;
-    padding: 24px;
-    border-radius: 4px;
-  }
   @media (min-width: 768px) {
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 12px;
@@ -51,12 +46,12 @@ class List extends React.Component {
             Object.keys(icons)
               .map((key, index) => {
                 const Icon = icons[key]
-                return <li key={index}>
-                  <IconWrapper>
+                return (
+                  <IconWrapper key={index} icon={key}>
                     <Icon />
                     <IconLabel>{camelToDash(key)}</IconLabel>
                   </IconWrapper>
-                </li>
+                )
               })
           }
         </Container>

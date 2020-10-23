@@ -15,6 +15,7 @@ const Enlarge = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
+      id="Enlarge"
     >
       <path d="M3 21l6.5-6.5"></path>
       <path d="M14.5 9.5L21 3"></path>

@@ -15,6 +15,7 @@ const Ribbon = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
+      id="Ribbon"
     >
       <path d="M4 4v18l8-8 8 8V4a2 2 0 00-2-2H6a2 2 0 00-2 2z"></path>
     </svg>

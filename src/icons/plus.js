@@ -15,6 +15,7 @@ const Plus = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
+      id="Plus"
     >
       <path d="M12 20v-8m0 0V4m0 8h8m-8 0H4"></path>
     </svg>

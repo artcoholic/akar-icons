@@ -15,6 +15,7 @@ const Question = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
+      id="Question"
     >
       <circle cx="12" cy="12" r="10"></circle>
       <path d="M10 8.484C10.5 7.494 11 7 12 7c1.246 0 2 .989 2 1.978s-.5 1.483-2 2.473V13m0 3.901V17"></path>

@@ -15,8 +15,9 @@ const Flag = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
+      id="Flag"
     >
-      <path d="M4 15.42h16l-6.914-6.21L20 3H4v18"></path>
+      <path d="M4 15h16l-5-6 5-6H4v18"></path>
     </svg>
   );
 };

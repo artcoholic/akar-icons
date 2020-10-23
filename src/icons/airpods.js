@@ -15,6 +15,7 @@ const Airpods = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
+      id="Airpods"
     >
       <circle r="4" transform="matrix(-1 0 0 1 18 6)"></circle>
       <circle cx="6" cy="6" r="4"></circle>

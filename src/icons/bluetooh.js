@@ -15,6 +15,7 @@ const Bluetooh = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
+      id="Bluetooh"
     >
       <path d="M5 7l12 10-6 5V2l6 5L5 17"></path>
     </svg>

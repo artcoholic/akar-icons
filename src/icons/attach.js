@@ -15,6 +15,7 @@ const Attach = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
+      id="Attach"
     >
       <path d="M6 7.91V16a6 6 0 006 6v0a6 6 0 006-6V6a4 4 0 00-4-4v0a4 4 0 00-4 4v9.182a2 2 0 002 2v0a2 2 0 002-2V8"></path>
     </svg>

@@ -15,6 +15,7 @@ const MoreHorizontal = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
+      id="MoreHorizontal"
     >
       <circle cx="4" cy="12" r="1"></circle>
       <circle cx="12" cy="12" r="1"></circle>

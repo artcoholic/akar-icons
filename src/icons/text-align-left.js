@@ -15,6 +15,7 @@ const TextAlignLeft = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
+      id="TextAlignLeft"
     >
       <path d="M2 6h20M2 12h11M2 18h16"></path>
     </svg>

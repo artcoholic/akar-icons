@@ -15,6 +15,7 @@ const Calculator = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
+      id="Calculator"
     >
       <path d="M2 6a4 4 0 014-4h12a4 4 0 014 4v5H2V6z"></path>
       <path d="M18.5 15h-3m3 3h-3"></path>

@@ -15,6 +15,7 @@ const Height = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
+      id="Height"
     >
       <path d="M12 21V3"></path>
       <path d="M8 6l4-4 4 4"></path>

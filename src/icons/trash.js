@@ -15,6 +15,7 @@ const Trash = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
+      id="Trash"
     >
       <path d="M8 4a2 2 0 012-2h4a2 2 0 012 2v1H8V4z"></path>
       <path d="M2 5h20"></path>

@@ -15,6 +15,7 @@ const SoundOn = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
+      id="SoundOn"
     >
       <path d="M16 8.5c1.333 1.778 1.333 5.222 0 7"></path>
       <path d="M19 4c3.988 4.352 4.012 11.677 0 16"></path>

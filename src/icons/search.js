@@ -15,6 +15,7 @@ const Search = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
+      id="Search"
     >
       <circle cx="10" cy="10" r="8"></circle>
       <path d="M21 21l-5-5"></path>

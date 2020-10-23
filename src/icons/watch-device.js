@@ -15,6 +15,7 @@ const WatchDevice = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
+      id="WatchDevice"
     >
       <path d="M6 7a2 2 0 012-2h8a2 2 0 012 2v10a2 2 0 01-2 2H8a2 2 0 01-2-2V7z"></path>
       <path d="M9 22h6"></path>

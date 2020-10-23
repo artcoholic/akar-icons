@@ -15,6 +15,7 @@ const Width = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
+      id="Width"
     >
       <path d="M21 12H3"></path>
       <path d="M6 16l-4-4 4-4"></path>

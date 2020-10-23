@@ -15,6 +15,7 @@ const Reduce = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
+      id="Reduce"
     >
       <path d="M3 21l7-7"></path>
       <path d="M14 10l7-7"></path>

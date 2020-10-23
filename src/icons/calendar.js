@@ -15,6 +15,7 @@ const Calendar = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
+      id="Calendar"
     >
       <rect x="2" y="4" width="20" height="18" rx="2"></rect>
       <path d="M8 2v4"></path>

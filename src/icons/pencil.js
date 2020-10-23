@@ -15,6 +15,7 @@ const Pencil = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
+      id="Pencil"
     >
       <path d="M4.343 15.657L17 3a2.828 2.828 0 114 4L8.343 19.657A8 8 0 012.686 22H2v-.686a8 8 0 012.343-5.657z"></path>
       <path d="M14 6l4 4"></path>

@@ -15,6 +15,7 @@ const Command = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
+      id="Command"
     >
       <path d="M9.3 17.85a3.15 3.15 0 11-3.15-3.15h11.7a3.15 3.15 0 11-3.15 3.15V6.15a3.15 3.15 0 113.15 3.15H6.15A3.15 3.15 0 119.3 6.15v11.7z"></path>
     </svg>

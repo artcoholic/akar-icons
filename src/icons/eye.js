@@ -15,6 +15,7 @@ const Eye = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
+      id="Eye"
     >
       <path d="M22 12s-4.477 7-10 7-10-7-10-7 4.477-7 10-7 10 7 10 7z"></path>
       <circle cx="12" cy="12" r="3"></circle>

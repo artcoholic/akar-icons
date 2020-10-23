@@ -15,6 +15,7 @@ const BatteryFull = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
+      id="BatteryFull"
     >
       <rect x="2" y="7" width="18" height="10" rx="2"></rect>
       <path d="M5 10v4"></path>

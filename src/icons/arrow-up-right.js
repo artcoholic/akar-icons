@@ -15,6 +15,7 @@ const ArrowUpRight = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
+      id="ArrowUpRight"
     >
       <path d="M18 6L6 18"></path>
       <path d="M8 6h10v10"></path>

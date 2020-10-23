@@ -15,6 +15,7 @@ const DesktopDevice = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
+      id="DesktopDevice"
     >
       <path d="M2 5a1 1 0 011-1h18a1 1 0 011 1v11a1 1 0 01-1 1H3a1 1 0 01-1-1V5z"></path>
       <path d="M8 20h8"></path>

@@ -15,6 +15,7 @@ const Wallet = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
+      id="Wallet"
     >
       <path d="M2 6a2 2 0 012-2h16a2 2 0 012 2v12a2 2 0 01-2 2H4a2 2 0 01-2-2V6z"></path>
       <path d="M2 8h20"></path>

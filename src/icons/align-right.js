@@ -15,6 +15,7 @@ const AlignRight = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
+      id="AlignRight"
     >
       <path d="M22 2v20"></path>
       <rect x="2" y="6" width="16" height="4"></rect>

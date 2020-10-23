@@ -15,6 +15,7 @@ const AlignVerticalCenter = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
+      id="AlignVerticalCenter"
     >
       <path d="M22 12H2"></path>
       <path d="M6 20V4h4v16H6z"></path>

@@ -15,6 +15,7 @@ const Person = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
+      id="Person"
     >
       <circle cx="12" cy="7" r="5"></circle>
       <path d="M17 14h1a3 3 0 013 3v3a2 2 0 01-2 2H5a2 2 0 01-2-2v-3a3 3 0 013-3h1"></path>
