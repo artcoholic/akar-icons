@@ -23,7 +23,8 @@ const IconWrapper = styled.button`
   }
 `
 
-export default ({ children, icon }) => {
+export default ({ children, icon, setOpen, setName }) => {
+
   const handleClick = (i) => {
     const svg = document.getElementById(`${i}`);
     const s = new XMLSerializer();
@@ -34,10 +35,12 @@ export default ({ children, icon }) => {
     el.select();
     document.execCommand("copy");
     document.body.removeChild(el);
+    setOpen(true);
+    setName(i);
   }
 
   return (
-    <IconWrapper onClick={() => handleClick(icon)}>
+    <IconWrapper onClick={() => { handleClick(icon); }}>
       {children}
     </IconWrapper>
   )

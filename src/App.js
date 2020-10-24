@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import * as icons from './icons';
 import Header from './components/Header';
 import IconWrapper from './components/IconWrapper';
+import AlertBox from './components/AlertBox';
 import Footer from './components/Footer';
 
 const Container = styled.div`
@@ -31,34 +32,37 @@ const IconLabel = styled.span`
   text-align: center;
 `
 
-class List extends React.Component {
-  render() {
+const App = () => {
 
-    const camelToDash = str => str
-      .replace(/(^[A-Z])/, ([first]) => first.toLowerCase())
-      .replace(/([A-Z])/g, ([letter]) => `-${letter.toLowerCase()}`)
+  const camelToDash = str => str
+    .replace(/(^[A-Z])/, ([first]) => first.toLowerCase())
+    .replace(/([A-Z])/g, ([letter]) => `-${letter.toLowerCase()}`)
+    ;
 
-    return (
-      <>
-        <Header />
-        <Container>
-          {
-            Object.keys(icons)
-              .map((key, index) => {
-                const Icon = icons[key]
-                return (
-                  <IconWrapper key={index} icon={key}>
-                    <Icon />
-                    <IconLabel>{camelToDash(key)}</IconLabel>
-                  </IconWrapper>
-                )
-              })
-          }
-        </Container>
-        <Footer numberOfIcons={Object.keys(icons).length} />
-      </>
-    )
-  }
+  const [open, setOpen] = useState(false);
+  const [name, setName] = useState();
+
+  return (
+    <>
+      <Header />
+      <Container>
+        {
+          Object.keys(icons)
+            .map((key, index) => {
+              const Icon = icons[key]
+              return (
+                <IconWrapper key={index} icon={key} setOpen={setOpen} setName={setName}>
+                  <Icon />
+                  <IconLabel>{camelToDash(key)}</IconLabel>
+                </IconWrapper>
+              )
+            })
+        }
+      </Container>
+      {open && <AlertBox setOpen={setOpen} name={name} icons={icons} />}
+      <Footer numberOfIcons={Object.keys(icons).length} />
+    </>
+  )
 }
 
-export default List;
+export default App;
