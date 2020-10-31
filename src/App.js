@@ -6,6 +6,9 @@ import IconWrapper from './components/IconWrapper';
 import AlertBox from './components/AlertBox';
 import Footer from './components/Footer';
 
+import Fuse from 'fuse.js';
+import data from './data.json';
+
 const Container = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -41,15 +44,37 @@ const App = () => {
 
   const [open, setOpen] = useState(false);
   const [name, setName] = useState();
+  const [query, updateQuery] = useState('');
+
+  // const DATA = [];
+  // for (var i in data) {
+  //   DATA.push([i, data[i]])
+  // };
+
+  // DATA.forEach((data) => {
+  //   data.splice(0, 1);
+  // });
+
+  const fuse = new Fuse(Object.keys(icons), {
+    keys: [
+      'name',
+      'description',
+    ],
+    includeScore: true,
+    threshold: 0.2,
+  });
+
+  const results = fuse.search(query);
+  const searchResults = query ? results.map(search => search.item) : Object.keys(icons);
 
   return (
     <>
-      <Header />
+      <Header query={query} updateQuery={updateQuery} icons={icons} />
       <Container>
         {
-          Object.keys(icons)
+          searchResults
             .map((key, index) => {
-              const Icon = icons[key]
+              const Icon = icons[key];
               return (
                 <IconWrapper key={index} icon={key} setOpen={setOpen} setName={setName}>
                   <Icon />

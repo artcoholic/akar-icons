@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import pkg from '../../package.json';
+import Search from './Search';
 
 const Header = styled.header`
   display: block;
@@ -21,9 +22,10 @@ const Version = styled.span`
   font-weight:bolder;
 `
 
-export default () =>
+export default ({ query, updateQuery, icons }) =>
   <Header>
     <Title>Akar Icons</Title>
+    <Search query={query} updateQuery={updateQuery} icons={icons} />
     <Version>v{pkg.version}</Version>
   </Header>
 

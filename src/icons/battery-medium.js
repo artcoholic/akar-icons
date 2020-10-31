@@ -17,11 +17,10 @@ const BatteryMedium = props => {
       {...otherProps}
       id="BatteryMedium"
     >
-      <rect x="2" y="7" width="18" height="10" rx="2"></rect>
-      <path d="M5 10v4"></path>
-      <path d="M8 10v4"></path>
-      <path d="M11 10v4"></path>
+      <rect x="2" y="6" width="18" height="12" rx="2"></rect>
       <path d="M20 10h1.5a.5.5 0 01.5.5v3a.5.5 0 01-.5.5H20v-4z"></path>
+      <path d="M7 10v4"></path>
+      <path d="M11 10v4"></path>
     </svg>
   );
 };

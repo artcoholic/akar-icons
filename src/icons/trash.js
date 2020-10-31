@@ -20,9 +20,8 @@ const Trash = props => {
       <path d="M8 4a2 2 0 012-2h4a2 2 0 012 2v1H8V4z"></path>
       <path d="M2 5h20"></path>
       <path d="M4 8l.867 12.142A2 2 0 006.862 22h10.276a2 2 0 001.995-1.858L20 8"></path>
-      <path d="M8 9l.5 9.5"></path>
-      <path d="M16 9l-.5 9.5"></path>
-      <path d="M12 9v9.5"></path>
+      <path d="M9 10l.5 7"></path>
+      <path d="M15 10l-.5 7"></path>
     </svg>
   );
 };

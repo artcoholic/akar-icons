@@ -156,3 +156,7 @@ export { default as RedditFill } from './icons/reddit-fill';
 export { default as TumblrFill } from './icons/tumblr-fill';
 export { default as PinterestFill } from './icons/pinterest-fill';
 export { default as VkFill } from './icons/vk-fill';
+export { default as YoutubeFill } from './icons/youtube-fill';
+export { default as InstagramFill } from './icons/instagram-fill';
+export { default as FigmaFill } from './icons/figma-fill';
+export { default as GithubFill } from './icons/github-fill';

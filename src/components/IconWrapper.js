@@ -38,7 +38,6 @@ export default ({ children, icon, setOpen, setName }) => {
     setOpen(true);
     setName(i);
   }
-
   return (
     <IconWrapper onClick={() => { handleClick(icon); }}>
       {children}

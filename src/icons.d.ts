@@ -165,3 +165,7 @@ export const RedditFill: Icon;
 export const TumblrFill: Icon;
 export const PinterestFill: Icon;
 export const VkFill: Icon;
+export const YoutubeFill: Icon;
+export const InstagramFill: Icon;
+export const FigmaFill: Icon;
+export const GithubFill: Icon;
