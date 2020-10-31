@@ -18,7 +18,8 @@ const IconWrapper = styled.button`
     background: #dae4e8;
   }
   &:focus {
-    outline: black auto 1px;
+    outline: none;
+    box-shadow: 0 0 0 2px #41535a;
     background: white;
   }
 `
