@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Search = props => {
+const Grid = props => {
   const { color, size, ...otherProps } = props;
   return (
     <svg
@@ -15,21 +15,24 @@ const Search = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
-      id="Search"
+      id="Grid"
     >
-      <path d="M21 21l-4.486-4.494M19 10.5a8.5 8.5 0 11-17 0 8.5 8.5 0 0117 0z"></path>
+      <rect x="3" y="3" width="7" height="7" rx="1"></rect>
+      <rect x="3" y="14" width="7" height="7" rx="1"></rect>
+      <rect x="14" y="3" width="7" height="7" rx="1"></rect>
+      <rect x="14" y="14" width="7" height="7" rx="1"></rect>
     </svg>
   );
 };
 
-Search.propTypes = {
+Grid.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
 };
 
-Search.defaultProps = {
+Grid.defaultProps = {
   color: 'currentColor',
   size: '24'
 };
 
-export default Search;
+export default Grid;

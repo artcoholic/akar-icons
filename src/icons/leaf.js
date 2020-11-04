@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Search = props => {
+const Leaf = props => {
   const { color, size, ...otherProps } = props;
   return (
     <svg
@@ -15,21 +15,22 @@ const Search = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
-      id="Search"
+      id="Leaf"
     >
-      <path d="M21 21l-4.486-4.494M19 10.5a8.5 8.5 0 11-17 0 8.5 8.5 0 0117 0z"></path>
+      <path d="M8 18C20.857 18 21 6.235 21 2 3 2 3 10.412 3 18v4"></path>
+      <path d="M3 18s0-6 8-7"></path>
     </svg>
   );
 };
 
-Search.propTypes = {
+Leaf.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
 };
 
-Search.defaultProps = {
+Leaf.defaultProps = {
   color: 'currentColor',
   size: '24'
 };
 
-export default Search;
+export default Leaf;

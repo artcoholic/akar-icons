@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Search = props => {
+const CircleTriangleDown = props => {
   const { color, size, ...otherProps } = props;
   return (
     <svg
@@ -15,21 +15,22 @@ const Search = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
-      id="Search"
+      id="CircleTriangleDown"
     >
-      <path d="M21 21l-4.486-4.494M19 10.5a8.5 8.5 0 11-17 0 8.5 8.5 0 0117 0z"></path>
+      <circle cx="12" cy="12" r="10"></circle>
+      <path d="M12 16l-4-6h8l-4 6z"></path>
     </svg>
   );
 };
 
-Search.propTypes = {
+CircleTriangleDown.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
 };
 
-Search.defaultProps = {
+CircleTriangleDown.defaultProps = {
   color: 'currentColor',
   size: '24'
 };
 
-export default Search;
+export default CircleTriangleDown;

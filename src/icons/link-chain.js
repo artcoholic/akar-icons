@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Search = props => {
+const LinkChain = props => {
   const { color, size, ...otherProps } = props;
   return (
     <svg
@@ -15,21 +15,21 @@ const Search = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
-      id="Search"
+      id="LinkChain"
     >
-      <path d="M21 21l-4.486-4.494M19 10.5a8.5 8.5 0 11-17 0 8.5 8.5 0 0117 0z"></path>
+      <path d="M13.544 10.456a4.368 4.368 0 00-6.176 0l-3.089 3.088a4.367 4.367 0 106.177 6.177L12 18.177m-1.544-4.633a4.368 4.368 0 006.177 0l3.088-3.088a4.368 4.368 0 00-6.177-6.177L12 5.823"></path>
     </svg>
   );
 };
 
-Search.propTypes = {
+LinkChain.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
 };
 
-Search.defaultProps = {
+LinkChain.defaultProps = {
   color: 'currentColor',
   size: '24'
 };
 
-export default Search;
+export default LinkChain;

@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Search = props => {
+const Water = props => {
   const { color, size, ...otherProps } = props;
   return (
     <svg
@@ -15,21 +15,21 @@ const Search = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
-      id="Search"
+      id="Water"
     >
-      <path d="M21 21l-4.486-4.494M19 10.5a8.5 8.5 0 11-17 0 8.5 8.5 0 0117 0z"></path>
+      <path d="M12 22a8 8 0 01-8-8c0-3.502 2.71-6.303 5.093-8.87L12 2l2.907 3.13C17.29 7.698 20 10.499 20 14a8 8 0 01-8 8z"></path>
     </svg>
   );
 };
 
-Search.propTypes = {
+Water.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
 };
 
-Search.defaultProps = {
+Water.defaultProps = {
   color: 'currentColor',
   size: '24'
 };
 
-export default Search;
+export default Water;

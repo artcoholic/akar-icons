@@ -5,6 +5,7 @@ import Header from './components/Header';
 import IconWrapper from './components/IconWrapper';
 import AlertBox from './components/AlertBox';
 import Footer from './components/Footer';
+import upperCamelCase from 'uppercamelcase';
 
 import Fuse from 'fuse.js';
 import data from './data.json';
@@ -16,12 +17,12 @@ const Container = styled.div`
   justify-items: stretch;
   align-items: stretch;
   margin: 0;
-  padding: 16px;
+  padding: 131px 16px 16px;
   list-style: none;
   @media (min-width: 768px) {
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 12px;
-    padding: 24px;
+    padding: 91px 24px 24px;
   }
   @media (min-width: 1152px) {
     grid-template-columns: repeat(8, 1fr);
@@ -46,26 +47,29 @@ const App = () => {
   const [name, setName] = useState();
   const [query, updateQuery] = useState('');
 
-  // const DATA = [];
-  // for (var i in data) {
-  //   DATA.push([i, data[i]])
-  // };
+  const DATA = [];
+  for (var i in data) {
+    DATA.push([i, data[i]])
+  };
 
-  // DATA.forEach((data) => {
-  //   data.splice(0, 1);
-  // });
+  DATA.forEach((data) => {
+    data.splice(0, 1);
+  });
 
-  const fuse = new Fuse(Object.keys(icons), {
+  const fuse = new Fuse(DATA.flat(), {
     keys: [
       'name',
-      'description',
+      {
+        name: 'description',
+        weight: 0.1,
+      },
     ],
     includeScore: true,
     threshold: 0.2,
-  });
+  })
 
   const results = fuse.search(query);
-  const searchResults = query ? results.map(search => search.item) : Object.keys(icons);
+  const searchResults = query ? results.map(search => upperCamelCase(search.item.name)) : Object.keys(icons);
 
   return (
     <>

@@ -17,7 +17,7 @@ const TextAlignCenter = props => {
       {...otherProps}
       id="TextAlignCenter"
     >
-      <path d="M2 6h20M7 12h10M4 18h16"></path>
+      <path d="M3 6h18M7 12h10M5 18h14"></path>
     </svg>
   );
 };

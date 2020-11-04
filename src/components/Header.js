@@ -11,6 +11,10 @@ const Header = styled.header`
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  position: fixed;
+  width: 100%;
+  background: white;
+  box-sizing: border-box;
   @media (min-width: 768px) {
     padding: 12px 24px;
   }

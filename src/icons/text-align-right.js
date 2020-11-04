@@ -17,7 +17,7 @@ const TextAlignRight = props => {
       {...otherProps}
       id="TextAlignRight"
     >
-      <path d="M2 6h20m-11 6h11M6 18h16"></path>
+      <path d="M3 6h18m-10 6h10M6 18h15"></path>
     </svg>
   );
 };

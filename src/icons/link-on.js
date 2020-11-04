@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Link = props => {
+const LinkOn = props => {
   const { color, size, ...otherProps } = props;
   return (
     <svg
@@ -15,21 +15,22 @@ const Link = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
-      id="Link"
+      id="LinkOn"
     >
-      <path d="M13.544 10.456a4.368 4.368 0 00-6.176 0l-3.089 3.088a4.367 4.367 0 106.177 6.177L12 18.177m-1.544-4.633a4.368 4.368 0 006.177 0l3.088-3.088a4.368 4.368 0 00-6.177-6.177L12 5.823"></path>
+      <path d="M15 8h3a4 4 0 014 4v0a4 4 0 01-4 4h-3m-6 0H6a4 4 0 01-4-4v0a4 4 0 014-4h3"></path>
+      <path d="M7 12h10"></path>
     </svg>
   );
 };
 
-Link.propTypes = {
+LinkOn.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
 };
 
-Link.defaultProps = {
+LinkOn.defaultProps = {
   color: 'currentColor',
   size: '24'
 };
 
-export default Link;
+export default LinkOn;
