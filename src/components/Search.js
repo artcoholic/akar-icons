@@ -1,17 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Search } from '../icons';
 
 const Container = styled.div`
   display: flex;
   align-items: center;
-  flex-grow: 2;
   flex-basis: 100%;
-  color: rgba(0,0,0,0.5);
   position: relative;
   order: 1;
   margin-top: 12px;
   svg {
+    color: rgba(0,0,0,1);
     position: absolute;
     left: 14px;
   }
@@ -20,6 +18,7 @@ const Container = styled.div`
     order: 0;
     margin-top: 0;
     flex-basis: auto;
+    flex-grow: 2;
     svg {
       position: absolute;
       left: 40px;
@@ -43,6 +42,24 @@ const SearchInput = styled.input`
   }
 `
 
+const ClearButton = styled.button`
+  position: absolute;
+  right: 0px;
+  transform: translateX(0);
+  padding: 14px;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  svg {
+    position: relative;
+    left: 0;
+  }
+  @media (min-width: 768px) {
+    transform: translateX(-24px);
+  }
+`
+
 export default ({ query, updateQuery, icons }) => {
   function onSearch({ currentTarget }) {
     updateQuery(currentTarget.value)
@@ -51,6 +68,7 @@ export default ({ query, updateQuery, icons }) => {
     <Container>
       <icons.Search size={20} />
       <SearchInput type="text" autocomplete="off" value={query} onChange={onSearch} placeholder={`Search ${Object.keys(icons).length} icons`} />
+      {query && <ClearButton onClick={() => updateQuery('')}><icons.Cross size={14} strokeWidth={3} /></ClearButton>}
     </Container>
   )
 }

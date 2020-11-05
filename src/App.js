@@ -35,6 +35,18 @@ const IconLabel = styled.span`
   font-size: .75em;
   text-align: center;
 `
+const NoResults = styled.span`
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 4em 0;
+  code {
+    background: black;
+    color: white;
+    padding: 0.2em 0.4em;
+    border-radius: 2px;
+    margin-left: 2px;
+  }
+`
 
 const App = () => {
 
@@ -76,8 +88,8 @@ const App = () => {
       <Header query={query} updateQuery={updateQuery} icons={icons} />
       <Container>
         {
-          searchResults
-            .map((key, index) => {
+          searchResults.length > 0 ?
+            searchResults.map((key, index) => {
               const Icon = icons[key];
               return (
                 <IconWrapper key={index} icon={key} setOpen={setOpen} setName={setName}>
@@ -85,7 +97,8 @@ const App = () => {
                   <IconLabel>{camelToDash(key)}</IconLabel>
                 </IconWrapper>
               )
-            })
+            }) :
+            <NoResults>There are no icons for <code>{query}</code></NoResults>
         }
       </Container>
       {open && <AlertBox setOpen={setOpen} name={name} icons={icons} />}
