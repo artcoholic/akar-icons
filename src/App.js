@@ -49,6 +49,15 @@ const NoResults = styled.span`
   }
 `
 
+const IconContainer = styled.div`
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 24px 0;
+`
+
 const App = () => {
 
   const camelToDash = str => str
@@ -98,7 +107,9 @@ const App = () => {
               const Icon = icons[key];
               return (
                 <IconWrapper key={index} icon={key} setOpen={setOpen} setName={setName}>
-                  <Icon strokeWidth={stroke} size={size} />
+                  <IconContainer>
+                    <Icon strokeWidth={stroke} size={size} />
+                  </IconContainer>
                   {/* <IconLabel>{camelToDash(key)}</IconLabel> */}
                 </IconWrapper>
               )

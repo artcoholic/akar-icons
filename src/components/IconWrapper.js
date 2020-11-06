@@ -12,20 +12,35 @@ const IconWrapper = styled.button`
   border: 0;
   cursor: pointer;
   transition: all 150ms ease-out;
-  svg{
-    margin: 36px 0;
-  }
+  position: relative;
   &:hover {
     background: #dae4e8;
+    span {
+      opacity: 1;
+      bottom: 16px;
+    }
   }
   &:focus {
     outline: none;
     box-shadow: 0 0 0 2px #41535a;
     background: white;
   }
+  span {
+    position: absolute;
+    bottom: 0px;
+    font-size: 12px;
+    opacity: 0;
+    transition: all 150ms ease-out;
+    padding: 0 24px;
+  }
 `
 
 export default ({ children, icon, setOpen, setName }) => {
+  const camelToDash = str => str
+    // .replace(/(^[A-Z])/, ([first]) => first.toLowerCase())
+    // .replace(/([A-Z])/g, ([letter]) => `-${letter.toLowerCase()}`)
+    .replace(/([A-Z])/g, ' $1').trim();
+  ;
 
   const handleClick = (i) => {
     const svg = document.getElementById(`${i}`);
@@ -43,6 +58,7 @@ export default ({ children, icon, setOpen, setName }) => {
   return (
     <IconWrapper onClick={() => { handleClick(icon); }}>
       {children}
+      <span>{camelToDash(icon)}</span>
     </IconWrapper>
   )
 }
