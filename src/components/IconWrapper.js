@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 const IconWrapper = styled.button`
   display: flex;
+  box-sizing: border-box;
   flex-direction: column;
   align-items: center;
   background: #f5f7f9;

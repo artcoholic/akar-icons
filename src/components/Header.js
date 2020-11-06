@@ -11,7 +11,7 @@ const Header = styled.header`
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  position: fixed;
+  /* position: fixed; */
   width: 100%;
   background: white;
   box-sizing: border-box;
@@ -38,7 +38,7 @@ const Version = styled.span`
 export default ({ query, updateQuery, icons }) =>
   <Header>
     <Title>Akar Icons</Title>
-    <Search query={query} updateQuery={updateQuery} icons={icons} />
+    {/* <Search query={query} updateQuery={updateQuery} icons={icons} /> */}
     <Version>v{pkg.version}</Version>
   </Header>
 

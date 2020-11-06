@@ -4,25 +4,12 @@ import styled from 'styled-components';
 const Container = styled.div`
   display: flex;
   align-items: center;
-  flex-basis: 100%;
   position: relative;
-  order: 1;
-  margin-top: 12px;
-  svg {
-    color: rgba(0,0,0,1);
-    position: absolute;
-    left: 14px;
-  }
+  box-sizing: border-box;
+  grid-column: 1 / -1;
   @media (min-width: 768px) {
-    padding: 0 24px;
-    order: 0;
-    margin-top: 0;
-    flex-basis: auto;
-    flex-grow: 2;
-    svg {
-      position: absolute;
-      left: 40px;
-    }
+    flex-basis: 200%;
+    grid-column: 1 / 3;
   }
 `
 
@@ -55,9 +42,13 @@ const ClearButton = styled.button`
     position: relative;
     left: 0;
   }
-  @media (min-width: 768px) {
-    transform: translateX(-24px);
-  }
+`
+
+const SearchIcon = styled.div`
+  position: absolute;
+  left: 0px;
+  padding: 0 14px;
+  box-sizing: border-box;
 `
 
 export default ({ query, updateQuery, icons }) => {
@@ -66,7 +57,7 @@ export default ({ query, updateQuery, icons }) => {
   }
   return (
     <Container>
-      <icons.Search size={20} />
+      <SearchIcon><icons.Search size={20} /></SearchIcon>
       <SearchInput type="text" autocomplete="off" value={query} onChange={onSearch} placeholder={`Search ${Object.keys(icons).length} icons`} />
       {query && <ClearButton onClick={() => updateQuery('')}><icons.Cross size={14} strokeWidth={3} /></ClearButton>}
     </Container>

@@ -5,8 +5,9 @@ import Header from './components/Header';
 import IconWrapper from './components/IconWrapper';
 import AlertBox from './components/AlertBox';
 import Footer from './components/Footer';
-import upperCamelCase from 'uppercamelcase';
+import CustomizationBar from './components/CustomizationBar';
 
+import upperCamelCase from 'uppercamelcase';
 import Fuse from 'fuse.js';
 import data from './data.json';
 
@@ -17,12 +18,12 @@ const Container = styled.div`
   justify-items: stretch;
   align-items: stretch;
   margin: 0;
-  padding: 131px 16px 16px;
+  padding: 16px;
   list-style: none;
   @media (min-width: 768px) {
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 12px;
-    padding: 91px 24px 24px;
+    padding: 12px 24px 24px;
   }
   @media (min-width: 1152px) {
     grid-template-columns: repeat(8, 1fr);
@@ -58,6 +59,9 @@ const App = () => {
   const [open, setOpen] = useState(false);
   const [name, setName] = useState();
   const [query, updateQuery] = useState('');
+  const [stroke, setStroke] = useState(2);
+  const [size, setSize] = useState(24);
+
 
   const DATA = [];
   for (var i in data) {
@@ -87,14 +91,15 @@ const App = () => {
     <>
       <Header query={query} updateQuery={updateQuery} icons={icons} />
       <Container>
+        <CustomizationBar query={query} updateQuery={updateQuery} icons={icons} stroke={stroke} setStroke={setStroke} size={size} setSize={setSize} />
         {
           searchResults.length > 0 ?
             searchResults.map((key, index) => {
               const Icon = icons[key];
               return (
                 <IconWrapper key={index} icon={key} setOpen={setOpen} setName={setName}>
-                  <Icon />
-                  <IconLabel>{camelToDash(key)}</IconLabel>
+                  <Icon strokeWidth={stroke} size={size} />
+                  {/* <IconLabel>{camelToDash(key)}</IconLabel> */}
                 </IconWrapper>
               )
             }) :
