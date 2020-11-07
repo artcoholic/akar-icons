@@ -18,6 +18,7 @@ const Container = styled.form`
   box-sizing: border-box;
   transition: box-shadow 300ms ease-out, padding 150ms ease-out;
   box-shadow: ${({ isStuck }) => isStuck ? `rgb(45 59 66 / 0.15) 0px 6px 12px 0px` : `none`};
+  border: ${({ isStuck }) => isStuck ? `.5px solid #e6eaef` : `none`};
   z-index: 99;
   @media (min-width: 768px) {
     grid-template-columns: repeat(4, 1fr);
