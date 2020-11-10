@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Bluetooh = props => {
+const Bluetooth = props => {
   const { color, size, ...otherProps } = props;
   return (
     <svg
@@ -15,21 +15,21 @@ const Bluetooh = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
-      id="Bluetooh"
+      id="Bluetooth"
     >
       <path d="M5 7l12 10-6 5V2l6 5L5 17"></path>
     </svg>
   );
 };
 
-Bluetooh.propTypes = {
+Bluetooth.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
 };
 
-Bluetooh.defaultProps = {
+Bluetooth.defaultProps = {
   color: 'currentColor',
   size: '24'
 };
 
-export default Bluetooh;
+export default Bluetooth;

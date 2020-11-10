@@ -15,7 +15,6 @@ const Container = styled.div`
   input[type=range] {
     width: 100%;
     appearance: none;
-    cursor: pointer;
     margin-top: 8px;
     padding: 8px 0;
     
@@ -28,12 +27,16 @@ const Container = styled.div`
     }
     &::-webkit-slider-thumb {
       appearance: none;
+      cursor: grab;
       border: none;
       height: 16px;
       width: 16px;
       border-radius: 50%;
       background: black;
       margin-top: -7px;
+    &:active {
+      cursor: grabbing;
+    }
     }
     &:focus {
       outline: none;

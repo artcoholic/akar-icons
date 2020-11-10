@@ -95,7 +95,7 @@ export const Block: Icon;
 export const MoreHorizontal: Icon;
 export const MoreVertical: Icon;
 export const Wifi: Icon;
-export const Bluetooh: Icon;
+export const Bluetooth: Icon;
 export const Location: Icon;
 export const LinkChain: Icon;
 export const LinkOut: Icon;

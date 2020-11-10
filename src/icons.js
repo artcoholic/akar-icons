@@ -86,7 +86,7 @@ export { default as Block } from './icons/block';
 export { default as MoreHorizontal } from './icons/more-horizontal';
 export { default as MoreVertical } from './icons/more-vertical';
 export { default as Wifi } from './icons/wifi';
-export { default as Bluetooh } from './icons/bluetooh';
+export { default as Bluetooth } from './icons/bluetooth';
 export { default as Location } from './icons/location';
 export { default as LinkChain } from './icons/link-chain';
 export { default as LinkOut } from './icons/link-out';
