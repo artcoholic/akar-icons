@@ -17,9 +17,9 @@ const Image = props => {
       {...otherProps}
       id="Image"
     >
-      <rect x="2" y="3" width="20" height="18" rx="2"></rect>
-      <circle cx="7.5" cy="8.5" r="2.5"></circle>
-      <path d="M14.526 10.608L5 21h15a2 2 0 002-2v-2.677a2 2 0 00-.526-1.351l-4-4.364a2 2 0 00-2.948 0z"></path>
+      <path d="M2 6a4 4 0 014-4h12a4 4 0 014 4v12a4 4 0 01-4 4H6a4 4 0 01-4-4V6z"></path>
+      <circle cx="8.5" cy="8.5" r="2.5"></circle>
+      <path d="M14.526 12.621L6 22h12.27A3.73 3.73 0 0022 18.27c0-.466-.175-.915-.49-1.26l-4.03-4.395a2 2 0 00-2.954.006z"></path>
     </svg>
   );
 };

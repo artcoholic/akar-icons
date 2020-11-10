@@ -18,11 +18,11 @@ const Alarm = props => {
       id="Alarm"
     >
       <circle cx="12" cy="13" r="9"></circle>
-      <path d="M12 8v5H8.5"></path>
+      <path d="M15.5 9.5L12 13"></path>
       <path d="M19 19l1 3"></path>
       <path d="M5 19l-1 3"></path>
-      <path d="M2 6l4-4"></path>
-      <path d="M18 2l4 4"></path>
+      <path d="M2 5l3-3"></path>
+      <path d="M19 2l3 3"></path>
       <path d="M12 4V2"></path>
     </svg>
   );

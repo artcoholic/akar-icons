@@ -19,7 +19,7 @@ const Wallet = props => {
     >
       <path d="M2 6a2 2 0 012-2h16a2 2 0 012 2v12a2 2 0 01-2 2H4a2 2 0 01-2-2V6z"></path>
       <path d="M2 8h20"></path>
-      <path d="M2 18v-6h7c0 1 .6 3 3 3s3-2 3-3h7v6a2 2 0 01-2 2H4a2 2 0 01-2-2z"></path>
+      <path d="M2 12h7c0 1 .6 3 3 3s3-2 3-3h7"></path>
     </svg>
   );
 };

@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Trash = props => {
+const VrAr = props => {
   const { color, size, ...otherProps } = props;
   return (
     <svg
@@ -15,25 +15,22 @@ const Trash = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
-      id="Trash"
+      id="VrAr"
     >
-      <path d="M8 4a2 2 0 012-2h4a2 2 0 012 2v1H8V4z"></path>
-      <path d="M2 5h20"></path>
-      <path d="M4 8l.867 12.142A2 2 0 006.862 22h10.276a2 2 0 001.995-1.858L20 8"></path>
-      <path d="M9 10l.5 7"></path>
-      <path d="M15 10l-.5 7"></path>
+      <path d="M2 10a2 2 0 012-2h16a2 2 0 012 2v7a2 2 0 01-2 2h-3.868a2 2 0 01-1.715-.971l-1.56-2.6a1 1 0 00-1.714 0l-1.56 2.6A2 2 0 017.868 19H4a2 2 0 01-2-2v-7z"></path>
+      <path d="M3.813 6.781A4 4 0 017.14 5h9.718a4 4 0 013.328 1.781L21 8H3l.813-1.219z"></path>
     </svg>
   );
 };
 
-Trash.propTypes = {
+VrAr.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
 };
 
-Trash.defaultProps = {
+VrAr.defaultProps = {
   color: 'currentColor',
   size: '24'
 };
 
-export default Trash;
+export default VrAr;

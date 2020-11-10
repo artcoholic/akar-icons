@@ -17,11 +17,11 @@ const Schedule = props => {
       {...otherProps}
       id="Schedule"
     >
-      <path d="M9 20H4a2 2 0 01-2-2V5a2 2 0 012-2h15a2 2 0 012 2v5"></path>
+      <path d="M9 20H6a4 4 0 01-4-4V7a4 4 0 014-4h11a4 4 0 014 4v3"></path>
       <path d="M8 2v2"></path>
       <path d="M15 2v2"></path>
       <path d="M2 8h19"></path>
-      <path d="M17 15v2.143L18 18"></path>
+      <path d="M18.5 15.643l-1.5 1.5"></path>
       <circle cx="17" cy="17" r="5"></circle>
     </svg>
   );

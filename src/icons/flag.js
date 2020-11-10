@@ -17,7 +17,7 @@ const Flag = props => {
       {...otherProps}
       id="Flag"
     >
-      <path d="M4 15h16l-5-6 5-6H4v18"></path>
+      <path d="M4 15h13.865a1 1 0 00.768-1.64L15 9l3.633-4.36A1 1 0 0017.865 3H4v18"></path>
     </svg>
   );
 };

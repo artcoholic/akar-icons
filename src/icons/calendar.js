@@ -17,7 +17,7 @@ const Calendar = props => {
       {...otherProps}
       id="Calendar"
     >
-      <rect x="2" y="4" width="20" height="18" rx="2"></rect>
+      <rect x="2" y="4" width="20" height="18" rx="4"></rect>
       <path d="M8 2v4"></path>
       <path d="M16 2v4"></path>
       <path d="M2 10h20"></path>

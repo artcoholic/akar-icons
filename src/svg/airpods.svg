@@ -1,8 +1,8 @@
 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle r="4" transform="matrix(-1 0 0 1 18 6)" stroke="black" stroke-width="2"/>
-<circle cx="6" cy="6" r="4" stroke="black" stroke-width="2"/>
-<path d="M14 6L14 21C14 21.5523 14.4477 22 15 22H17C17.5523 22 18 21.5509 18 20.9986C18 17.0671 18 14.7999 18 10.5714" stroke="black" stroke-width="2" stroke-linecap="round"/>
-<path d="M10 6L10 21C10 21.5523 9.55228 22 9 22H7C6.44772 22 6 21.5509 6 20.9986C6 17.0671 6 14.7999 6 10.5714" stroke="black" stroke-width="2" stroke-linecap="round"/>
+<path d="M14 6C14 8.20914 15.6436 10 18 10C20.3564 10 22 8.20914 22 6C22 3.79086 20.3564 2 18 2C15.6436 2 14 3.79086 14 6Z" stroke="black" stroke-width="2"/>
+<path d="M10 6C10 8.20914 8.35642 10 6 10C3.64358 10 2 8.20914 2 6C2 3.79086 3.64358 2 6 2C8.35642 2 10 3.79086 10 6Z" stroke="black" stroke-width="2"/>
+<path d="M14 6V20C14 21.1046 14.8954 22 16 22V22C17.1046 22 18 21.1045 18 19.9999C18 16.6542 18 14.4289 18 10.5714" stroke="black" stroke-width="2" stroke-linecap="round"/>
+<path d="M10 6V20C10 21.1046 9.10457 22 8 22V22C6.89543 22 6 21.1045 6 19.9999C6 16.6542 6 14.4289 6 10.5714" stroke="black" stroke-width="2" stroke-linecap="round"/>
 <line y1="-1" x2="3" y2="-1" transform="matrix(-1 0 0 1 17 19)" stroke="black" stroke-width="2"/>
 <line x1="7" y1="18" x2="10" y2="18" stroke="black" stroke-width="2"/>
 <path d="M20 3V3C18.7889 4.81665 18.7889 7.18335 20 9V9" stroke="black" stroke-width="2"/>

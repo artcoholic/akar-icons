@@ -17,11 +17,11 @@ const Trophy = props => {
       {...otherProps}
       id="Trophy"
     >
-      <path d="M5 2h14v7a7 7 0 01-7 7v0a7 7 0 01-7-7V2z"></path>
+      <path d="M5 4a2 2 0 012-2h10a2 2 0 012 2v5a7 7 0 01-7 7v0a7 7 0 01-7-7V4z"></path>
       <path d="M12 16v3"></path>
       <path d="M9 22h6l-3-3-3 3z"></path>
-      <path d="M5 4H2v3.783a4 4 0 001.88 3.392L6 12.5"></path>
-      <path d="M19 4h3v3.229a5 5 0 01-2.35 4.24L18 12.5"></path>
+      <path d="M5 4H4a2 2 0 00-2 2v1.783a4 4 0 001.88 3.392L6 12.5"></path>
+      <path d="M19 4h1a2 2 0 012 2v1.229a5 5 0 01-2.35 4.24L18 12.5"></path>
     </svg>
   );
 };

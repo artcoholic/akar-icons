@@ -18,7 +18,7 @@ const PersonCross = props => {
       id="PersonCross"
     >
       <circle cx="12" cy="7" r="5"></circle>
-      <path d="M17 22H5a2 2 0 01-2-2v-3a3 3 0 013-3h1"></path>
+      <path d="M17 22H5.266a2 2 0 01-1.985-2.248l.39-3.124A3 3 0 016.649 14H7"></path>
       <path d="M22 19l-5-5m5 0l-5 5"></path>
     </svg>
   );

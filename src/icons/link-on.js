@@ -18,7 +18,7 @@ const LinkOn = props => {
       id="LinkOn"
     >
       <path d="M15 8h3a4 4 0 014 4v0a4 4 0 01-4 4h-3m-6 0H6a4 4 0 01-4-4v0a4 4 0 014-4h3"></path>
-      <path d="M7 12h10"></path>
+      <path d="M9 12h6"></path>
     </svg>
   );
 };

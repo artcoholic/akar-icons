@@ -17,10 +17,10 @@ const Bug = props => {
       {...otherProps}
       id="Bug"
     >
-      <path d="M5 7h14v7a7 7 0 01-7 7v0a7 7 0 01-7-7V7z"></path>
+      <path d="M5 9a2 2 0 012-2h10a2 2 0 012 2v5a7 7 0 01-7 7v0a7 7 0 01-7-7V9z"></path>
       <path d="M8 6v-.425c0-.981.384-1.96 1.326-2.238 1.525-.45 3.823-.45 5.348 0C15.616 3.615 16 4.594 16 5.575V6"></path>
-      <path d="M19 7l3-3"></path>
-      <path d="M5 7L2 4"></path>
+      <path d="M18.5 7.5L22 4"></path>
+      <path d="M5.5 7.5L2 4"></path>
       <path d="M6 18l-4 3"></path>
       <path d="M5 12H1.5"></path>
       <path d="M22.5 12H19"></path>
