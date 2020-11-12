@@ -7,6 +7,7 @@ const Container = styled.div`
   position: relative;
   box-sizing: border-box;
   grid-column: 1 / -1;
+  color: #1B1C32;
   @media (min-width: 768px) {
     flex-basis: 200%;
     grid-column: 1 / 3;
@@ -20,13 +21,15 @@ const SearchInput = styled.input`
   width: 100%;
   background: #f5f7f9;
   line-height:1.5;
-  &:focus {
+  -webkit-appearance: none;
+  color: #1B1C32;
+  &:focus, &:active {
    outline: none;
-   box-shadow: 0 0 0 2px #41535a;
+   box-shadow: 0 0 0 2px #1B1C32;
    background: white;
   }
   &::placeholder  {
-    color:rgba(0,0,0,0.25);
+    color:#CDCDD8;
   }
 `
 
@@ -39,6 +42,7 @@ const ClearButton = styled.button`
   border: none;
   outline: none;
   cursor: pointer;
+  color: #1B1C32;
   svg {
     position: relative;
     left: 0;

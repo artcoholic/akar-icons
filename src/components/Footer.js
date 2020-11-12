@@ -8,7 +8,7 @@ const Footer = styled.footer`
   border-top: 1px solid #f2f2f2;
   font-size: .875em;
   a {
-    color: black;
+    color: #1B1C32;
     text-decoration: none;
     &:hover {
       text-decoration: underline;

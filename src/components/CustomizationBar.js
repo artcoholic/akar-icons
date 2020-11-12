@@ -28,10 +28,10 @@ const Container = styled.form`
   }
 `
 
-export default ({ stroke, setStroke, size, setSize, query, updateQuery, icons }) => {
+export default ({ stroke, setStroke, size, setSize, query, updateQuery, icons, height }) => {
   const [isStuck, setIsStuck] = useState(false);
   useScrollPosition(({ currPos }) => {
-    const isStuck = currPos.y < -49;
+    const isStuck = currPos.y < -height;
     if (isStuck) {
       setIsStuck(true)
     } else {

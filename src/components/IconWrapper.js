@@ -13,6 +13,8 @@ const IconWrapper = styled.button`
   cursor: pointer;
   transition: all 150ms ease-out;
   position: relative;
+  color: #1B1C32;
+  -webkit-appearance: none;
   &:hover {
     background: #dae4e8;
     span {
@@ -20,9 +22,9 @@ const IconWrapper = styled.button`
       bottom: 16px;
     }
   }
-  &:focus {
+  &:focus, &:active {
     outline: none;
-    box-shadow: 0 0 0 2px #41535a;
+    box-shadow: 0 0 0 2px #1B1C32;
     background: white;
   }
   span {

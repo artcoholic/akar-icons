@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
-import styled from 'styled-components';
+import styled, { ThemeProvider } from 'styled-components';
 import * as icons from './icons';
 import Header from './components/Header';
 import IconWrapper from './components/IconWrapper';
 import AlertBox from './components/AlertBox';
 import Footer from './components/Footer';
 import CustomizationBar from './components/CustomizationBar';
+import theme from './theme';
 
 import upperCamelCase from 'uppercamelcase';
 import Fuse from 'fuse.js';
@@ -32,16 +33,14 @@ const Container = styled.div`
     grid-template-columns: repeat(12, 1fr);
   }
 `
-const IconLabel = styled.span`
-  font-size: .75em;
-  text-align: center;
-`
+
 const NoResults = styled.span`
   grid-column: 1 / -1;
   text-align: center;
   padding: 4em 0;
+  color: #1B1C32;
   code {
-    background: black;
+    background: #1B1C32;
     color: white;
     padding: 0.2em 0.4em;
     border-radius: 2px;
@@ -58,19 +57,14 @@ const IconContainer = styled.div`
   margin: 24px 0;
 `
 
+
 const App = () => {
-
-  const camelToDash = str => str
-    .replace(/(^[A-Z])/, ([first]) => first.toLowerCase())
-    .replace(/([A-Z])/g, ([letter]) => `-${letter.toLowerCase()}`)
-    ;
-
   const [open, setOpen] = useState(false);
   const [name, setName] = useState();
   const [query, updateQuery] = useState('');
   const [stroke, setStroke] = useState(2);
   const [size, setSize] = useState(24);
-
+  const [height, setHeight] = useState(0);
 
   const DATA = [];
   for (var i in data) {
@@ -98,27 +92,41 @@ const App = () => {
 
   return (
     <>
-      <Header query={query} updateQuery={updateQuery} icons={icons} />
-      <Container>
-        <CustomizationBar query={query} updateQuery={updateQuery} icons={icons} stroke={stroke} setStroke={setStroke} size={size} setSize={setSize} />
-        {
-          searchResults.length > 0 ?
-            searchResults.map((key, index) => {
-              const Icon = icons[key];
-              return (
-                <IconWrapper key={index} icon={key} setOpen={setOpen} setName={setName}>
-                  <IconContainer>
-                    <Icon strokeWidth={stroke} size={size} />
-                  </IconContainer>
-                  {/* <IconLabel>{camelToDash(key)}</IconLabel> */}
-                </IconWrapper>
-              )
-            }) :
-            <NoResults>There are no icons for <code>{query}</code></NoResults>
-        }
-      </Container>
-      {open && <AlertBox setOpen={setOpen} name={name} icons={icons} />}
-      <Footer numberOfIcons={Object.keys(icons).length} />
+      <ThemeProvider theme={theme}>
+        <Header
+          query={query}
+          updateQuery={updateQuery}
+          icons={icons}
+          setHeight={setHeight}
+        />
+        <Container>
+          <CustomizationBar
+            height={height}
+            query={query}
+            updateQuery={updateQuery}
+            icons={icons}
+            stroke={stroke}
+            setStroke={setStroke}
+            size={size}
+            setSize={setSize} />
+          {
+            searchResults.length > 0 ?
+              searchResults.map((key, index) => {
+                const Icon = icons[key];
+                return (
+                  <IconWrapper key={index} icon={key} setOpen={setOpen} setName={setName}>
+                    <IconContainer>
+                      <Icon strokeWidth={stroke} size={size} />
+                    </IconContainer>
+                  </IconWrapper>
+                )
+              }) :
+              <NoResults>There are no icons for <code>{query}</code></NoResults>
+          }
+        </Container>
+        {open && <AlertBox setOpen={setOpen} name={name} icons={icons} />}
+        <Footer numberOfIcons={Object.keys(icons).length} />
+      </ThemeProvider>
     </>
   )
 }

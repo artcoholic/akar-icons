@@ -181,6 +181,7 @@ export const LightBulb: Icon;
 export const Chess: Icon;
 export const TrashCan: Icon;
 export const Microphone: Icon;
+export const Coffee: Icon;
 export const Person: Icon;
 export const PersonAdd: Icon;
 export const PersonCheck: Icon;

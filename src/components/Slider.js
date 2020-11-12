@@ -10,6 +10,7 @@ const Container = styled.div`
     display: flex;
     justify-content: space-between;
     font-size: 14px;
+    color: #1B1C32;
   }
   
   input[type=range] {
@@ -20,7 +21,7 @@ const Container = styled.div`
     
     &::-webkit-slider-runnable-track {
       height: 2px;
-      background: #ddd;
+      background: #CDCDD8;
       border: none;
       border-radius: 2px;
       bottom: 0;
@@ -32,10 +33,13 @@ const Container = styled.div`
       height: 16px;
       width: 16px;
       border-radius: 50%;
-      background: black;
+      background: #1B1C32;
       margin-top: -7px;
+      transition: all 150ms ease-out;
     &:active {
       cursor: grabbing;
+      transform: scale(1.5);
+      box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
     }
     }
     &:focus {
