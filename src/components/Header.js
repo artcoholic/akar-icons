@@ -25,7 +25,7 @@ const InnerContainer = styled.div`
 `
 const Title = styled.h1`
   margin: 0;
-  font-size: 1.6em;
+  font-size: 2.25em;
   font-weight: 400;
   flex-basis: 100%;
   order: 2;
@@ -36,7 +36,7 @@ const Title = styled.h1`
   }
 `
 const Version = styled.span`
-  border: 1px solid white;
+  background: white;
   border-radius: 4px;
   padding: .25em .5em;
   font-weight:bolder;
@@ -150,14 +150,14 @@ export default ({ icons, setHeight }) => {
             flexDirection={['column', 'row']}
             mt={[0, 24]}
           >
-            <SecondaryLinks href=""><icons.GithubFill size={16} />Github</SecondaryLinks>
+            <SecondaryLinks href="https://github.com/artcoholic/akar-icons" target="_blank"><icons.GithubFill size={16} />Github</SecondaryLinks>
             <SecondaryLinks href=""><icons.FigmaFill size={16} />Figma library</SecondaryLinks>
             <SecondaryLinks href=""><icons.File size={16} />Request an icon</SecondaryLinks>
             <SecondaryLinks href=""><icons.Coffee size={16} />Buy me a coffee</SecondaryLinks>
           </Wrapper>
         </Wrapper>
       </InnerContainer>
-    </Header>
+    </Header >
   )
 }
 

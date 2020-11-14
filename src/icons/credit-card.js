@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Microphone = props => {
+const CreditCard = props => {
   const { color, size, ...otherProps } = props;
   return (
     <svg
@@ -15,24 +15,22 @@ const Microphone = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
-      id="Microphone"
+      id="CreditCard"
     >
-      <rect x="8" y="2" width="8" height="13" rx="4"></rect>
-      <path d="M18 16.292A7.98 7.98 0 0112 19a7.98 7.98 0 01-6-2.708"></path>
-      <path d="M12 19v3"></path>
-      <path d="M10 22h4"></path>
+      <rect x="2" y="5" width="20" height="14" rx="2"></rect>
+      <path d="M12 10.016A2.794 2.794 0 009.857 9C8.28 9 7 10.343 7 12s1.28 3 2.857 3c.854 0 1.62-.393 2.143-1.016M17 12c0 1.657-1.28 3-2.857 3-1.578 0-2.857-1.343-2.857-3s1.279-3 2.857-3C15.72 9 17 10.343 17 12z"></path>
     </svg>
   );
 };
 
-Microphone.propTypes = {
+CreditCard.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
 };
 
-Microphone.defaultProps = {
+CreditCard.defaultProps = {
   color: 'currentColor',
   size: '24'
 };
 
-export default Microphone;
+export default CreditCard;
