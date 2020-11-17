@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
 
   label {
     display: flex;
@@ -17,13 +17,12 @@ const Container = styled.div`
     width: 100%;
     appearance: none;
     margin-top: 8px;
-    padding: 8px 0;
     
     &::-webkit-slider-runnable-track {
-      height: 2px;
-      background: #CDCDD8;
+      height: 16px;
+      background: #f5f7f9;
       border: none;
-      border-radius: 2px;
+      border-radius: 8px;
       bottom: 0;
     }
     &::-webkit-slider-thumb {
@@ -34,7 +33,7 @@ const Container = styled.div`
       width: 16px;
       border-radius: 50%;
       background: #1B1C32;
-      margin-top: -7px;
+      margin-top: 0;
       transition: all 150ms ease-out;
     &:active {
       cursor: grabbing;

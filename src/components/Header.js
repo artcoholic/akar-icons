@@ -88,21 +88,25 @@ const Button = styled.button`
 
 const SecondaryLinks = styled.a`
   margin-bottom: 1em;
+  transition: background 150ms ease-out;
   &:last-child {
     margin-bottom: 0;
-  }
-  &:hover {
-    text-decoration: underline;
   }
   svg {
     margin-right: 8px;
   }
   @media (min-width: 768px) {
-    margin-bottom: 0;
-    margin-right: 24px;
+    margin-bottom: -8px;
+    margin-right: 8px;
+    padding: 8px 12px;
+    border-radius: 4px;
     &:last-child {
+      margin-bottom: -8px;
       margin-right: 0;
     }
+    &:hover {
+    background: #C9D5D9;
+  }
   }
 `
 
@@ -148,7 +152,7 @@ export default ({ icons, setHeight }) => {
           <Wrapper
             alignItems={[null, "flex-end"]}
             flexDirection={['column', 'row']}
-            mt={[0, 24]}
+            mt={[0, 14]}
           >
             <SecondaryLinks href="https://github.com/artcoholic/akar-icons" target="_blank"><icons.GithubFill size={16} />Github</SecondaryLinks>
             <SecondaryLinks href=""><icons.FigmaFill size={16} />Figma library</SecondaryLinks>
