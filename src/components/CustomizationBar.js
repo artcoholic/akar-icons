@@ -81,7 +81,7 @@ export default ({ stroke, setStroke, size, setSize, query, updateQuery, icons, h
           title="Size"
           output={size}
           input={setSize}
-          min="16"
+          min="12"
           max="64"
           step="4"
         />
