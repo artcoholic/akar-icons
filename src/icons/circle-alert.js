@@ -18,7 +18,7 @@ const CircleAlert = props => {
       id="CircleAlert"
     >
       <circle cx="12" cy="12" r="10"></circle>
-      <path d="M12 7v6m0 3.901V17"></path>
+      <path d="M12 7v6m0 3.5v.5"></path>
     </svg>
   );
 };
