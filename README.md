@@ -1,5 +1,5 @@
 # Akar Icons
-A perfectly rounded icon library made for designers, developers, and pretty much everyone. View full library at [akaricons.com](https://akaricons.com).
+A perfectly rounded icon library made for designers, developers, and pretty much everyone.
 
 ---
 
@@ -9,7 +9,7 @@ Explore all icons at [akaricons.com](https://akaricons.com). Simply click the ic
 ## For developers
 Akar icons are currently available as individual React components. Start using it today.
 
-### 1. Install
+### 1. Installation
 Install it with npm:
 
 ```shell
@@ -55,7 +55,7 @@ export default MyComponent;
 Explore all icons at [akaricons.com](https://akaricons.com).
 
 ## Author
-[Arturo Wibawa](https://arturowibawa.com) ([@agwibawa](https://twitter.com/agwibawa))
+Arturo Wibawa ([@agwibawa](https://twitter.com/agwibawa))
 
 ## License
 [MIT License](./LICENSE), Copyright © 2020-present Arturo Wibawa.
