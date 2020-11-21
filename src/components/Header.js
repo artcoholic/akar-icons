@@ -155,9 +155,9 @@ export default ({ icons, setHeight }) => {
             mt={[0, 14]}
           >
             <SecondaryLinks href="https://github.com/artcoholic/akar-icons" target="_blank"><icons.GithubFill size={16} />Github</SecondaryLinks>
-            <SecondaryLinks href=""><icons.FigmaFill size={16} />Figma library</SecondaryLinks>
-            <SecondaryLinks href=""><icons.File size={16} />Request an icon</SecondaryLinks>
-            <SecondaryLinks href=""><icons.Coffee size={16} />Buy me a coffee</SecondaryLinks>
+            <SecondaryLinks href="" target="_blank"><icons.FigmaFill size={16} />Figma library</SecondaryLinks>
+            <SecondaryLinks href="https://github.com/artcoholic/akar-icons/issues" target="_blank"><icons.File size={16} />Request an icon</SecondaryLinks>
+            <SecondaryLinks href="https://paypal.me/awibawa/5" target="_blank"><icons.Coffee size={16} />Buy me a coffee</SecondaryLinks>
           </Wrapper>
         </Wrapper>
       </InnerContainer>
