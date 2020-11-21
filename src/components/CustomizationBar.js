@@ -57,7 +57,7 @@ export default ({ stroke, setStroke, size, setSize, query, updateQuery, icons, h
   })
 
   useEffect(() => {
-    (query !== '' || stroke !== 2 || size !== 24) ? setReset(true) : setReset(false);
+    (query !== '' || stroke != 2 || size != 24) ? setReset(true) : setReset(false);
   }, [stroke, query, size]);
 
   function handleReset() {
@@ -65,6 +65,7 @@ export default ({ stroke, setStroke, size, setSize, query, updateQuery, icons, h
     setSize(24);
     updateQuery('');
   }
+
   return (
     <>
       <Container isStuck={isStuck}>
@@ -73,9 +74,9 @@ export default ({ stroke, setStroke, size, setSize, query, updateQuery, icons, h
           title="Stroke width"
           output={stroke}
           input={setStroke}
-          min="0.5"
-          max="4"
-          step="0.5"
+          min={0.5}
+          max={3}
+          step={0.5}
         />
         <Slider
           title="Size"
