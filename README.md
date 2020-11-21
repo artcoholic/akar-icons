@@ -7,8 +7,6 @@ Play around at [akaricons.com](https://akaricons.com)
 ## For Designers
 Explore all icons at [akaricons.com](https://akaricons.com). Simply click the icon you'd like to use and paste it to your favorite application (Figma, Sketch, XD).
 
----
-
 ## For developers
 Akar icons are currently available as individual React components. Start using it with 3-easy steps.
 
