@@ -1,3 +1,6 @@
+<a href="https://akaricons.com" target="_blank">
+  <img alt="akar icons" src="https://repository-images.githubusercontent.com/306119910/c3a57000-2be0-11eb-88a2-2714f9bafcd4.png">
+</a>
 # Akar Icons
 A perfectly rounded icon library made for designers, developers, and pretty much everyone.
 
