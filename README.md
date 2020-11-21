@@ -16,7 +16,7 @@ Install it with npm:
 npm install --save akar-icons
 ```
 
-### 2. Use
+### 2. Usage
 Import the icons you need into your React project and declare them in your render method:
 
 ```jsx
@@ -56,3 +56,6 @@ Explore all icons at [akaricons.com](https://akaricons.com).
 
 ## Author
 - Arturo Wibawa ([@agwibawa](https://twitter.com/agwibawa))
+
+## License
+[MIT License](./LICENSE), Copyright © 2020-present Arturo Wibawa.
