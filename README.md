@@ -2,27 +2,24 @@
 A perfectly rounded icon library made for designers, developers, and pretty much everyone. 
 Play around at [akaricons.com](https://akaricons.com)
 
-## Usage
-Akar icons are accessible for both designers and developers.
-
 ---
 
-### For Designers
+## For Designers
 Explore all icons at [akaricons.com](https://akaricons.com). Simply click the icon you'd like to use and paste it to your favorite application (Figma, Sketch, XD).
 
 ---
 
-### For developers
+## For developers
 Akar icons are currently available as individual React components. Start using it with 3-easy steps.
 
-#### 1. Install
+### 1. Install
 Install it with npm:
 
 ```shell
 npm install --save akar-icons
 ```
 
-#### 2. Use
+### 2. Use
 * Import the icons you need into your React project and declare them in your render method:
 
 ```jsx
