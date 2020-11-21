@@ -55,7 +55,7 @@ export default MyComponent;
 Explore all icons at [akaricons.com](https://akaricons.com).
 
 ## Author
-Arturo Wibawa ([@agwibawa](https://twitter.com/agwibawa))
+[Arturo Wibawa](https://arturowibawa.com) ([@agwibawa](https://twitter.com/agwibawa))
 
 ## License
 [MIT License](./LICENSE), Copyright © 2020-present Arturo Wibawa.
