@@ -40,6 +40,7 @@
     "normalize.css": "^8.0.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "serialize-javascript": "^5.0.1",
     "styled-components": "^5.1.1",
     "styled-system": "^5.1.5"
   },
