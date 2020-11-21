@@ -73,8 +73,5 @@
     "rollup-plugin-uglify": "^6.0.4",
     "svgo": "^1.3.0",
     "uppercamelcase": "^3.0.0"
-  },
-  "resolutions": {
-    "serialize-javascript": "^2.1.1"
   }
 }
