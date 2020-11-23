@@ -142,10 +142,10 @@ export default ({ icons, setHeight }) => {
           <Wrapper
             mb={['2em', 0]}
           >
-            <a href="">
+            <a href="https://github.com/artcoholic/akar-icons#readme" target="_blank">
               <Button mr={[12, 24]} mb={[12, 0]}>Get started <icons.ArrowUpRight size={16} /></Button>
             </a>
-            <a href="">
+            <a href="https://github.com/artcoholic/akar-icons/raw/master/src/akar-icons.zip">
               <Button mb={[12, 0]} color="#1B1C32" bg="white">Download all <icons.AlignToBottom size={16} /></Button>
             </a>
           </Wrapper>
@@ -155,7 +155,7 @@ export default ({ icons, setHeight }) => {
             mt={[0, 14]}
           >
             <SecondaryLinks href="https://github.com/artcoholic/akar-icons" target="_blank"><icons.GithubFill size={16} />Github</SecondaryLinks>
-            <SecondaryLinks href="" target="_blank"><icons.FigmaFill size={16} />Figma library</SecondaryLinks>
+            {/* <SecondaryLinks href="" target="_blank"><icons.FigmaFill size={16} />Figma library</SecondaryLinks> */}
             <SecondaryLinks href="https://github.com/artcoholic/akar-icons/issues" target="_blank"><icons.File size={16} />Request an icon</SecondaryLinks>
             <SecondaryLinks href="https://paypal.me/awibawa/5" target="_blank"><icons.Coffee size={16} />Buy me a coffee</SecondaryLinks>
           </Wrapper>
