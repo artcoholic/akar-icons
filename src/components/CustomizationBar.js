@@ -45,6 +45,9 @@ const ResetButton = styled.button`
   @media (min-width: 768px) {
     display: block;
   }
+  svg {
+    display: block;
+  }
 `
 
 export default ({ stroke, setStroke, size, setSize, query, updateQuery, icons, height }) => {
