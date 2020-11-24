@@ -39,8 +39,6 @@ const IconWrapper = styled.button`
 
 export default ({ children, icon, setOpen, setName }) => {
   const camelToDash = str => str
-    // .replace(/(^[A-Z])/, ([first]) => first.toLowerCase())
-    // .replace(/([A-Z])/g, ([letter]) => `-${letter.toLowerCase()}`)
     .replace(/([A-Z])/g, ' $1').trim();
   ;
 
@@ -56,6 +54,10 @@ export default ({ children, icon, setOpen, setName }) => {
     document.body.removeChild(el);
     setOpen(true);
     setName(i);
+    gtag('event', 'select_content', {
+      content_type: 'icon',
+      item_id: `${i}`
+    })
   }
   return (
     <IconWrapper onClick={() => { handleClick(icon); }}>

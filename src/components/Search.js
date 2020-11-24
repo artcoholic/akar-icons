@@ -57,13 +57,18 @@ const SearchIcon = styled.div`
 `
 
 export default ({ query, updateQuery, icons }) => {
+
   function onSearch({ currentTarget }) {
     updateQuery(currentTarget.value)
+    gtag('event', 'search', {
+      search_term: `${currentTarget.value}`
+    });
   }
+
   return (
     <Container>
       <SearchIcon><icons.Search size={20} /></SearchIcon>
-      <SearchInput type="text" autocomplete="off" value={query} onChange={onSearch} placeholder={`Search ${Object.keys(icons).length} icons`} />
+      <SearchInput type="text" autocomplete="off" value={query} onChange={onSearch} placeholder={`Search ${Object.keys(icons).length} icons`} onKeyPress={(e) => { e.key === 'Enter' && e.preventDefault(); }} />
       {query && <ClearButton onClick={() => updateQuery('')}><icons.Cross size={14} strokeWidth={3} /></ClearButton>}
     </Container>
   )
