@@ -146,7 +146,7 @@ export default ({ icons, setHeight }) => {
               <Button mr={[12, 24]} mb={[12, 0]}>Get started <icons.ArrowUpRight size={16} /></Button>
             </a>
             <a href="https://github.com/artcoholic/akar-icons/raw/master/src/akar-icons.zip">
-              <Button mb={[12, 0]} color="#1B1C32" bg="white">Download all <icons.AlignToBottom size={16} /></Button>
+              <Button mb={[12, 0]} color="#1B1C32" bg="white">Download all <icons.Download size={16} /></Button>
             </a>
           </Wrapper>
           <Wrapper
@@ -154,7 +154,7 @@ export default ({ icons, setHeight }) => {
             flexDirection={['column', 'row']}
             mt={[0, 14]}
           >
-            <SecondaryLinks href="https://github.com/artcoholic/akar-icons" target="_blank"><icons.GithubFill size={16} />Github</SecondaryLinks>
+            <SecondaryLinks href="https://github.com/artcoholic/akar-icons" target="_blank"><icons.GithubFill size={16} />View on Github</SecondaryLinks>
             {/* <SecondaryLinks href="" target="_blank"><icons.FigmaFill size={16} />Figma library</SecondaryLinks> */}
             <SecondaryLinks href="https://github.com/artcoholic/akar-icons/issues" target="_blank"><icons.File size={16} />Request an icon</SecondaryLinks>
             <SecondaryLinks href="https://paypal.me/awibawa/5" target="_blank"><icons.Coffee size={16} />Buy me a coffee</SecondaryLinks>
