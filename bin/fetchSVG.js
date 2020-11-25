@@ -1,10 +1,10 @@
-const got = require('got')
-const {ensureDir, writeFile} = require('fs-extra')
-const {join, resolve} = require('path')
-const Figma = require('figma-js')
-const PQueue = require('p-queue')
-require('dotenv').config()
-const {FIGMA_TOKEN, FIGMA_FILE_URL} = process.env
+const got = require('got');
+const { ensureDir, writeFile } = require('fs-extra');
+const { join, resolve } = require('path');
+const Figma = require('figma-js');
+const PQueue = require('p-queue');
+require('dotenv').config();
+const { FIGMA_TOKEN, FIGMA_FILE_URL } = process.env;
 
 const options = {
   format: 'svg',
@@ -12,14 +12,14 @@ const options = {
   scale: '1'
 }
 
-for(const arg of process.argv.slice(2)) {
+for (const arg of process.argv.slice(2)) {
   const [param, value] = arg.split('=')
-  if(options[param]) {
+  if (options[param]) {
     options[param] = value
   }
 }
 
-if(!FIGMA_TOKEN) {
+if (!FIGMA_TOKEN) {
   throw Error('Cannot find FIGMA_TOKEN in process!')
 }
 
@@ -46,9 +46,9 @@ client.file(fileId)
 
     function check(c) {
       if (c.type === 'COMPONENT') {
-        const {name, id} = c
-        const {description = '', key} = data.components[c.id]
-        const {width, height} = c.absoluteBoundingBox
+        const { name, id } = c
+        const { description = '', key } = data.components[c.id]
+        const { width, height } = c.absoluteBoundingBox
 
         components[id] = {
           name,
@@ -81,8 +81,8 @@ client.file(fileId)
         ids: Object.keys(components),
         scale: options.scale
       }
-    ).then(({data}) => {
-      for(const id of Object.keys(data.images)) {
+    ).then(({ data }) => {
+      for (const id of Object.keys(data.images)) {
         components[id].image = data.images[id]
       }
       return components
@@ -106,10 +106,10 @@ client.file(fileId)
         },
         encoding: (options.format === 'svg' ? 'utf8' : null)
       })
-      .then(response => {
-        return ensureDir(join(options.outputDir, options.format))
-          .then(() => writeFile(join(options.outputDir, options.format, `${component.name}.${options.format}`), response.body, (options.format === 'svg' ? 'utf8' : 'binary')))
-      })
+        .then(response => {
+          return ensureDir(join(options.outputDir, options.format))
+            .then(() => writeFile(join(options.outputDir, options.format, `${component.name}.${options.format}`), response.body, (options.format === 'svg' ? 'utf8' : 'binary')))
+        })
     }))
   })
   .catch(error => {
@@ -117,7 +117,7 @@ client.file(fileId)
   })
 
 function queueTasks(tasks, options) {
-  const queue = new PQueue(Object.assign({concurrency: 3}, options))
+  const queue = new PQueue(Object.assign({ concurrency: 3 }, options))
   for (const task of tasks) {
     queue.add(task)
   }

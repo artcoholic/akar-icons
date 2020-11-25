@@ -179,6 +179,7 @@ export { default as Coffee } from './icons/coffee';
 export { default as CreditCard } from './icons/credit-card';
 export { default as Utensils } from './icons/utensils';
 export { default as Radish } from './icons/radish';
+export { default as Clipboard } from './icons/clipboard';
 export { default as Person } from './icons/person';
 export { default as PersonAdd } from './icons/person-add';
 export { default as PersonCheck } from './icons/person-check';

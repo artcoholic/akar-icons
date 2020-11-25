@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Download = props => {
+const Clipboard = props => {
   const { color, size, ...otherProps } = props;
   return (
     <svg
@@ -15,22 +15,22 @@ const Download = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
-      id="Download"
+      id="Clipboard"
     >
-      <path d="M12 15V3m0 12l-4-4m4 4l4-4"></path>
-      <path d="M2 12l.802 7.22A2 2 0 004.79 21h14.42a2 2 0 001.988-1.78L22 12"></path>
+      <path d="M15 4h4a1 1 0 011 1v15a1 1 0 01-1 1H5a1 1 0 01-1-1V5a1 1 0 011-1h4"></path>
+      <path d="M9 5a3 3 0 013-3v0a3 3 0 013 3v1H9V5z"></path>
     </svg>
   );
 };
 
-Download.propTypes = {
+Clipboard.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
 };
 
-Download.defaultProps = {
+Clipboard.defaultProps = {
   color: 'currentColor',
   size: '24'
 };
 
-export default Download;
+export default Clipboard;

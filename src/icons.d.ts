@@ -188,6 +188,7 @@ export const Coffee: Icon;
 export const CreditCard: Icon;
 export const Utensils: Icon;
 export const Radish: Icon;
+export const Clipboard: Icon;
 export const Person: Icon;
 export const PersonAdd: Icon;
 export const PersonCheck: Icon;
