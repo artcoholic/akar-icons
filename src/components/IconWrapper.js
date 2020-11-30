@@ -55,7 +55,7 @@ export default ({ children, icon, setOpen, setName }) => {
     setOpen(true);
     setName(i);
     gtag('event', 'select_content', {
-      content_type: 'icon',
+      content_type: `${i}`,
       item_id: `${i}`
     })
   }
