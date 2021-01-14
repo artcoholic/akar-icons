@@ -70,9 +70,13 @@ const Button = styled.button`
   align-content: center;
   cursor: pointer;
   margin: 0 6px;
+  transition: all 150ms ease-out;
   ${color}
   &:focus {
     outline: none;
+  }
+  &:hover {
+    box-shadow: rgb(45 59 66 / 0.15) 0px 6px 12px 0px;
   }
   svg {
     margin-left: 8px;

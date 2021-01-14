@@ -35,7 +35,8 @@ const Wrapper = styled.div`
 `
 
 const ResetButton = styled.button`
-  cursor: ${({ reset }) => reset ? 'pointer' : 'default'};
+  cursor: pointer;
+  pointer-events: ${({ reset }) => reset ? 'auto' : 'none'};
   border: none;
   outline: none;
   font-size: 12px;
@@ -46,6 +47,9 @@ const ResetButton = styled.button`
   order: -1;
   padding: 0 16px;
   margin-left: 8px;
+  &:hover {
+    background-color: #e8c031;
+  }
   @media (min-width: 768px) {
     order: 0;
     margin-left: 12px;
@@ -95,11 +99,6 @@ export default ({ stroke, setStroke, size, setSize, query, updateQuery, icons, h
             mr={[0, 12]}
           />
         </Wrapper>
-        {/* {reset &&
-          <ResetButton reset={reset} isStuck={isStuck} type="button" onClick={handleReset}>
-            <icons.ArrowCounterClockwise size={16} />
-          </ResetButton>
-        } */}
         <ResetButton reset={reset} isStuck={isStuck} type="button" onClick={handleReset}>
           <icons.ArrowCounterClockwise size={16} />
         </ResetButton>

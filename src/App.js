@@ -144,7 +144,7 @@ const App = () => {
               </NoResults>
           }
         </Container>
-        {open && <AlertBox setOpen={setOpen} name={name} icons={icons} />}
+        {open && <AlertBox open={open} setOpen={setOpen} name={name} icons={icons} />}
         <Footer numberOfIcons={Object.keys(icons).length} />
       </ThemeProvider>
     </>
