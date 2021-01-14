@@ -1,11 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
+import { space } from 'styled-system';
 
 const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   flex-basis: 100%;
+  margin: 16px 8px 0 ;
+  ${space}
+  @media (min-width: 768px) {
+    margin: 0 12px;
+  }
 
   label {
     display: flex;
@@ -48,12 +54,12 @@ const Container = styled.div`
   }
 `
 
-export default ({ title, input, output, min, max, step }) => {
+export default ({ title, input, output, min, max, step, mr, ml }) => {
   function handleChange(event) {
     input(event.target.value);
   }
   return (
-    <Container>
+    <Container mr={mr} ml={ml}>
       <label><span>{title}</span><span>{output}px</span></label>
       <input type="range" min={min} max={max} step={step} value={output} onChange={handleChange} />
     </Container>

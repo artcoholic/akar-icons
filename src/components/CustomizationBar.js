@@ -6,25 +6,22 @@ import { useScrollPosition } from '@n8tb1t/use-scroll-position';
 
 const Container = styled.form`
   grid-column: 1 / -1;
-  grid-gap: 16px 12px;
   margin: 0;
   position: sticky;
   top: 16px;
   background: white;
   border-radius: 8px;
-  padding: ${({ isStuck }) => isStuck ? '16px' : '4px 0 12px 0'};
+  padding: ${({ isStuck }) => isStuck ? '16px' : '8px 0 16px 0'};
   box-sizing: border-box;
   transition: box-shadow 300ms ease-out, padding 150ms ease-out;
   box-shadow: ${({ isStuck }) => isStuck ? 'rgb(45 59 66 / 0.15) 0px 6px 12px 0px' : 'none'};
   border: ${({ isStuck }) => isStuck ? '.5px solid #e6eaef' : 'none'};
   z-index: 99;
-
   display: flex;
   justify-content: space-between;
   flex-flow: row wrap;
   
   @media (min-width: 768px) {
-    grid-gap: 24px;
     flex-flow: row nowrap;
     top: 24px;
     padding: ${({ isStuck }) => isStuck ? '16px' : '16px 0'};
@@ -35,10 +32,6 @@ const Wrapper = styled.div`
   display: flex;
   flex-flow: row nowrap;
   flex-basis: 100%;
-  grid-gap: 16px;
-  @media (min-width: 768px) {
-    grid-gap: 24px;
-  }
 `
 
 const ResetButton = styled.button`
@@ -52,8 +45,10 @@ const ResetButton = styled.button`
   background: ${({ reset }) => reset ? '#FFD542' : '#EFEFEF'};
   order: -1;
   padding: 0 16px;
+  margin-left: 8px;
   @media (min-width: 768px) {
     order: 0;
+    margin-left: 12px;
   }
 `
 
@@ -88,6 +83,7 @@ export default ({ stroke, setStroke, size, setSize, query, updateQuery, icons, h
             min={0.5}
             max={3}
             step={0.5}
+            ml={[0, 12]}
           />
           <Slider
             title="Size"
@@ -96,6 +92,7 @@ export default ({ stroke, setStroke, size, setSize, query, updateQuery, icons, h
             min="12"
             max="64"
             step="4"
+            mr={[0, 12]}
           />
         </Wrapper>
         {/* {reset &&

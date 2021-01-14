@@ -9,8 +9,10 @@ const Container = styled.div`
   color: #1B1C32;
   order: -1;
   flex-grow: 1;
+  margin-right: 8px;
   @media (min-width: 768px) {
     flex-basis: 100%;
+    margin-right: 12px;
   }
 `
 
