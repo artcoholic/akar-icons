@@ -6,11 +6,11 @@ const Container = styled.div`
   align-items: center;
   position: relative;
   box-sizing: border-box;
-  grid-column: 1 / -1;
   color: #1B1C32;
+  order: -1;
+  flex-grow: 1;
   @media (min-width: 768px) {
-    flex-basis: 200%;
-    grid-column: 1 / 3;
+    flex-basis: 100%;
   }
 `
 
@@ -54,6 +54,9 @@ const SearchIcon = styled.div`
   left: 0px;
   padding: 0 14px;
   box-sizing: border-box;
+  svg {
+    display: block;
+  }
 `
 
 export default ({ query, updateQuery, icons }) => {

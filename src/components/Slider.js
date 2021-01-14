@@ -5,6 +5,7 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  flex-basis: 100%;
 
   label {
     display: flex;

@@ -6,8 +6,6 @@ import { useScrollPosition } from '@n8tb1t/use-scroll-position';
 
 const Container = styled.form`
   grid-column: 1 / -1;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
   grid-gap: 16px 12px;
   margin: 0;
   position: sticky;
@@ -20,33 +18,42 @@ const Container = styled.form`
   box-shadow: ${({ isStuck }) => isStuck ? 'rgb(45 59 66 / 0.15) 0px 6px 12px 0px' : 'none'};
   border: ${({ isStuck }) => isStuck ? '.5px solid #e6eaef' : 'none'};
   z-index: 99;
+
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  
   @media (min-width: 768px) {
-    grid-template-columns: repeat(4, 1fr);
     grid-gap: 24px;
+    flex-flow: row nowrap;
     top: 24px;
     padding: ${({ isStuck }) => isStuck ? '16px' : '16px 0'};
   }
 `
 
+const Wrapper = styled.div`
+  display: flex;
+  flex-flow: row nowrap;
+  flex-basis: 100%;
+  grid-gap: 16px;
+  @media (min-width: 768px) {
+    grid-gap: 24px;
+  }
+`
+
 const ResetButton = styled.button`
-  position: absolute;
-  cursor: pointer;
+  cursor: ${({ reset }) => reset ? 'pointer' : 'default'};
   border: none;
   outline: none;
   font-size: 12px;
-  display: none;
   transition: all 150ms ease-out;
-  border-radius: 50%;
-  right: ${({ isStuck }) => isStuck ? '-12px' : '0'};
-  top: ${({ isStuck }) => isStuck ? '-12px' : '0'};
-  background: ${({ isStuck }) => isStuck ? 'red' : 'none'};
-  padding: ${({ isStuck }) => isStuck ? '4px' : '0'};
-  color: ${({ isStuck }) => isStuck ? 'white' : 'red'};
+  border-radius: 4px;
+  color: ${({ reset }) => reset ? '#1B1C32' : '#BDBDBD'};
+  background: ${({ reset }) => reset ? '#FFD542' : '#EFEFEF'};
+  order: -1;
+  padding: 0 16px;
   @media (min-width: 768px) {
-    display: block;
-  }
-  svg {
-    display: block;
+    order: 0;
   }
 `
 
@@ -73,27 +80,32 @@ export default ({ stroke, setStroke, size, setSize, query, updateQuery, icons, h
     <>
       <Container isStuck={isStuck}>
         <Search query={query} updateQuery={updateQuery} icons={icons} />
-        <Slider
-          title="Stroke width"
-          output={stroke}
-          input={setStroke}
-          min={0.5}
-          max={3}
-          step={0.5}
-        />
-        <Slider
-          title="Size"
-          output={size}
-          input={setSize}
-          min="12"
-          max="64"
-          step="4"
-        />
-        {reset &&
+        <Wrapper>
+          <Slider
+            title="Stroke width"
+            output={stroke}
+            input={setStroke}
+            min={0.5}
+            max={3}
+            step={0.5}
+          />
+          <Slider
+            title="Size"
+            output={size}
+            input={setSize}
+            min="12"
+            max="64"
+            step="4"
+          />
+        </Wrapper>
+        {/* {reset &&
           <ResetButton reset={reset} isStuck={isStuck} type="button" onClick={handleReset}>
             <icons.ArrowCounterClockwise size={16} />
           </ResetButton>
-        }
+        } */}
+        <ResetButton reset={reset} isStuck={isStuck} type="button" onClick={handleReset}>
+          <icons.ArrowCounterClockwise size={16} />
+        </ResetButton>
       </Container>
     </>
   )
