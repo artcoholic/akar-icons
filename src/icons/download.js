@@ -18,7 +18,7 @@ const Download = props => {
       id="Download"
     >
       <path d="M12 15V3m0 12l-4-4m4 4l4-4"></path>
-      <path d="M2 12l.802 7.22A2 2 0 004.79 21h14.42a2 2 0 001.988-1.78L22 12"></path>
+      <path d="M2 17l.621 2.485A2 2 0 004.561 21H19.439a2 2 0 001.94-1.515L22 17"></path>
     </svg>
   );
 };

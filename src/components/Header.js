@@ -5,47 +5,45 @@ import pkg from '../../package.json';
 
 const Header = styled.header`
   display: block;
-  padding: 16px 16px 0;
   width: 100%;
   background: white;
   box-sizing: border-box;
   @media (min-width: 768px) {
-    padding: 24px 24px 0px;
+    padding: 0px 24px;
   }
 `
 const InnerContainer = styled.div`
   background: #DAE4E8;
   width: 100%;
-  border-radius: 12px;
-  padding: 24px;
+  padding: 48px 24px;
   box-sizing: border-box;
   @media (min-width: 768px) {
-    padding: 48px
+    padding: 96px 48px;
+    border-radius: 12px;
   }
 `
 const Title = styled.h1`
   margin: 0;
   font-size: 2.25em;
-  font-weight: 400;
-  flex-basis: 100%;
-  order: 2;
+  font-weight: 300;
+  text-align:center;
+  width: 100%;
+  margin-top: .5em;
+  margin-bottom: .25em;
+  max-width: 710px;
   @media (min-width: 768px) {
     font-size: 2.8em;
-    flex-basis: 60%;
-    order: 1;
   }
 `
-const Version = styled.span`
-  background: white;
-  border-radius: 4px;
-  padding: .25em .5em;
-  font-weight:bolder;
-  order: 1;
-  margin-bottom: 1em;
-  @media (min-width: 768px) {
-    order: 2;
-    margin-bottom: 0;
-  }
+
+const SubTitle = styled.h2`
+  font-size: 1.2em;
+  line-height: 1.5em;
+  font-weight: 300;
+  text-align: center;
+  width: 100%;
+  opacity: .5;
+  max-width:580px;
 `
 
 const Wrapper = styled.div`
@@ -71,8 +69,7 @@ const Button = styled.button`
   display: flex;
   align-content: center;
   cursor: pointer;
-  margin-bottom: 12px;
-  margin-right: 12px;
+  margin: 0 6px;
   ${color}
   &:focus {
     outline: none;
@@ -81,33 +78,25 @@ const Button = styled.button`
     margin-left: 8px;
   }
   @media (min-width: 768px) {
-    margin-bottom: 0;
-    margin-right: 24px;
+    margin: 0 12px;
   }
 `
 
-const SecondaryLinks = styled.a`
-  margin-bottom: 1em;
-  transition: background 150ms ease-out;
-  &:last-child {
-    margin-bottom: 0;
-  }
+const Logo = styled.div`
+  box-shadow: rgb(45 59 66 / 0.15) 0px 6px 12px 0px;
+  border-radius: 8px;
+  border: 1px solid #d8c789;
+  background: #FFD542;
   svg {
-    margin-right: 8px;
+    display: block;
   }
-  @media (min-width: 768px) {
-    margin-bottom: -8px;
-    margin-right: 8px;
-    padding: 8px 12px;
-    border-radius: 4px;
-    &:last-child {
-      margin-bottom: -8px;
-      margin-right: 0;
-    }
-    &:hover {
-    background: #C9D5D9;
-  }
-  }
+`
+
+const HeaderTitle = styled.span`
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+  font-size: .75em;
 `
 
 export default ({ icons, setHeight }) => {
@@ -126,40 +115,49 @@ export default ({ icons, setHeight }) => {
 
   return (
     <Header id="myHeader" ref={ref}>
+      <Wrapper
+        justifyContent="center"
+        padding="12px 0"
+      >
+        <HeaderTitle>Akar Icons</HeaderTitle>
+      </Wrapper>
       <InnerContainer>
         <Wrapper
-          justifyContent={["flex-start", "space-between"]}
-          alignItems="flex-start"
-          mb={['2em', '8em']}
+          alignItems="center"
+          mb="2em"
+          flexDirection="column"
         >
+          <Logo>
+            <svg width="64" height="64" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M506.667 346.667H293.333C234.99 346.667 194.711 384.388 188.39 434.186C179.723 502.474 202.498 543.642 285.301 570.938C322.49 583.197 354.071 609.984 365.589 647.409L371.516 666.667L374.06 664.482C391.365 649.625 410.941 637.638 432.042 628.979L483.283 607.952C570.896 572 622.501 517.069 611.981 434.186C605.661 384.388 565.01 346.667 506.667 346.667Z" fill="#FFF7D9" stroke="#1B1C32" stroke-width="40" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M399.035 265.863C399.035 265.863 317.033 274.037 274.094 238.255C231.156 202.473 240.965 134.137 240.965 134.137C240.965 134.137 322.967 125.963 365.906 161.745C408.844 197.527 399.035 265.863 399.035 265.863Z" fill="#FFD542" stroke="#1B1C32" stroke-width="40" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M400.965 265.863C400.965 265.863 482.967 274.037 525.906 238.255C568.844 202.473 559.035 134.137 559.035 134.137C559.035 134.137 477.033 125.963 434.094 161.745C391.156 197.527 400.965 265.863 400.965 265.863Z" fill="#FFD542" stroke="#1B1C32" stroke-width="40" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M586.667 386.667C573.333 413.333 503.093 426.667 400 426.667C296.907 426.667 226.667 413.333 213.333 386.667" stroke="#1B1C32" stroke-width="40" stroke-linejoin="round" />
+            </svg>
+          </Logo>
           <Title>Perfectly rounded icon library made for designers and developers</Title>
-          <Version>v{pkg.version}</Version>
+          <SubTitle>Use these icons to bring life into your user interface and experience. Free to use for your personal and commercial projects. Start creating!</SubTitle>
         </Wrapper>
         <Wrapper
-          justifyContent={["flex-start", "space-between"]}
-          flexDirection={['column', 'row']}
+          justifyContent="center"
         >
-          <Wrapper
-            mb={['2em', 0]}
-          >
-            <a href="https://github.com/artcoholic/akar-icons#readme" target="_blank">
-              <Button mr={[12, 24]} mb={[12, 0]}>Get started <icons.ArrowUpRight size={16} /></Button>
-            </a>
-            <a href="https://github.com/artcoholic/akar-icons/raw/master/src/akar-icons.zip">
-              <Button mb={[12, 0]} color="#1B1C32" bg="white">Download all <icons.Download size={16} /></Button>
-            </a>
-          </Wrapper>
-          <Wrapper
+          <a href="https://github.com/artcoholic/akar-icons#readme" target="_blank">
+            <Button>Get started <icons.ArrowUpRight size={16} /></Button>
+          </a>
+          <a href="https://github.com/artcoholic/akar-icons/raw/master/src/akar-icons.zip">
+            <Button color="#1B1C32" bg="white">Download all <icons.Download size={16} /></Button>
+          </a>
+        </Wrapper>
+        {/* <Wrapper
             alignItems={[null, "flex-end"]}
             flexDirection={['column', 'row']}
             mt={[0, 14]}
           >
             <SecondaryLinks href="https://github.com/artcoholic/akar-icons" target="_blank"><icons.GithubFill size={16} />View on Github</SecondaryLinks>
-            {/* <SecondaryLinks href="" target="_blank"><icons.FigmaFill size={16} />Figma library</SecondaryLinks> */}
+            <SecondaryLinks href="" target="_blank"><icons.FigmaFill size={16} />Figma library</SecondaryLinks>
             <SecondaryLinks href="https://github.com/artcoholic/akar-icons/issues" target="_blank"><icons.File size={16} />Request an icon</SecondaryLinks>
             <SecondaryLinks href="https://paypal.me/awibawa/5" target="_blank"><icons.Coffee size={16} />Buy me a coffee</SecondaryLinks>
-          </Wrapper>
-        </Wrapper>
+          </Wrapper> */}
       </InnerContainer>
     </Header >
   )

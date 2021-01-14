@@ -39,12 +39,13 @@ const NoResults = styled.span`
   text-align: center;
   padding: 4em 0;
   color: #1B1C32;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column wrap;
   code {
-    background: #1B1C32;
-    color: white;
-    padding: 0.2em 0.4em;
-    border-radius: 2px;
     margin-left: 2px;
+    border-bottom: 1px dotted #1B1C32;
   }
 `
 
@@ -57,6 +58,22 @@ const IconContainer = styled.div`
   margin: 24px 0;
 `
 
+const SecondaryLinks = styled.a`
+  transition: background 150ms ease-out;
+  display: flex;
+  align-items: center;
+  background: #f5f7f9;
+  color: #1B1C32;
+  margin-top: 1.5em;
+  padding: 8px 12px;
+  border-radius: 4px;
+  &:hover {
+    background: #C9D5D9;
+  }
+  svg {
+    margin-right: 8px;
+  }
+`
 
 const App = () => {
   const [open, setOpen] = useState(false);
@@ -121,7 +138,10 @@ const App = () => {
                   </IconWrapper>
                 )
               }) :
-              <NoResults>There are no icons for <code>{query}</code></NoResults>
+              <NoResults>
+                <span>There are no icons for <code>{query}</code></span>
+                <SecondaryLinks href="https://github.com/artcoholic/akar-icons/issues" target="_blank"><icons.File size={16} />Request an icon</SecondaryLinks>
+              </NoResults>
           }
         </Container>
         {open && <AlertBox setOpen={setOpen} name={name} icons={icons} />}
