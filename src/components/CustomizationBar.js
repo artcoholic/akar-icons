@@ -90,7 +90,7 @@ export default ({ stroke, setStroke, size, setSize, query, updateQuery, icons, h
             ml={[0, 12]}
           />
           <Slider
-            title="Size"
+            title="Icon size"
             output={size}
             input={setSize}
             min="12"

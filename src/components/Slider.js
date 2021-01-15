@@ -7,7 +7,7 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: flex-end;
   flex-basis: 100%;
-  margin: 16px 8px 0 ;
+  margin: 16px 4px 0 ;
   ${space}
   @media (min-width: 768px) {
     margin: 0 12px;

@@ -64,9 +64,9 @@ const SecondaryLinks = styled.a`
   align-items: center;
   background: #f5f7f9;
   color: #1B1C32;
-  margin-top: 1.5em;
   padding: 8px 12px;
   border-radius: 4px;
+  font-weight: 300;
   &:hover {
     background: #C9D5D9;
   }
@@ -125,7 +125,8 @@ const App = () => {
             stroke={stroke}
             setStroke={setStroke}
             size={size}
-            setSize={setSize} />
+            setSize={setSize}
+          />
           {
             searchResults.length > 0 ?
               searchResults.map((key, index) => {
@@ -139,13 +140,14 @@ const App = () => {
                 )
               }) :
               <NoResults>
-                <span>There are no icons for <code>{query}</code></span>
+                <span style={{ fontSize: "6em", color: "#DAE4E8" }}>( · _ · )</span>
+                <span style={{ margin: "2em 0 1em 0" }}>There are no icons for <code>{query}</code></span>
                 <SecondaryLinks href="https://github.com/artcoholic/akar-icons/issues" target="_blank"><icons.File size={16} />Request an icon</SecondaryLinks>
               </NoResults>
           }
         </Container>
         {open && <AlertBox open={open} setOpen={setOpen} name={name} icons={icons} />}
-        <Footer numberOfIcons={Object.keys(icons).length} />
+        <Footer numberOfIcons={Object.keys(icons).length} icons={icons} />
       </ThemeProvider>
     </>
   )

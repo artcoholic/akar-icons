@@ -9,7 +9,7 @@ const Container = styled.div`
   color: #1B1C32;
   order: -1;
   flex-grow: 1;
-  margin-right: 8px;
+  flex-basis: 0;
   @media (min-width: 768px) {
     flex-basis: 100%;
     margin-right: 12px;
@@ -61,20 +61,58 @@ const SearchIcon = styled.div`
   }
 `
 
+const ForwardSlash = styled.span`
+  position: absolute;
+  right: 14px;
+  border: 1px solid #DAE4E8;
+  padding: 2px 8px 4px;
+  color: #DAE4E8;
+  border-radius: 4px;
+  font-weight: 300;
+  background-color: white;
+  box-shadow: rgb(45 59 66 / 0.15) 0px 1px 2px 0px;
+  visibility: hidden;
+  @media (min-width: 768px) {
+    visibility: visible;
+  }
+`
+
 export default ({ query, updateQuery, icons }) => {
+  const [focus, setFocus] = React.useState(false);
+  const searchInput = React.useRef(null);
 
   function onSearch({ currentTarget }) {
     updateQuery(currentTarget.value)
     gtag('event', 'search', {
       search_term: `${currentTarget.value}`
     });
+  };
+
+  function autoFocus(e) {
+    if (e.keyCode === 191 && e.shiftKey === false) {
+      searchInput.current.focus();
+      e.preventDefault();
+    }
   }
+
+  document.addEventListener('keydown', autoFocus);
 
   return (
     <Container>
       <SearchIcon><icons.Search size={20} /></SearchIcon>
-      <SearchInput type="text" autocomplete="off" value={query} onChange={onSearch} placeholder={`Search ${Object.keys(icons).length} icons`} onKeyPress={(e) => { e.key === 'Enter' && e.preventDefault(); }} />
+      <SearchInput
+        ref={searchInput}
+        type="text"
+        autocomplete="off"
+        value={query}
+        onChange={onSearch}
+        placeholder={`Search ${Object.keys(icons).length} icons`}
+        onKeyPress={(e) => { e.key === 'Enter' && e.preventDefault(); }}
+        onFocus={() => setFocus(true)}
+        onBlur={() => setFocus(false)}
+      />
       {query && <ClearButton onClick={() => updateQuery('')}><icons.Cross size={14} strokeWidth={3} /></ClearButton>}
+      {!query && !focus && <ForwardSlash>/</ForwardSlash>}
     </Container>
   )
 }
