@@ -70,7 +70,6 @@ const ForwardSlash = styled.span`
   border-radius: 4px;
   font-weight: 300;
   background-color: white;
-  box-shadow: rgb(45 59 66 / 0.15) 0px 1px 2px 0px;
   visibility: hidden;
   @media (min-width: 768px) {
     visibility: visible;

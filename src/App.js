@@ -66,12 +66,12 @@ const SecondaryLinks = styled.a`
   color: #1B1C32;
   padding: 8px 12px;
   border-radius: 4px;
-  font-weight: 300;
+  font-size: 14px;
   &:hover {
     background: #C9D5D9;
   }
   svg {
-    margin-right: 8px;
+    margin-right: 4px;
   }
 `
 
@@ -142,7 +142,7 @@ const App = () => {
               <NoResults>
                 <span style={{ fontSize: "6em", color: "#DAE4E8" }}>( · _ · )</span>
                 <span style={{ margin: "2em 0 1em 0" }}>There are no icons for <code>{query}</code></span>
-                <SecondaryLinks href="https://github.com/artcoholic/akar-icons/issues" target="_blank"><icons.File size={16} />Request an icon</SecondaryLinks>
+                <SecondaryLinks href="https://github.com/artcoholic/akar-icons/issues" target="_blank"><icons.File size={14} />Request an icon</SecondaryLinks>
               </NoResults>
           }
         </Container>

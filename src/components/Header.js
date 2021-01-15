@@ -95,6 +95,9 @@ const Button = styled.button`
   &:hover {
     box-shadow: rgb(45 59 66 / 0.15) 0px 6px 12px 0px;
   }
+  &:active {
+    box-shadow: none;
+  }
   svg {
     margin-left: 8px;
   }
