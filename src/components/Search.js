@@ -109,6 +109,7 @@ export default ({ query, updateQuery, icons }) => {
         onKeyPress={(e) => { e.key === 'Enter' && e.preventDefault(); }}
         onFocus={() => setFocus(true)}
         onBlur={() => setFocus(false)}
+        aria-label="Search"
       />
       {query && <ClearButton onClick={() => updateQuery('')}><icons.Cross size={14} strokeWidth={3} /></ClearButton>}
       {!query && !focus && <ForwardSlash>/</ForwardSlash>}

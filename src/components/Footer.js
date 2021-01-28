@@ -47,8 +47,8 @@ const style = {
 export default ({ icons }) =>
   <Footer>
     <span style={{ display: 'flex', flexDirection: 'row' }}>
-      <LinkWrapper><icons.File size={14} style={style} /> <a href="https://github.com/artcoholic/akar-icons/issues" target="_blank">Request an icon</a></LinkWrapper>
-      <LinkWrapper><icons.Coffee size={14} style={style} /> <a href="https://paypal.me/awibawa/5" target="_blank">Buy me a coffee</a></LinkWrapper>
+      <LinkWrapper><icons.File size={14} style={style} /> <a href="https://github.com/artcoholic/akar-icons/issues" target="_blank" rel="noopener">Request an icon</a></LinkWrapper>
+      <LinkWrapper><icons.Coffee size={14} style={style} /> <a href="https://paypal.me/awibawa/5" target="_blank" rel="noopener">Buy me a coffee</a></LinkWrapper>
     </span>
-    <MadeByContainer>Made by <icons.TwitterFill size={14} color="#1DA1F2" style={{ margin: '0 4px' }} /> <a href="https://twitter.com/agwibawa" target="_blank">agwibawa</a></MadeByContainer>
+    <MadeByContainer>Made by <icons.TwitterFill size={14} color="#1DA1F2" style={{ margin: '0 4px' }} /> <a href="https://twitter.com/agwibawa" target="_blank" rel="noopener">agwibawa</a></MadeByContainer>
   </Footer>

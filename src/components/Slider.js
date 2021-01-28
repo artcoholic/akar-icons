@@ -60,8 +60,8 @@ export default ({ title, input, output, min, max, step, mr, ml }) => {
   }
   return (
     <Container mr={mr} ml={ml}>
-      <label><span>{title}</span><span>{output}px</span></label>
-      <input type="range" min={min} max={max} step={step} value={output} onChange={handleChange} />
+      <label for="slider"><span>{title}</span><span>{output}px</span></label>
+      <input id="slider" type="range" min={min} max={max} step={step} value={output} onChange={handleChange} />
     </Container>
   )
 }

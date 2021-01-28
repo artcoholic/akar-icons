@@ -99,7 +99,7 @@ export default ({ stroke, setStroke, size, setSize, query, updateQuery, icons, h
             mr={[0, 12]}
           />
         </Wrapper>
-        <ResetButton reset={reset} isStuck={isStuck} type="button" onClick={handleReset}>
+        <ResetButton reset={reset} isStuck={isStuck} type="button" onClick={handleReset} aria-label="Reset">
           <icons.ArrowCounterClockwise size={16} />
         </ResetButton>
       </Container>

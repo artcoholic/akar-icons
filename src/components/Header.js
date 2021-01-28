@@ -46,7 +46,7 @@ const SubTitle = styled.h2`
   font-weight: 300;
   text-align: center;
   width: 100%;
-  opacity: .5;
+  opacity: .75;
   max-width: 600px;
   @media (min-width: 375px) {
     font-size: 1.25em;
@@ -171,7 +171,7 @@ export default ({ icons, setHeight }) => {
         <Wrapper
           justifyContent="center"
         >
-          <ButtonLink href="https://github.com/artcoholic/akar-icons#readme" target="_blank">
+          <ButtonLink href="https://github.com/artcoholic/akar-icons#readme" target="_blank" rel="noopener">
             <Button>Get started <icons.ArrowUpRight size={16} /></Button>
           </ButtonLink>
           <ButtonLink href="https://github.com/artcoholic/akar-icons/raw/master/src/akar-icons.zip">
