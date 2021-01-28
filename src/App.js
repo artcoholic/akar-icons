@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import "babel-polyfill";
 import styled, { ThemeProvider } from 'styled-components';
 import * as icons from './icons';
 import Header from './components/Header';
