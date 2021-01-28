@@ -54,14 +54,14 @@ const Container = styled.div`
   }
 `
 
-export default ({ title, input, output, min, max, step, mr, ml }) => {
+export default ({ title, input, output, min, max, step, mr, ml, type }) => {
   function handleChange(event) {
     input(event.target.value);
   }
   return (
     <Container mr={mr} ml={ml}>
-      <label for="slider"><span>{title}</span><span>{output}px</span></label>
-      <input id="slider" type="range" min={min} max={max} step={step} value={output} onChange={handleChange} />
+      <label for={type}><span>{title}</span><span>{output}px</span></label>
+      <input id={type} type="range" min={min} max={max} step={step} value={output} onChange={handleChange} />
     </Container>
   )
 }

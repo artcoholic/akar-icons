@@ -88,6 +88,7 @@ export default ({ stroke, setStroke, size, setSize, query, updateQuery, icons, h
             max={3}
             step={0.5}
             ml={[0, 12]}
+            type="stroke-width"
           />
           <Slider
             title="Icon size"
@@ -97,6 +98,7 @@ export default ({ stroke, setStroke, size, setSize, query, updateQuery, icons, h
             max="64"
             step="4"
             mr={[0, 12]}
+            type="icon-size"
           />
         </Wrapper>
         <ResetButton reset={reset} isStuck={isStuck} type="button" onClick={handleReset} aria-label="Reset">
