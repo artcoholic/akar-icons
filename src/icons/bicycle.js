@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Calculator = props => {
+const Bicycle = props => {
   const { color, size, ...otherProps } = props;
   return (
     <svg
@@ -15,25 +15,26 @@ const Calculator = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
-      id="Calculator"
+      id="Bicycle"
     >
-      <path d="M2 6a4 4 0 014-4h12a4 4 0 014 4v5H2V6z"></path>
-      <path d="M18.5 16.5h-3"></path>
-      <path d="M12 11h10v7a4 4 0 01-4 4h-6V11z"></path>
-      <path d="M12 11H2v7a4 4 0 004 4h6V11z"></path>
-      <path d="M5.5 18L7 16.5m0 0L8.5 15M7 16.5L8.5 18M7 16.5L5.5 15"></path>
+      <circle cx="6" cy="15" r="4"></circle>
+      <circle cx="18" cy="15" r="4"></circle>
+      <path d="M6 15l2-7h7.5"></path>
+      <path d="M6 5h3"></path>
+      <path d="M18 15L15 5h4"></path>
+      <path d="M19 5h.5A1.5 1.5 0 0121 6.5v0A1.5 1.5 0 0119.5 8H19"></path>
     </svg>
   );
 };
 
-Calculator.propTypes = {
+Bicycle.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
 };
 
-Calculator.defaultProps = {
+Bicycle.defaultProps = {
   color: 'currentColor',
   size: '24'
 };
 
-export default Calculator;
+export default Bicycle;

@@ -1,6 +1,6 @@
 {
   "name": "akar-icons",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A perfectly rounded icon library made for everyone.",
   "main": "dist/index.js",
   "typings": "dist/icons.d.ts",
@@ -60,7 +60,7 @@
     "concurrently": "^5.3.0",
     "dotenv": "^8.2.0",
     "figma-js": "^1.13.0",
-    "fs-extra": "^9.0.1",
+    "fs-extra": "^9.1.0",
     "got": "^11.8.1",
     "p-queue": "2.4.2",
     "prettier-eslint": "^9.0.0",

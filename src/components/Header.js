@@ -174,20 +174,7 @@ export default ({ icons, setHeight }) => {
           <ButtonLink href="https://github.com/artcoholic/akar-icons#readme" target="_blank" rel="noopener">
             <Button>Get started <icons.ArrowUpRight size={16} /></Button>
           </ButtonLink>
-          <ButtonLink href="https://github.com/artcoholic/akar-icons/raw/master/src/akar-icons.zip">
-            <Button color="#1B1C32" bg="white">Download all <icons.Download size={16} /></Button>
-          </ButtonLink>
         </Wrapper>
-        {/* <Wrapper
-            alignItems={[null, "flex-end"]}
-            flexDirection={['column', 'row']}
-            mt={[0, 14]}
-          >
-            <SecondaryLinks href="https://github.com/artcoholic/akar-icons" target="_blank"><icons.GithubFill size={16} />View on Github</SecondaryLinks>
-            <SecondaryLinks href="" target="_blank"><icons.FigmaFill size={16} />Figma library</SecondaryLinks>
-            <SecondaryLinks href="https://github.com/artcoholic/akar-icons/issues" target="_blank"><icons.File size={16} />Request an icon</SecondaryLinks>
-            <SecondaryLinks href="https://paypal.me/awibawa/5" target="_blank"><icons.Coffee size={16} />Buy me a coffee</SecondaryLinks>
-          </Wrapper> */}
       </InnerContainer>
     </Header >
   )
