@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Utensils = props => {
+const Circle = props => {
   const { color, size, ...otherProps } = props;
   return (
     <svg
@@ -15,26 +15,21 @@ const Utensils = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
-      id="Utensils"
+      id="Circle"
     >
-      <path d="M11 8V2H2v6a4 4 0 004 4h1a4 4 0 004-4z"></path>
-      <path d="M15 16V2h3a4 4 0 014 4v10h-4"></path>
-      <path d="M15 16v5a1 1 0 001 1h1a1 1 0 001-1v-5"></path>
-      <path d="M5 16v5a1 1 0 001 1h1a1 1 0 001-1v-5"></path>
-      <path d="M5 6V2"></path>
-      <path d="M8 6V2"></path>
+      <circle cx="12" cy="12" r="9"></circle>
     </svg>
   );
 };
 
-Utensils.propTypes = {
+Circle.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
 };
 
-Utensils.defaultProps = {
+Circle.defaultProps = {
   color: 'currentColor',
   size: '24'
 };
 
-export default Utensils;
+export default Circle;

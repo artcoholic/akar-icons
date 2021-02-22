@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Utensils = props => {
+const Glasses = props => {
   const { color, size, ...otherProps } = props;
   return (
     <svg
@@ -15,26 +15,25 @@ const Utensils = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
-      id="Utensils"
+      id="Glasses"
     >
-      <path d="M11 8V2H2v6a4 4 0 004 4h1a4 4 0 004-4z"></path>
-      <path d="M15 16V2h3a4 4 0 014 4v10h-4"></path>
-      <path d="M15 16v5a1 1 0 001 1h1a1 1 0 001-1v-5"></path>
-      <path d="M5 16v5a1 1 0 001 1h1a1 1 0 001-1v-5"></path>
-      <path d="M5 6V2"></path>
-      <path d="M8 6V2"></path>
+      <circle cx="6" cy="14" r="4"></circle>
+      <circle cx="18" cy="14" r="4"></circle>
+      <path d="M10 14l.211-.106a4 4 0 013.578 0L14 14"></path>
+      <path d="M19 6l2.838 6.623a2 2 0 01.162.788V14"></path>
+      <path d="M5 6l-2.838 6.623A2 2 0 002 13.41V14"></path>
     </svg>
   );
 };
 
-Utensils.propTypes = {
+Glasses.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
 };
 
-Utensils.defaultProps = {
+Glasses.defaultProps = {
   color: 'currentColor',
   size: '24'
 };
 
-export default Utensils;
+export default Glasses;

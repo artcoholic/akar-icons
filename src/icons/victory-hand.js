@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Utensils = props => {
+const VictoryHand = props => {
   const { color, size, ...otherProps } = props;
   return (
     <svg
@@ -15,26 +15,24 @@ const Utensils = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
-      id="Utensils"
+      id="VictoryHand"
     >
-      <path d="M11 8V2H2v6a4 4 0 004 4h1a4 4 0 004-4z"></path>
-      <path d="M15 16V2h3a4 4 0 014 4v10h-4"></path>
-      <path d="M15 16v5a1 1 0 001 1h1a1 1 0 001-1v-5"></path>
-      <path d="M5 16v5a1 1 0 001 1h1a1 1 0 001-1v-5"></path>
-      <path d="M5 6V2"></path>
-      <path d="M8 6V2"></path>
+      <path d="M12 11l-1-7.272c0-.466.185-.913.515-1.243 1.024-1.024 2.777-.44 2.982.994L16 10l1.508-6.328a1.682 1.682 0 013.276.73L19 16"></path>
+      <path d="M19 16c-.536 4-3.358 6-7.5 6C7.358 22 4 20 4 16"></path>
+      <path d="M4 16v-4a2 2 0 114 0m4 1v-2a2 2 0 10-4 0v4"></path>
+      <path d="M13.692 17H11a2 2 0 110-4h4c2.21 0 4.5 2 3.5 5"></path>
     </svg>
   );
 };
 
-Utensils.propTypes = {
+VictoryHand.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
 };
 
-Utensils.defaultProps = {
+VictoryHand.defaultProps = {
   color: 'currentColor',
   size: '24'
 };
 
-export default Utensils;
+export default VictoryHand;

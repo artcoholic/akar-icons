@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Utensils = props => {
+const Rss = props => {
   const { color, size, ...otherProps } = props;
   return (
     <svg
@@ -15,26 +15,22 @@ const Utensils = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
-      id="Utensils"
+      id="Rss"
     >
-      <path d="M11 8V2H2v6a4 4 0 004 4h1a4 4 0 004-4z"></path>
-      <path d="M15 16V2h3a4 4 0 014 4v10h-4"></path>
-      <path d="M15 16v5a1 1 0 001 1h1a1 1 0 001-1v-5"></path>
-      <path d="M5 16v5a1 1 0 001 1h1a1 1 0 001-1v-5"></path>
-      <path d="M5 6V2"></path>
-      <path d="M8 6V2"></path>
+      <path d="M4 4.03C14.114 3.5 20.501 9.887 19.97 20M4 10.418c6.068-.319 9.9 3.514 9.582 9.582"></path>
+      <circle cx="5" cy="19" r="1"></circle>
     </svg>
   );
 };
 
-Utensils.propTypes = {
+Rss.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
 };
 
-Utensils.defaultProps = {
+Rss.defaultProps = {
   color: 'currentColor',
   size: '24'
 };
 
-export default Utensils;
+export default Rss;
