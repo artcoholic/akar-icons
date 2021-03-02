@@ -115,6 +115,8 @@ export const Health: Icon;
 export const Rss: Icon;
 export const Circle: Icon;
 export const CircleFill: Icon;
+export const Backspace: Icon;
+export const BackspaceFill: Icon;
 export const Ribbon: Icon;
 export const Phone: Icon;
 export const Attach: Icon;

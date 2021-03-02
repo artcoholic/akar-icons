@@ -75,6 +75,32 @@ const SecondaryLinks = styled.a`
   }
 `
 
+const ProductHuntBadge = styled.div`
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  display:flex;
+`
+
+const CloseButton = styled.button`
+  padding: 0;
+  margin: 0;
+  border-radius: 50%;
+  border: none;
+  background: white;
+  position: absolute;
+  top: -12px;
+  left: -12px;
+  cursor: pointer;
+  transition: box-shadow 300ms ease-out;
+  &:hover {
+    box-shadow: rgb(45 59 66 / 0.3) 0px 6px 12px 0px;
+  }
+  svg {
+    display: block;
+  }
+`
+
 const App = () => {
   const [open, setOpen] = useState(false);
   const [name, setName] = useState();
@@ -82,6 +108,7 @@ const App = () => {
   const [stroke, setStroke] = useState(2);
   const [size, setSize] = useState(24);
   const [height, setHeight] = useState(0);
+  const [badge, setBadge] = useState(true);
 
   const DATA = [];
   for (var i in data) {
@@ -148,6 +175,16 @@ const App = () => {
         </Container>
         {open && <AlertBox open={open} setOpen={setOpen} name={name} icons={icons} />}
         <Footer numberOfIcons={Object.keys(icons).length} icons={icons} />
+        {badge &&
+          <ProductHuntBadge>
+            <CloseButton onClick={() => setBadge(false)} type="button" aria-label="Close Badge">
+              <icons.CircleX color="#EA532A" />
+            </CloseButton>
+            <a href="https://www.producthunt.com/posts/akar-icons?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-akar-icons" target="_blank">
+              <img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=282614&theme=light" alt="Akar Icons - Perfectly rounded icon library for your projects. | Product Hunt" style={{ width: 250, height: 54 }} />
+            </a>
+          </ProductHuntBadge>
+        }
       </ThemeProvider>
     </>
   )

@@ -174,14 +174,6 @@ export default ({ icons, setHeight }) => {
           <ButtonLink href="https://github.com/artcoholic/akar-icons#readme" target="_blank" rel="noopener">
             <Button>Get started <icons.ArrowUpRight size={16} /></Button>
           </ButtonLink>
-          <ButtonLink href="https://www.producthunt.com/posts/akar-icons?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-akar-icons" target="_blank" rel="noopener">
-            <Button
-              bg="white"
-              color="#1B1C32"
-            >
-              View on Product Hunt <icons.ArrowUpRight size={16} />
-            </Button>
-          </ButtonLink>
         </Wrapper>
       </InnerContainer>
     </Header >
