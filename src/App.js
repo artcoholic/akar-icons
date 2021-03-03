@@ -80,6 +80,7 @@ const ProductHuntBadge = styled.div`
   bottom: 24px;
   right: 24px;
   display:flex;
+  z-index: 999;
 `
 
 const CloseButton = styled.button`
