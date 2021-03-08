@@ -88,7 +88,7 @@ export default ({ query, updateQuery, icons }) => {
   };
 
   function autoFocus(e) {
-    if (e.keyCode === 191 && e.shiftKey === false) {
+    if (e.key === '/') {
       searchInput.current.focus();
       e.preventDefault();
     }
