@@ -176,7 +176,7 @@ export default ({ icons, setHeight }) => {
           </ButtonLink>
         </Wrapper>
       </InnerContainer>
-    </Header >
+    </Header>
   )
 }
 

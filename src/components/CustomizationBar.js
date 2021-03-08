@@ -61,12 +61,11 @@ export default ({ stroke, setStroke, size, setSize, query, updateQuery, icons, h
   const [reset, setReset] = useState(false);
 
   useScrollPosition(({ currPos }) => {
-    const isStuck = currPos.y < -height;
-    isStuck ? setIsStuck(true) : setIsStuck(false);
+    setIsStuck(currPos.y < -height);
   })
 
   useEffect(() => {
-    (query !== '' || stroke != 2 || size != 24) ? setReset(true) : setReset(false);
+    setReset(query !== '' || stroke != 2 || size != 24);
   }, [stroke, query, size]);
 
   function handleReset() {

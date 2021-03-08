@@ -133,8 +133,6 @@ const App = () => {
     <>
       <ThemeProvider theme={theme}>
         <Header
-          query={query}
-          updateQuery={updateQuery}
           icons={icons}
           setHeight={setHeight}
         />
