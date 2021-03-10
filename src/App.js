@@ -102,6 +102,21 @@ const CloseButton = styled.button`
   }
 `
 
+const DATA = Object.values(data).map(x => [x])
+const ICON_KEYS = Object.keys(icons)
+
+const fuse = new Fuse(DATA.flat(), {
+  keys: [
+    'name',
+    {
+      name: 'description',
+      weight: 0.1,
+    },
+  ],
+  includeScore: true,
+  threshold: 0.2,
+})
+
 const App = () => {
   const [open, setOpen] = useState(false);
   const [name, setName] = useState();
@@ -111,36 +126,13 @@ const App = () => {
   const [height, setHeight] = useState(0);
   const [badge, setBadge] = useState(true);
 
-  const DATA = [];
-  for (var i in data) {
-    DATA.push([i, data[i]])
-  };
-
-  DATA.forEach((data) => {
-    data.splice(0, 1);
-  });
-
-  const fuse = new Fuse(DATA.flat(), {
-    keys: [
-      'name',
-      {
-        name: 'description',
-        weight: 0.1,
-      },
-    ],
-    includeScore: true,
-    threshold: 0.2,
-  })
-
   const results = fuse.search(query);
-  const searchResults = query ? results.map(search => upperCamelCase(search.item.name)) : Object.keys(icons);
+  const searchResults = query ? results.map(search => upperCamelCase(search.item.name)) : ICON_KEYS;
 
   return (
     <>
       <ThemeProvider theme={theme}>
         <Header
-          query={query}
-          updateQuery={updateQuery}
           icons={icons}
           setHeight={setHeight}
         />
@@ -175,7 +167,7 @@ const App = () => {
           }
         </Container>
         {open && <AlertBox open={open} setOpen={setOpen} name={name} icons={icons} />}
-        <Footer numberOfIcons={Object.keys(icons).length} icons={icons} />
+        <Footer icons={icons} />
         {badge &&
           <ProductHuntBadge>
             <CloseButton onClick={() => setBadge(false)} type="button" aria-label="Close Badge">
