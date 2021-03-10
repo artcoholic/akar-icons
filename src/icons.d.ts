@@ -199,6 +199,7 @@ export const Plane: Icon;
 export const Jar: Icon;
 export const Glasses: Icon;
 export const Plant: Icon;
+export const Edit: Icon;
 export const Person: Icon;
 export const PersonAdd: Icon;
 export const PersonCheck: Icon;
