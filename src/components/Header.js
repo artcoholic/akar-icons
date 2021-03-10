@@ -62,16 +62,6 @@ const Wrapper = styled.div`
 `
 
 const ButtonLink = styled.a`
-  display: flex;
-  align-items: center;
-  color: #1B1C32;
-  width: 100%;
-  @media (min-width: 768px) {
-    width: auto;
-  }
-`
-
-const Button = styled.button`
   -webkit-appearance: none;
   border: 0;
   padding: 15px 1.2em;
@@ -80,6 +70,7 @@ const Button = styled.button`
   color: #CDCDD8;
   border-radius: 4px;
   display: flex;
+  align-items: center;
   align-content: center;
   cursor: pointer;
   margin: 12px 0 0 0;
@@ -91,6 +82,7 @@ const Button = styled.button`
 
   &:focus {
     outline: none;
+    box-shadow: 0 0 0 4px rgba(27, 28, 50, 0.15);
   }
   &:hover {
     box-shadow: rgb(45 59 66 / 0.15) 0px 6px 12px 0px;
@@ -103,7 +95,9 @@ const Button = styled.button`
   }
   @media (min-width: 768px) {
     margin: 0 12px;
+    width: auto;
   }
+
 `
 
 const Logo = styled.div`
@@ -172,7 +166,7 @@ export default ({ icons, setHeight }) => {
           justifyContent="center"
         >
           <ButtonLink href="https://github.com/artcoholic/akar-icons#readme" target="_blank" rel="noopener">
-            <Button>Get started <icons.ArrowUpRight size={16} /></Button>
+            Get started <icons.ArrowUpRight size={16} />
           </ButtonLink>
         </Wrapper>
       </InnerContainer>

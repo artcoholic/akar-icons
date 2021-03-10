@@ -35,20 +35,22 @@ const Wrapper = styled.div`
 `
 
 const ResetButton = styled.button`
-  cursor: pointer;
-  pointer-events: ${({ reset }) => reset ? 'auto' : 'none'};
   border: none;
-  outline: none;
   font-size: 12px;
   transition: all 150ms ease-out;
   border-radius: 4px;
-  color: ${({ reset }) => reset ? '#1B1C32' : '#BDBDBD'};
-  background: ${({ reset }) => reset ? '#FFD542' : '#EFEFEF'};
+  background: ${({ disabled }) => disabled ? '#EFEFEF' : '#FFD542'};
+  color: ${({ disabled }) => disabled ? '#BDBDBD' : '#1B1C32'};
+  cursor: ${({ disabled }) => disabled ? 'not-allowed' : 'pointer'};
   order: -1;
   padding: 0 16px;
   margin-left: 8px;
-  &:hover {
+  &:enabled:hover {
     background-color: #e8c031;
+  }
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(27, 28, 50, 0.05);
   }
   @media (min-width: 768px) {
     order: 0;
@@ -58,15 +60,11 @@ const ResetButton = styled.button`
 
 export default ({ stroke, setStroke, size, setSize, query, updateQuery, icons, height }) => {
   const [isStuck, setIsStuck] = useState(false);
-  const [reset, setReset] = useState(false);
+  const isEnabled = query !== '' || stroke != 2 || size != 24;
 
   useScrollPosition(({ currPos }) => {
     setIsStuck(currPos.y < -height);
   })
-
-  useEffect(() => {
-    setReset(query !== '' || stroke != 2 || size != 24);
-  }, [stroke, query, size]);
 
   function handleReset() {
     setStroke(2);
@@ -100,7 +98,7 @@ export default ({ stroke, setStroke, size, setSize, query, updateQuery, icons, h
             type="icon-size"
           />
         </Wrapper>
-        <ResetButton reset={reset} isStuck={isStuck} type="button" onClick={handleReset} aria-label="Reset">
+        <ResetButton disabled={!isEnabled} type="button" onClick={handleReset} aria-label="Reset">
           <icons.ArrowCounterClockwise size={16} />
         </ResetButton>
       </Container>

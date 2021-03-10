@@ -17,15 +17,17 @@ const IconWrapper = styled.button`
   -webkit-appearance: none;
   &:hover {
     background: #dae4e8;
+  }
+  &:focus, &:hover {
     span {
       opacity: 1;
       bottom: 16px;
     }
   }
   &:focus, &:active {
+    background: white;
     outline: none;
     box-shadow: 0 0 0 2px #1B1C32;
-    background: white;
   }
   span {
     position: absolute;

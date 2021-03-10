@@ -42,12 +42,15 @@ const ClearButton = styled.button`
   padding: 14px;
   background: none;
   border: none;
-  outline: none;
   cursor: pointer;
   color: #1B1C32;
   svg {
     position: relative;
     left: 0;
+  }
+  &:focus {
+    outline: 1px dashed #1B1C32;
+    outline-offset: 2px;
   }
 `
 
@@ -88,6 +91,11 @@ export default ({ query, updateQuery, icons }) => {
     });
   };
 
+  function onClear() {
+    searchInput.current.focus();
+    updateQuery('');
+  }
+
   function autoFocus(e) {
     if (e.key === '/') {
       searchInput.current.focus();
@@ -112,7 +120,11 @@ export default ({ query, updateQuery, icons }) => {
         onBlur={() => setFocus(false)}
         aria-label="Search"
       />
-      {query && <ClearButton onClick={() => updateQuery('')}><icons.Cross size={14} strokeWidth={3} /></ClearButton>}
+      {query && (
+        <ClearButton aria-label="Clear search" onClick={onClear}>
+          <icons.Cross size={14} strokeWidth={3} />
+        </ClearButton>
+      )}
       {!query && !focus && <ForwardSlash>/</ForwardSlash>}
     </Container>
   )

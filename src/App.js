@@ -6,6 +6,7 @@ import IconWrapper from './components/IconWrapper';
 import AlertBox from './components/AlertBox';
 import Footer from './components/Footer';
 import CustomizationBar from './components/CustomizationBar';
+import SearchResults from './components/SearchResults';
 import theme from './theme';
 
 import upperCamelCase from 'uppercamelcase';
@@ -14,23 +15,12 @@ import data from './data.json';
 
 const Container = styled.div`
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
   grid-gap: 8px;
-  justify-items: stretch;
-  align-items: stretch;
   margin: 0;
   padding: 16px;
-  list-style: none;
   @media (min-width: 768px) {
-    grid-template-columns: repeat(4, 1fr);
     grid-gap: 12px;
     padding: 12px 24px 24px;
-  }
-  @media (min-width: 1152px) {
-    grid-template-columns: repeat(8, 1fr);
-  }
-  @media (min-width: 2560px) {
-    grid-template-columns: repeat(12, 1fr);
   }
 `
 
@@ -126,8 +116,8 @@ const App = () => {
   const [height, setHeight] = useState(0);
   const [badge, setBadge] = useState(true);
 
-  const results = fuse.search(query);
-  const searchResults = query ? results.map(search => upperCamelCase(search.item.name)) : ICON_KEYS;
+  const fuseResults = fuse.search(query);
+  const results = query ? fuseResults.map(search => upperCamelCase(search.item.name)) : ICON_KEYS;
 
   return (
     <>
@@ -147,24 +137,26 @@ const App = () => {
             size={size}
             setSize={setSize}
           />
-          {
-            searchResults.length > 0 ?
-              searchResults.map((key, index) => {
-                const Icon = icons[key];
-                return (
-                  <IconWrapper key={index} icon={key} setOpen={setOpen} setName={setName}>
-                    <IconContainer>
-                      <Icon strokeWidth={stroke} size={size} />
-                    </IconContainer>
-                  </IconWrapper>
-                )
-              }) :
+          <SearchResults>
+            {results.length === 0 && (
               <NoResults>
                 <span style={{ fontSize: "6em", color: "#DAE4E8" }}>( · _ · )</span>
                 <span style={{ margin: "2em 0 1em 0" }}>There are no icons for <code>{query}</code></span>
                 <SecondaryLinks href="https://github.com/artcoholic/akar-icons/issues" target="_blank"><icons.File size={14} />Request an icon</SecondaryLinks>
               </NoResults>
-          }
+            )}
+            {results.map((key, index) => {
+              const Icon = icons[key];
+
+              return (
+                <IconWrapper key={index} icon={key} setOpen={setOpen} setName={setName}>
+                  <IconContainer>
+                    <Icon strokeWidth={stroke} size={size} />
+                  </IconContainer>
+                </IconWrapper>
+              )
+            })}
+          </SearchResults>
         </Container>
         {open && <AlertBox open={open} setOpen={setOpen} name={name} icons={icons} />}
         <Footer icons={icons} />
