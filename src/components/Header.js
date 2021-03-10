@@ -82,6 +82,7 @@ const ButtonLink = styled.a`
 
   &:focus {
     outline: none;
+    box-shadow: 0 0 0 4px rgba(27, 28, 50, 0.15);
   }
   &:hover {
     box-shadow: rgb(45 59 66 / 0.15) 0px 6px 12px 0px;

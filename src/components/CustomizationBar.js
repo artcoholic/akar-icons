@@ -36,7 +36,6 @@ const Wrapper = styled.div`
 
 const ResetButton = styled.button`
   border: none;
-  outline: none;
   font-size: 12px;
   transition: all 150ms ease-out;
   border-radius: 4px;
@@ -48,6 +47,10 @@ const ResetButton = styled.button`
   margin-left: 8px;
   &:enabled:hover {
     background-color: #e8c031;
+  }
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(27, 28, 50, 0.05);
   }
   @media (min-width: 768px) {
     order: 0;
