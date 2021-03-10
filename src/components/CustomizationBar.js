@@ -50,7 +50,7 @@ const ResetButton = styled.button`
   }
   &:focus {
     outline: none;
-    box-shadow: 0 0 0 4px rgba(27, 28, 50, 0.05);
+    box-shadow: 0 0 0 4px rgba(0, 95, 204, 0.3);
   }
   @media (min-width: 768px) {
     order: 0;

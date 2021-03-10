@@ -49,7 +49,7 @@ const IconContainer = styled.div`
 `
 
 const SecondaryLinks = styled.a`
-  transition: background 150ms ease-out;
+  transition: all 150ms ease-out;
   display: flex;
   align-items: center;
   background: #f5f7f9;
@@ -62,6 +62,10 @@ const SecondaryLinks = styled.a`
   }
   svg {
     margin-right: 4px;
+  }
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(0, 95, 204, 0.3);
   }
 `
 
@@ -166,7 +170,7 @@ const App = () => {
               <icons.CircleX color="#EA532A" />
             </CloseButton>
             <a href="https://www.producthunt.com/posts/akar-icons?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-akar-icons" target="_blank">
-              <img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=282614&theme=light" alt="Akar Icons - Perfectly rounded icon library for your projects. | Product Hunt" style={{ width: 250, height: 54 }} />
+              <img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=282614&theme=light" alt="Akar Icons - Perfectly rounded icon library for your projects. | Product Hunt" style={{ width: 250, height: 54, display: 'block' }} />
             </a>
           </ProductHuntBadge>
         }

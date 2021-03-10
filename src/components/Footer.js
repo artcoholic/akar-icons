@@ -10,10 +10,6 @@ const Footer = styled.footer`
   flex-flow: column wrap;
   a {
     color: #1B1C32;
-    text-decoration: none;
-    &:hover {
-      text-decoration: underline;
-    }
   }
   @media (min-width: 768px) {
     padding: 16px 24px;
@@ -21,10 +17,22 @@ const Footer = styled.footer`
   }
 `
 
-const LinkWrapper = styled.span`
+const LinkWrapper = styled.a`
+  transition: all 150ms ease-out;
   display: flex;
   align-items: center;
-  margin-right: 16px;
+  margin-right: 8px;
+  border-radius: 4px;
+  padding: 8px 12px;
+  background: #f5f7f9;
+  &:hover {
+    text-decoration: none;
+    background: #C9D5D9;
+  }
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(0, 95, 204, 0.3);
+  }
 `
 
 const MadeByContainer = styled.span`
@@ -38,6 +46,9 @@ const MadeByContainer = styled.span`
     padding: 0;
     margin: 0;
   }
+  a {
+    margin: 0;
+  }
 `
 
 const style = {
@@ -47,8 +58,12 @@ const style = {
 export default ({ icons }) =>
   <Footer>
     <span style={{ display: 'flex', flexDirection: 'row' }}>
-      <LinkWrapper><icons.File size={14} style={style} /> <a href="https://github.com/artcoholic/akar-icons/issues" target="_blank" rel="noopener">Request an icon</a></LinkWrapper>
-      <LinkWrapper><icons.Coffee size={14} style={style} /> <a href="https://paypal.me/awibawa/5" target="_blank" rel="noopener">Buy me a coffee</a></LinkWrapper>
+      <LinkWrapper href="https://github.com/artcoholic/akar-icons/issues" target="_blank" rel="noopener"><icons.File size={14} style={style} /> Request an icon</LinkWrapper>
+      <LinkWrapper href="https://paypal.me/awibawa/5" target="_blank" rel="noopener"><icons.Coffee size={14} style={style} /> Buy me a coffee</LinkWrapper>
     </span>
-    <MadeByContainer>Made by <icons.TwitterFill size={14} color="#1DA1F2" style={{ margin: '0 4px' }} /> <a href="https://twitter.com/agwibawa" target="_blank" rel="noopener">agwibawa</a></MadeByContainer>
+    <MadeByContainer>
+      <LinkWrapper href="https://twitter.com/agwibawa" target="_blank" rel="noopener">
+        Made by <icons.TwitterFill size={14} color="#1DA1F2" style={{ margin: '0 4px' }} /> agwibawa
+      </LinkWrapper>
+    </MadeByContainer>
   </Footer>

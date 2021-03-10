@@ -44,13 +44,15 @@ const ClearButton = styled.button`
   border: none;
   cursor: pointer;
   color: #1B1C32;
+  border-radius: 4px;
   svg {
+    display: block;
     position: relative;
     left: 0;
   }
   &:focus {
-    outline: 1px dashed #1B1C32;
-    outline-offset: 2px;
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(0, 95, 204, 0.3);
   }
 `
 
