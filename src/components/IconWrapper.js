@@ -15,7 +15,7 @@ const IconWrapper = styled.button`
   position: relative;
   color: #1B1C32;
   -webkit-appearance: none;
-  &:hover {
+  &:hover, &:focus {
     background: #dae4e8;
     span {
       opacity: 1;
@@ -25,7 +25,6 @@ const IconWrapper = styled.button`
   &:focus, &:active {
     outline: none;
     box-shadow: 0 0 0 2px #1B1C32;
-    background: white;
   }
   span {
     position: absolute;
