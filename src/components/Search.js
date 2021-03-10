@@ -88,6 +88,11 @@ export default ({ query, updateQuery, icons }) => {
     });
   };
 
+  function onClear() {
+    searchInput.current.focus();
+    updateQuery('');
+  }
+
   function autoFocus(e) {
     if (e.key === '/') {
       searchInput.current.focus();
@@ -112,7 +117,11 @@ export default ({ query, updateQuery, icons }) => {
         onBlur={() => setFocus(false)}
         aria-label="Search"
       />
-      {query && <ClearButton onClick={() => updateQuery('')}><icons.Cross size={14} strokeWidth={3} /></ClearButton>}
+      {query && (
+        <ClearButton aria-label="Clear search" onClick={onClear}>
+          <icons.Cross size={14} strokeWidth={3} />
+        </ClearButton>
+      )}
       {!query && !focus && <ForwardSlash>/</ForwardSlash>}
     </Container>
   )
