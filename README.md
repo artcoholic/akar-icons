@@ -50,7 +50,6 @@ Icons can be configured with inline props including inline ```style``` objects:
 <Star color="yellow" size={32} strokeWidth={3} style={{ display: "block" }}/>
 ```
 
-#### Props
 Prop | Description | Default
 ---- | ----------- | -------
 `color` | Set the icon color | `currentColor`
