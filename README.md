@@ -47,10 +47,18 @@ export default MyComponent;
 Icons can be configured with inline props including inline ```style``` objects:
 
 ```jsx
-<Star color="yellow" size={32} strokeWidth={3} />
+<Star color="yellow" size={32} strokeWidth={3} style={{ display: "block" }}/>
 ```
 
-You can also import the whole icon library:
+#### Props
+Prop | Description | Default
+---- | ----------- | -------
+`color` | Set the icon color | `currentColor`
+`size` | Set the width and height of the svg icon | `24`
+`strokeWidth` | Set the stroke width of the icon | `2`
+`style` | Add [inline styles](https://facebook.github.io/react/tips/inline-styles.html) to the element | `{}`
+
+You can also import the whole icon library like this:
 ```jsx
 import * as Icon from 'akar-icons';
 
