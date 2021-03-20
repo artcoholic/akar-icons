@@ -225,3 +225,4 @@ export { default as AndroidFill } from './icons/android-fill';
 export { default as BitcoinFill } from './icons/bitcoin-fill';
 export { default as SpotifyFill } from './icons/spotify-fill';
 export { default as SoundcloudFill } from './icons/soundcloud-fill';
+export { default as CodepenFill } from './icons/codepen-fill';

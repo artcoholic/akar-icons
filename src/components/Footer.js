@@ -62,7 +62,7 @@ export default ({ icons }) =>
       <LinkWrapper href="https://paypal.me/awibawa/5" target="_blank" rel="noopener"><icons.Coffee size={14} style={style} /> Buy me a coffee</LinkWrapper>
     </span>
     <MadeByContainer>
-      <LinkWrapper href="https://twitter.com/agwibawa" target="_blank" rel="noopener">
+      <LinkWrapper href="https://twitter.com/agwibawa" target="_blank" rel="noopener" bg="#1DA1F2">
         Made by <icons.TwitterFill size={14} color="#1DA1F2" style={{ margin: '0 4px' }} /> agwibawa
       </LinkWrapper>
     </MadeByContainer>

@@ -234,3 +234,4 @@ export const AndroidFill: Icon;
 export const BitcoinFill: Icon;
 export const SpotifyFill: Icon;
 export const SoundcloudFill: Icon;
+export const CodepenFill: Icon;
