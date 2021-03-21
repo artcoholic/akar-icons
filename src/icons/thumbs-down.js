@@ -30,7 +30,8 @@ ThumbsDown.propTypes = {
 
 ThumbsDown.defaultProps = {
   color: 'currentColor',
-  size: '24'
+  size: '24',
+  display: 'block'
 };
 
 export default ThumbsDown;

@@ -29,7 +29,8 @@ ChevronRight.propTypes = {
 
 ChevronRight.defaultProps = {
   color: 'currentColor',
-  size: '24'
+  size: '24',
+  display: 'block'
 };
 
 export default ChevronRight;

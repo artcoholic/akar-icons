@@ -30,7 +30,8 @@ Backspace.propTypes = {
 
 Backspace.defaultProps = {
   color: 'currentColor',
-  size: '24'
+  size: '24',
+  display: 'block'
 };
 
 export default Backspace;
