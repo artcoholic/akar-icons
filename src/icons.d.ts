@@ -203,6 +203,8 @@ export const Glasses: Icon;
 export const Plant: Icon;
 export const Edit: Icon;
 export const TrashBin: Icon;
+export const SunFill: Icon;
+export const MoonFill: Icon;
 export const Person: Icon;
 export const PersonAdd: Icon;
 export const PersonCheck: Icon;

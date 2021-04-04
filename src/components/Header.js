@@ -1,7 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import styled from 'styled-components';
 import { flexbox, space, color, layout } from 'styled-system';
-import pkg from '../../package.json';
 
 const Header = styled.header`
   display: block;

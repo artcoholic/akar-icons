@@ -194,6 +194,8 @@ export { default as Glasses } from './icons/glasses';
 export { default as Plant } from './icons/plant';
 export { default as Edit } from './icons/edit';
 export { default as TrashBin } from './icons/trash-bin';
+export { default as SunFill } from './icons/sun-fill';
+export { default as MoonFill } from './icons/moon-fill';
 export { default as Person } from './icons/person';
 export { default as PersonAdd } from './icons/person-add';
 export { default as PersonCheck } from './icons/person-check';
