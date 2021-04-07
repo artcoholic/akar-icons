@@ -1,10 +1,6 @@
 {
   "name": "akar-icons",
-<<<<<<< HEAD
-  "version": "1.2.3",
-=======
-  "version": "1.2.3",
->>>>>>> 33116f8a9e8ca520224205891551e9b310836f4e
+  "version": "1.2.4",
   "description": "A perfectly rounded icon library made for everyone.",
   "main": "dist/index.js",
   "typings": "dist/icons.d.ts",
