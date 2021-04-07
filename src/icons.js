@@ -110,6 +110,7 @@ export { default as Circle } from './icons/circle';
 export { default as CircleFill } from './icons/circle-fill';
 export { default as Backspace } from './icons/backspace';
 export { default as BackspaceFill } from './icons/backspace-fill';
+export { default as DoubleCheck } from './icons/double-check';
 export { default as Ribbon } from './icons/ribbon';
 export { default as Phone } from './icons/phone';
 export { default as Attach } from './icons/attach';
