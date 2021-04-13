@@ -164,7 +164,7 @@ const App = () => {
         </Container>
         {open && <AlertBox open={open} setOpen={setOpen} name={name} icons={icons} />}
         <Footer icons={icons} />
-        {badge &&
+        {/* {badge &&
           <ProductHuntBadge>
             <CloseButton onClick={() => setBadge(false)} type="button" aria-label="Close Badge">
               <icons.CircleX color="#EA532A" />
@@ -173,7 +173,7 @@ const App = () => {
               <img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=282614&theme=light" alt="Akar Icons - Perfectly rounded icon library for your projects. | Product Hunt" style={{ width: 250, height: 54, display: 'block' }} />
             </a>
           </ProductHuntBadge>
-        }
+        } */}
       </ThemeProvider>
     </>
   )
