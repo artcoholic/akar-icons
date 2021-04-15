@@ -18,8 +18,7 @@ const MobileDevice = props => {
       id="MobileDevice"
     >
       <rect x="6" y="2" width="12" height="20" rx="2"></rect>
-      <path d="M11 5h2"></path>
-      <path d="M11.95 19h.1"></path>
+      <path d="M11.95 18h.1"></path>
     </svg>
   );
 };

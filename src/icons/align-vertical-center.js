@@ -18,8 +18,10 @@ const AlignVerticalCenter = props => {
       id="AlignVerticalCenter"
     >
       <path d="M22 12H2"></path>
-      <path d="M10 8V4H6v4m0 8v4h4v-4"></path>
-      <path d="M14 8V6h4v2m-4 8v2h4v-2"></path>
+      <path d="M6 16v4h4v-4"></path>
+      <path d="M14 16v2h4v-2"></path>
+      <path d="M14 8V6h4v2"></path>
+      <path d="M10 8V4H6v4"></path>
     </svg>
   );
 };

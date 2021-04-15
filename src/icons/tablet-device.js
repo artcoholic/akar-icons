@@ -18,7 +18,7 @@ const TabletDevice = props => {
       id="TabletDevice"
     >
       <rect x="4" y="2" width="16" height="20" rx="2"></rect>
-      <path d="M11 19h2"></path>
+      <path d="M11 18h2"></path>
     </svg>
   );
 };
