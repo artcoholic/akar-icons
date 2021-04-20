@@ -40,9 +40,7 @@ const IconWrapper = styled.button`
 `
 
 export default ({ children, icon, setOpen, setName }) => {
-  const addSpace = str => str
-    .replace(/([a-z])([A-Z])/g, '$1 $2');
-  ;
+  const addSpace = str => str.replace(/([a-z])([A-Z])/g, '$1 $2');
 
   const handleClick = (i) => {
     const svg = document.getElementById(`${i}`);

@@ -118,7 +118,6 @@ const App = () => {
   const [stroke, setStroke] = useState(2);
   const [size, setSize] = useState(24);
   const [height, setHeight] = useState(0);
-  const [badge, setBadge] = useState(true);
 
   const fuseResults = fuse.search(query);
   const results = query ? fuseResults.map(search => upperCamelCase(search.item.name)) : ICON_KEYS;
@@ -164,16 +163,6 @@ const App = () => {
         </Container>
         {open && <AlertBox open={open} setOpen={setOpen} name={name} icons={icons} />}
         <Footer icons={icons} />
-        {/* {badge &&
-          <ProductHuntBadge>
-            <CloseButton onClick={() => setBadge(false)} type="button" aria-label="Close Badge">
-              <icons.CircleX color="#EA532A" />
-            </CloseButton>
-            <a href="https://www.producthunt.com/posts/akar-icons?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-akar-icons" target="_blank">
-              <img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=282614&theme=light" alt="Akar Icons - Perfectly rounded icon library for your projects. | Product Hunt" style={{ width: 250, height: 54, display: 'block' }} />
-            </a>
-          </ProductHuntBadge>
-        } */}
       </ThemeProvider>
     </>
   )
