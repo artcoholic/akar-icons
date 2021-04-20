@@ -40,8 +40,8 @@ const IconWrapper = styled.button`
 `
 
 export default ({ children, icon, setOpen, setName }) => {
-  const camelToDash = str => str
-    .replace(/([A-Z])/g, ' $1').trim();
+  const addSpace = str => str
+    .replace(/([a-z])([A-Z])/g, '$1 $2');
   ;
 
   const handleClick = (i) => {
@@ -64,7 +64,7 @@ export default ({ children, icon, setOpen, setName }) => {
   return (
     <IconWrapper onClick={() => { handleClick(icon); }}>
       {children}
-      <span>{camelToDash(icon)}</span>
+      <span>{addSpace(icon)}</span>
     </IconWrapper>
   )
 }

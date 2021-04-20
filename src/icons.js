@@ -193,6 +193,7 @@ export { default as Radish } from './icons/radish';
 export { default as Clipboard } from './icons/clipboard';
 export { default as Bicycle } from './icons/bicycle';
 export { default as Plane } from './icons/plane';
+export { default as PlaneFill } from './icons/plane-fill';
 export { default as Jar } from './icons/jar';
 export { default as Glasses } from './icons/glasses';
 export { default as Plant } from './icons/plant';

@@ -17,14 +17,14 @@ const Airpods = props => {
       {...otherProps}
       id="Airpods"
     >
-      <path d="M14 6c0 2.21 1.644 4 4 4s4-1.79 4-4-1.644-4-4-4-4 1.79-4 4z"></path>
-      <path d="M10 6c0 2.21-1.644 4-4 4S2 8.21 2 6s1.644-4 4-4 4 1.79 4 4z"></path>
-      <path d="M14 6v14a2 2 0 002 2v0a2 2 0 002-2V10.57"></path>
-      <path d="M10 6v14a2 2 0 01-2 2v0a2 2 0 01-2-2V10.57"></path>
-      <line y1="-1" x2="3" y2="-1" transform="matrix(-1 0 0 1 17 19)"></line>
-      <line x1="7" y1="18" x2="10" y2="18"></line>
-      <path d="M20 3v0a5.408 5.408 0 000 6v0"></path>
-      <path d="M4 3v0a5.408 5.408 0 010 6v0"></path>
+      <path d="M14 7c0 2.21 1.644 4 4 4s4-1.79 4-4-1.644-4-4-4-4 1.79-4 4z"></path>
+      <path d="M10 7c0 2.21-1.644 4-4 4S2 9.21 2 7s1.644-4 4-4 4 1.79 4 4z"></path>
+      <path d="M14 7v12a2 2 0 002 2v0a2 2 0 002-2v-8"></path>
+      <path d="M14 17h4"></path>
+      <path d="M6 17h4"></path>
+      <path d="M10 7v12a2 2 0 01-2 2v0a2 2 0 01-2-2v-8"></path>
+      <path d="M20 4v0a5.408 5.408 0 000 6v0"></path>
+      <path d="M4 4v0a5.408 5.408 0 010 6v0"></path>
     </svg>
   );
 };

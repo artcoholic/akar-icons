@@ -202,6 +202,7 @@ export const Radish: Icon;
 export const Clipboard: Icon;
 export const Bicycle: Icon;
 export const Plane: Icon;
+export const PlaneFill: Icon;
 export const Jar: Icon;
 export const Glasses: Icon;
 export const Plant: Icon;
