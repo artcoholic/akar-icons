@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Fire = props => {
+const ChatAdd = props => {
   const { color, size, ...otherProps } = props;
   return (
     <svg
@@ -15,23 +15,24 @@ const Fire = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
-      id="Fire"
+      id="ChatAdd"
     >
-      <path d="M12 22c-4.97 0-9-2.582-9-7v-.088C3 12.794 4.338 11.1 6.375 10c1.949-1.052 3.101-2.99 2.813-5l-.563-3 2.086.795c3.757 1.43 6.886 3.912 8.914 7.066A8.495 8.495 0 0121 14.464V15c0 1.562-.504 2.895-1.375 3.965"></path>
-      <path d="M12 22c-1.657 0-3-1.433-3-3.2 0-1.4 1.016-2.521 1.91-3.548L12 14l1.09 1.252C13.984 16.28 15 17.4 15 18.8c0 1.767-1.343 3.2-3 3.2z"></path>
+      <path d="M12 8v3m0 0v3m0-3h3m-3 0H9"></path>
+      <path d="M14 19c3.771 0 5.657 0 6.828-1.172C22 16.657 22 14.771 22 11c0-3.771 0-5.657-1.172-6.828C19.657 3 17.771 3 14 3h-4C6.229 3 4.343 3 3.172 4.172 2 5.343 2 7.229 2 11c0 3.771 0 5.657 1.172 6.828.653.654 1.528.943 2.828 1.07"></path>
+      <path d="M14 19c-1.236 0-2.598.5-3.841 1.145-1.998 1.037-2.997 1.556-3.489 1.225-.492-.33-.399-1.355-.212-3.404L6.5 17.5"></path>
     </svg>
   );
 };
 
-Fire.propTypes = {
+ChatAdd.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
 };
 
-Fire.defaultProps = {
+ChatAdd.defaultProps = {
   color: 'currentColor',
   size: '24',
   display: 'block'
 };
 
-export default Fire;
+export default ChatAdd;
