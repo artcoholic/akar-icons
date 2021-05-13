@@ -65,8 +65,8 @@ const ButtonLink = styled.a`
   border: 0;
   padding: 15px 1.2em;
   font-weight: 300;
-  background: #1B1C32;
-  color: #CDCDD8;
+  background: ${props => props.primary ? "#1B1C32" : "white"};
+  color: ${props => props.primary ? "#CDCDD8" : "#1B1C32"};
   border-radius: 4px;
   display: flex;
   align-items: center;
@@ -88,9 +88,6 @@ const ButtonLink = styled.a`
   }
   &:active {
     box-shadow: none;
-  }
-  svg {
-    margin-left: 8px;
   }
   @media (min-width: 768px) {
     margin: 0 12px;
@@ -164,8 +161,11 @@ export default ({ icons, setHeight }) => {
         <Wrapper
           justifyContent="center"
         >
+          <ButtonLink primary href="https://github.com/artcoholic/akar-icons#readme" target="_blank" rel="noopener">
+            <icons.Paper size={16} style={{ marginRight: 8 }} /> Read the docs <icons.ArrowUpRight size={16} style={{ marginLeft: 8 }} />
+          </ButtonLink>
           <ButtonLink href="https://github.com/artcoholic/akar-icons#readme" target="_blank" rel="noopener">
-            Get started <icons.ArrowUpRight size={16} />
+            <icons.Coin size={16} style={{ marginRight: 8 }} /> Donate <icons.ArrowUpRight size={16} style={{ marginLeft: 8 }} />
           </ButtonLink>
         </Wrapper>
       </InnerContainer>

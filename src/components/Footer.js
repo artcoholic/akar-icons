@@ -59,7 +59,7 @@ export default ({ icons }) =>
   <Footer>
     <span style={{ display: 'flex', flexDirection: 'row' }}>
       <LinkWrapper href="https://github.com/artcoholic/akar-icons/issues" target="_blank" rel="noopener"><icons.File size={14} style={style} /> Request an icon</LinkWrapper>
-      <LinkWrapper href="https://paypal.me/awibawa/5" target="_blank" rel="noopener"><icons.Coffee size={14} style={style} /> Buy me a coffee</LinkWrapper>
+      <LinkWrapper href="https://paypal.me/awibawa/5" target="_blank" rel="noopener"><icons.Coin size={14} style={style} /> Donate</LinkWrapper>
     </span>
     <MadeByContainer>
       <LinkWrapper href="https://twitter.com/agwibawa" target="_blank" rel="noopener" bg="#1DA1F2">
