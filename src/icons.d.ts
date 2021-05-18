@@ -251,4 +251,5 @@ export const BitcoinFill: Icon;
 export const SpotifyFill: Icon;
 export const SoundcloudFill: Icon;
 export const CodepenFill: Icon;
+export const GithubOutlineFill: Icon;
 export const WhatsappFill: Icon;

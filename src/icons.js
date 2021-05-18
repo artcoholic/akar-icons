@@ -242,4 +242,5 @@ export { default as BitcoinFill } from './icons/bitcoin-fill';
 export { default as SpotifyFill } from './icons/spotify-fill';
 export { default as SoundcloudFill } from './icons/soundcloud-fill';
 export { default as CodepenFill } from './icons/codepen-fill';
+export { default as GithubOutlineFill } from './icons/github-outline-fill';
 export { default as WhatsappFill } from './icons/whatsapp-fill';
