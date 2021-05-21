@@ -17,8 +17,7 @@ const LinkOff = props => {
       {...otherProps}
       id="LinkOff"
     >
-      <path d="M15 6h1a6 6 0 010 12h-1"></path>
-      <path d="M9 18H8A6 6 0 018 6h1"></path>
+      <path d="M15 6h1a6 6 0 0 1 0 12h-1M9 18H8A6 6 0 0 1 8 6h1"></path>
     </svg>
   );
 };

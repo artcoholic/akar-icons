@@ -17,9 +17,7 @@ const Headphone = props => {
       {...otherProps}
       id="Headphone"
     >
-      <path d="M2 13.565C2 11.512 4 11 6 11v9a4 4 0 01-4-4v-2.435z"></path>
-      <path d="M22 13.565C22 11.512 20 11 18 11v9a4 4 0 004-4v-2.435z"></path>
-      <path d="M6 20V10a6 6 0 1112 0v10"></path>
+      <path d="M2 13.565C2 11.512 4 11 6 11v9a4 4 0 0 1-4-4v-2.435zM22 13.565C22 11.512 20 11 18 11v9a4 4 0 0 0 4-4v-2.435zM6 20V10a6 6 0 1 1 12 0v10"></path>
     </svg>
   );
 };

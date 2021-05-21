@@ -17,9 +17,7 @@ const WatchDevice = props => {
       {...otherProps}
       id="WatchDevice"
     >
-      <path d="M5 7a2 2 0 012-2h10a2 2 0 012 2v10a2 2 0 01-2 2H7a2 2 0 01-2-2V7z"></path>
-      <path d="M9 22h6"></path>
-      <path d="M9 2h6"></path>
+      <path d="M5 7a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V7zM9 22h6M9 2h6"></path>
     </svg>
   );
 };

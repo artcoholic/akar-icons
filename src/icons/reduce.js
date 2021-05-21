@@ -17,10 +17,7 @@ const Reduce = props => {
       {...otherProps}
       id="Reduce"
     >
-      <path d="M3 21l7-7"></path>
-      <path d="M14 10l7-7"></path>
-      <path d="M20 10h-6V4"></path>
-      <path d="M10 20v-6H4"></path>
+      <path d="M3 21l7-7M14 10l7-7M20 10h-6V4M10 20v-6H4"></path>
     </svg>
   );
 };

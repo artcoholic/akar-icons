@@ -17,10 +17,7 @@ const FullScreen = props => {
       {...otherProps}
       id="FullScreen"
     >
-      <path d="M2 7V2h5"></path>
-      <path d="M22 7V2h-5"></path>
-      <path d="M7 22H2v-5"></path>
-      <path d="M17 22h5v-5"></path>
+      <path d="M2 7V2h5M22 7V2h-5M7 22H2v-5M17 22h5v-5"></path>
     </svg>
   );
 };

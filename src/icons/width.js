@@ -17,9 +17,7 @@ const Width = props => {
       {...otherProps}
       id="Width"
     >
-      <path d="M21 12H3"></path>
-      <path d="M6 16l-4-4 4-4"></path>
-      <path d="M18 16l4-4-4-4"></path>
+      <path d="M21 12H3M6 16l-4-4 4-4M18 16l4-4-4-4"></path>
     </svg>
   );
 };

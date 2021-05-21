@@ -17,7 +17,7 @@ const Sun = props => {
       {...otherProps}
       id="Sun"
     >
-      <path d="M12 3V2m0 20v-1m9-9h1M2 12h1m16-7l1-1M4 20l1-1M4 4l1 1m14 14l1 1m-2-8a6 6 0 11-12 0 6 6 0 0112 0z"></path>
+      <path d="M12 3V2m0 20v-1m9-9h1M2 12h1m16-7l1-1M4 20l1-1M4 4l1 1m14 14l1 1m-2-8a6 6 0 1 1-12 0 6 6 0 0 1 12 0z"></path>
     </svg>
   );
 };

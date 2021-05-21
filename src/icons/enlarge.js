@@ -17,10 +17,7 @@ const Enlarge = props => {
       {...otherProps}
       id="Enlarge"
     >
-      <path d="M3 21l6.5-6.5"></path>
-      <path d="M14.5 9.5L21 3"></path>
-      <path d="M15 3h6v6"></path>
-      <path d="M3 15v6h6"></path>
+      <path d="M3 21l6.5-6.5M14.5 9.5L21 3M15 3h6v6M3 15v6h6"></path>
     </svg>
   );
 };

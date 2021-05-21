@@ -17,9 +17,7 @@ const Height = props => {
       {...otherProps}
       id="Height"
     >
-      <path d="M12 21V3"></path>
-      <path d="M8 6l4-4 4 4"></path>
-      <path d="M8 18l4 4 4-4"></path>
+      <path d="M12 21V3M8 6l4-4 4 4M8 18l4 4 4-4"></path>
     </svg>
   );
 };

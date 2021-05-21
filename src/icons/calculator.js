@@ -17,10 +17,9 @@ const Calculator = props => {
       {...otherProps}
       id="Calculator"
     >
-      <path d="M2 6a4 4 0 014-4h12a4 4 0 014 4v5H2V6z"></path>
+      <path d="M2 6a4 4 0 0 1 4-4h12a4 4 0 0 1 4 4v5H2V6z"></path>
       <path d="M18.5 16.5h-3"></path>
-      <path d="M12 11h10v7a4 4 0 01-4 4h-6V11z"></path>
-      <path d="M12 11H2v7a4 4 0 004 4h6V11z"></path>
+      <path d="M12 11h10v7a4 4 0 0 1-4 4h-6V11zM12 11H2v7a4 4 0 0 0 4 4h6V11z"></path>
       <path d="M5.5 18L7 16.5m0 0L8.5 15M7 16.5L8.5 18M7 16.5L5.5 15"></path>
     </svg>
   );

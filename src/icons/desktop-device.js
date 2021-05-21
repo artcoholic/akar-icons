@@ -17,8 +17,7 @@ const DesktopDevice = props => {
       {...otherProps}
       id="DesktopDevice"
     >
-      <path d="M2 6a2 2 0 012-2h16a2 2 0 012 2v9a2 2 0 01-2 2H4a2 2 0 01-2-2V6z"></path>
-      <path d="M8 20h8"></path>
+      <path d="M2 6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6zM8 20h8"></path>
     </svg>
   );
 };

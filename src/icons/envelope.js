@@ -17,8 +17,8 @@ const Envelope = props => {
       {...otherProps}
       id="Envelope"
     >
-      <path d="M2 6a2 2 0 012-2h16a2 2 0 012 2v12a2 2 0 01-2 2H4a2 2 0 01-2-2V6z"></path>
-      <path d="M3 5l6.343 5.638a4 4 0 005.315 0L21 5"></path>
+      <path d="M2 6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6z"></path>
+      <path d="M3 5l6.343 5.638a4 4 0 0 0 5.315 0L21 5"></path>
     </svg>
   );
 };

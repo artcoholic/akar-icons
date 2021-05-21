@@ -18,9 +18,7 @@ const Microphone = props => {
       id="Microphone"
     >
       <rect x="8" y="2" width="8" height="13" rx="4"></rect>
-      <path d="M18 16.292A7.98 7.98 0 0112 19a7.98 7.98 0 01-6-2.708"></path>
-      <path d="M12 19v3"></path>
-      <path d="M10 22h4"></path>
+      <path d="M18 16.292A7.98 7.98 0 0 1 12 19a7.98 7.98 0 0 1-6-2.708M12 19v3M10 22h4"></path>
     </svg>
   );
 };

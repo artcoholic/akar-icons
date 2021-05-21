@@ -17,9 +17,7 @@ const LinkOut = props => {
       {...otherProps}
       id="LinkOut"
     >
-      <path d="M13.5 10.5L21 3"></path>
-      <path d="M16 3h5v5"></path>
-      <path d="M21 14v5a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h5"></path>
+      <path d="M13.5 10.5L21 3M16 3h5v5M21 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5"></path>
     </svg>
   );
 };

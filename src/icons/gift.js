@@ -18,10 +18,7 @@ const Gift = props => {
       id="Gift"
     >
       <rect x="3" y="8" width="18" height="14" rx="2"></rect>
-      <path d="M12 5a3 3 0 10-3 3"></path>
-      <path d="M15 8a3 3 0 10-3-3"></path>
-      <path d="M12 5v17"></path>
-      <path d="M21 15H3"></path>
+      <path d="M12 5a3 3 0 1 0-3 3M15 8a3 3 0 1 0-3-3M12 5v17M21 15H3"></path>
     </svg>
   );
 };
