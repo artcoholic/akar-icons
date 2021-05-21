@@ -21,7 +21,6 @@ function optimize(svg) {
       { convertShapeToPath: false },
       { mergePaths: false },
       { removeAttrs: { attrs: '(fill|stroke.*)' } },
-      { removeTitle: true },
     ],
   });
 

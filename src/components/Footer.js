@@ -35,7 +35,7 @@ const LinkWrapper = styled.a`
   }
 `
 
-const MadeByContainer = styled.span`
+const MadeByContainer = styled.div`
   display: flex;
   align-items: center;
   border-top: 1px solid #f5f7f9;
@@ -57,10 +57,10 @@ const style = {
 
 export default ({ icons }) =>
   <Footer>
-    <span style={{ display: 'flex', flexDirection: 'row' }}>
+    <div style={{ display: 'flex', flexDirection: 'row' }}>
       <LinkWrapper href="https://github.com/artcoholic/akar-icons/issues" target="_blank" rel="noopener"><icons.File size={14} style={style} /> Request an icon</LinkWrapper>
       <LinkWrapper href="https://paypal.me/awibawa/5" target="_blank" rel="noopener"><icons.Coin size={14} style={style} /> Donate</LinkWrapper>
-    </span>
+    </div>
     <MadeByContainer>
       <LinkWrapper href="https://twitter.com/agwibawa" target="_blank" rel="noopener" bg="#1DA1F2">
         Made by <icons.TwitterFill size={14} color="#1DA1F2" style={{ margin: '0 4px' }} /> agwibawa
