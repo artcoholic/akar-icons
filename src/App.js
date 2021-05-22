@@ -3,7 +3,7 @@ import styled, { ThemeProvider } from 'styled-components';
 import * as icons from './icons';
 import Header from './components/Header';
 import IconWrapper from './components/IconWrapper';
-import AlertBox from './components/AlertBox';
+import Popover from './components/Popover';
 import Footer from './components/Footer';
 import CustomizationBar from './components/CustomizationBar';
 import SearchResults from './components/SearchResults';
@@ -66,33 +66,6 @@ const SecondaryLinks = styled.a`
   &:focus {
     outline: none;
     box-shadow: 0 0 0 4px rgba(0, 95, 204, 0.3);
-  }
-`
-
-const ProductHuntBadge = styled.div`
-  position: fixed;
-  bottom: 24px;
-  right: 24px;
-  display:flex;
-  z-index: 999;
-`
-
-const CloseButton = styled.button`
-  padding: 0;
-  margin: 0;
-  border-radius: 50%;
-  border: none;
-  background: white;
-  position: absolute;
-  top: -12px;
-  left: -12px;
-  cursor: pointer;
-  transition: box-shadow 300ms ease-out;
-  &:hover {
-    box-shadow: rgb(45 59 66 / 0.3) 0px 6px 12px 0px;
-  }
-  svg {
-    display: block;
   }
 `
 
@@ -161,7 +134,7 @@ const App = () => {
             })}
           </SearchResults>
         </Container>
-        {open && <AlertBox open={open} setOpen={setOpen} name={name} icons={icons} />}
+        <Popover open={open} setOpen={setOpen} name={name} icons={icons} size={size} />
         <Footer icons={icons} />
       </ThemeProvider>
     </>

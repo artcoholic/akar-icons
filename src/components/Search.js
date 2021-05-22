@@ -105,7 +105,14 @@ export default ({ query, updateQuery, icons }) => {
     }
   }
 
+  function autoClear(e) {
+    if (e.key === 'Escape') {
+      updateQuery('');
+    }
+  }
+
   document.addEventListener('keydown', autoFocus);
+  document.addEventListener('keydown', autoClear);
 
   return (
     <Container>

@@ -58,18 +58,18 @@ const moveFocus = (parentEl, nextPosition) => {
 };
 
 export default props => {
-  // const ref = useRef();
+  const ref = useRef();
 
-  // useEffect(() => {
-  //   const unsubscribe = tinykeys(window, {
-  //     ArrowDown: () => moveFocus(ref.current, getColumns(ref.current)),
-  //     ArrowLeft: () => moveFocus(ref.current, -1),
-  //     ArrowRight: () => moveFocus(ref.current, 1),
-  //     ArrowUp: () => moveFocus(ref.current, getColumns(ref.current) * -1)
-  //   });
+  useEffect(() => {
+    const unsubscribe = tinykeys(window, {
+      ArrowDown: () => moveFocus(ref.current, getColumns(ref.current)),
+      ArrowLeft: () => moveFocus(ref.current, -1),
+      ArrowRight: () => moveFocus(ref.current, 1),
+      ArrowUp: () => moveFocus(ref.current, getColumns(ref.current) * -1)
+    });
 
-  //   return () => unsubscribe();
-  // }, []);
+    return () => unsubscribe();
+  }, []);
 
-  return <Container {...props} />;
+  return <Container {...props} ref={ref} />;
 };

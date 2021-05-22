@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const Footer = styled.footer`
   display: flex;
   justify-content: space-between;
-  padding: 16px;
+  padding: 12px;
   border-top: 1px solid #e6eaef;
   font-size: .875em;
   flex-flow: column wrap;
@@ -12,7 +12,7 @@ const Footer = styled.footer`
     color: #1B1C32;
   }
   @media (min-width: 768px) {
-    padding: 16px 24px;
+    padding: 12px 16px;
     flex-flow: row wrap;
   }
 `
@@ -21,7 +21,7 @@ const LinkWrapper = styled.a`
   transition: all 150ms ease-out;
   display: flex;
   align-items: center;
-  margin-right: 8px;
+  margin: 4px;
   border-radius: 4px;
   padding: 8px 12px;
   background: #f5f7f9;
@@ -39,14 +39,11 @@ const MadeByContainer = styled.div`
   display: flex;
   align-items: center;
   border-top: 1px solid #f5f7f9;
-  padding-top: 16px;
-  margin-top: 16px;
+  padding-top: 12px;
+  margin-top: 12px;
   @media (min-width: 768px) {
     border: none;
     padding: 0;
-    margin: 0;
-  }
-  a {
     margin: 0;
   }
 `
@@ -57,8 +54,9 @@ const style = {
 
 export default ({ icons }) =>
   <Footer>
-    <div style={{ display: 'flex', flexDirection: 'row' }}>
-      <LinkWrapper href="https://github.com/artcoholic/akar-icons/issues" target="_blank" rel="noopener"><icons.File size={14} style={style} /> Request an icon</LinkWrapper>
+    <div style={{ display: 'flex', flexFlow: 'row wrap' }}>
+      <LinkWrapper href="https://github.com/artcoholic/akar-icons/issues/new?assignees=artcoholic&labels=enhancement&template=icon-request.md&title=%5BICON+REQUEST%5D" target="_blank" rel="noopener"><icons.File size={14} style={style} /> Request an icon</LinkWrapper>
+      <LinkWrapper href="https://github.com/artcoholic/akar-icons/issues/new?assignees=artcoholic&labels=bug&template=bug_report.md&title=%5BBUG%5D" target="_blank" rel="noopener"><icons.Bug size={14} style={style} /> Report a bug</LinkWrapper>
       <LinkWrapper href="https://paypal.me/awibawa/5" target="_blank" rel="noopener"><icons.Coin size={14} style={style} /> Donate</LinkWrapper>
     </div>
     <MadeByContainer>

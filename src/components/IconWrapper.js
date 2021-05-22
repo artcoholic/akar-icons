@@ -43,15 +43,6 @@ export default ({ children, icon, setOpen, setName }) => {
   const addSpace = str => str.replace(/([a-z])([A-Z])/g, '$1 $2');
 
   const handleClick = (i) => {
-    const svg = document.getElementById(`${i}`);
-    const s = new XMLSerializer();
-    const str = s.serializeToString(svg);
-    const el = document.createElement('textarea');
-    el.value = str;
-    document.body.appendChild(el);
-    el.select();
-    document.execCommand("copy");
-    document.body.removeChild(el);
     setOpen(true);
     setName(i);
     gtag('event', 'select_content', {
