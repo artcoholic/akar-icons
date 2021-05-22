@@ -118,7 +118,7 @@ const App = () => {
               <NoResults>
                 <span style={{ fontSize: "6em", color: "#DAE4E8" }}>( · _ · )</span>
                 <span style={{ margin: "2em 0 1em 0" }}>There are no icons for <code>{query}</code></span>
-                <SecondaryLinks href="https://github.com/artcoholic/akar-icons/issues" target="_blank"><icons.File size={14} />Request an icon</SecondaryLinks>
+                <SecondaryLinks href="https://github.com/artcoholic/akar-icons/issues/new?assignees=artcoholic&labels=enhancement&template=icon-request.md&title=%5BICON+REQUEST%5D" target="_blank"><icons.File size={14} />Request an icon</SecondaryLinks>
               </NoResults>
             )}
             {results.map((key, index) => {
