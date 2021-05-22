@@ -225,13 +225,13 @@ const Popover = ({ open, setOpen, name, icons, size }) => {
                   <span class="tooltip" id="myTooltip">
                     {copiedSnippet ? 'Copied!' : 'Copy snippet'}
                   </span>
-                  {copiedSnippet ? <icons.CircleCheck size={16} /> : <icons.Copy size={16} />}
+                  {copiedSnippet ? <icons.CircleCheckFill size={16} /> : <icons.Copy size={16} />}
                 </button>
               </div>
             </ReactCode>
             <CopySVGContainer>
               <button className="copy-svg-btn" onClick={() => copySVG(name)}>
-                {copiedSVG ? <icons.CircleCheck size={16} /> : <icons.Copy size={16} />}
+                {copiedSVG ? <icons.CircleCheckFill size={16} /> : <icons.Copy size={16} />}
                 {copiedSVG ? "Copied to clipboard!" : "Copy SVG"}
               </button>
             </CopySVGContainer>
