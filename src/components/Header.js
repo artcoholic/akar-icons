@@ -164,7 +164,7 @@ export default ({ icons, setHeight }) => {
           <ButtonLink primary href="https://github.com/artcoholic/akar-icons#readme" target="_blank" rel="noopener">
             <icons.Paper size={16} style={{ marginRight: 8 }} /> Read the docs <icons.ArrowUpRight size={16} style={{ marginLeft: 8 }} />
           </ButtonLink>
-          <ButtonLink href="https://github.com/artcoholic/akar-icons#readme" target="_blank" rel="noopener">
+          <ButtonLink href="https://paypal.me/awibawa/5" target="_blank" rel="noopener">
             <icons.Coin size={16} style={{ marginRight: 8 }} /> Donate <icons.ArrowUpRight size={16} style={{ marginLeft: 8 }} />
           </ButtonLink>
         </Wrapper>
