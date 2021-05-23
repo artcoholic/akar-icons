@@ -97,7 +97,7 @@ const ReactCode = styled.div`
       font-family: monospace;
       width: 100%;
     }
-    .copy-btn {
+    .copy-snippet-btn {
       background-color: none;
       padding: 11px;
       border-radius: 2px;
