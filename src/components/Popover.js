@@ -124,6 +124,7 @@ const ReactCode = styled.div`
         padding: .5em .75em;
         white-space: nowrap;
         transition: all 150ms ease-out;
+        pointer-events: none;
         &::after {
           content: '';
           position: absolute;
