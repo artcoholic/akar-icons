@@ -17,7 +17,9 @@ const DoubleCheck = props => {
       {...otherProps}
       id="DoubleCheck"
     >
-      <path d="M2 12l5.25 5 2.625-3M8 12l5.25 5L22 7M16 7l-3.5 4"></path>
+      <path d="M2 12l5.25 5 2.625-3"></path>
+      <path d="M8 12l5.25 5L22 7"></path>
+      <path d="M16 7l-3.5 4"></path>
     </svg>
   );
 };

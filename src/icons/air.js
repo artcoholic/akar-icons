@@ -17,7 +17,9 @@ const Air = props => {
       {...otherProps}
       id="Air"
     >
-      <path d="M3 8h7a3 3 0 1 0-3-3M4 16h11a3 3 0 1 1-3 3M2 12h17a3 3 0 1 0-3-3"></path>
+      <path d="M3 8h7a3 3 0 1 0-3-3"></path>
+      <path d="M4 16h11a3 3 0 1 1-3 3"></path>
+      <path d="M2 12h17a3 3 0 1 0-3-3"></path>
     </svg>
   );
 };

@@ -18,7 +18,8 @@ const FaceVerySad = props => {
       id="FaceVerySad"
     >
       <circle cx="12" cy="12" r="10"></circle>
-      <path d="M8 9.05v-.1M16 9.05v-.1"></path>
+      <path d="M8 9.05v-.1"></path>
+      <path d="M16 9.05v-.1"></path>
       <path d="M12 13a4 4 0 0 1 4 4H8a4 4 0 0 1 4-4z"></path>
     </svg>
   );

@@ -17,7 +17,10 @@ const Hashtag = props => {
       {...otherProps}
       id="Hashtag"
     >
-      <path d="M10 3L6 21M18 3l-4 18M4 8h17M3 16h17"></path>
+      <path d="M10 3L6 21"></path>
+      <path d="M18 3l-4 18"></path>
+      <path d="M4 8h17"></path>
+      <path d="M3 16h17"></path>
     </svg>
   );
 };

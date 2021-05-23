@@ -17,7 +17,9 @@ const Play = props => {
       {...otherProps}
       id="Play"
     >
-      <path d="M6 4v16M20 12L6 20M20 12L6 4"></path>
+      <path d="M6 4v16"></path>
+      <path d="M20 12L6 20"></path>
+      <path d="M20 12L6 4"></path>
     </svg>
   );
 };

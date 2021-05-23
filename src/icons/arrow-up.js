@@ -17,7 +17,8 @@ const ArrowUp = props => {
       {...otherProps}
       id="ArrowUp"
     >
-      <path d="M12 20V4M5 11l7-7 7 7"></path>
+      <path d="M12 20V4"></path>
+      <path d="M5 11l7-7 7 7"></path>
     </svg>
   );
 };

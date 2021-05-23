@@ -21,7 +21,8 @@ const Container = styled.div`
 `
 
 const Wrapper = styled.div`
-  background: white;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(12px);
   color: black;
   border-radius: 8px;
   border: .5px solid #e6eaef;

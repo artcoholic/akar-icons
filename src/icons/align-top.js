@@ -18,7 +18,8 @@ const AlignTop = props => {
       id="AlignTop"
     >
       <path d="M22 2H2"></path>
-      <path d="M6 22V6h4v16H6zM14 16V6h4v10h-4z"></path>
+      <path d="M6 22V6h4v16H6z"></path>
+      <path d="M14 16V6h4v10h-4z"></path>
     </svg>
   );
 };

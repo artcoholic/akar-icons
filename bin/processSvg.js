@@ -20,8 +20,9 @@ function optimize(svg) {
     plugins: [
       { convertPathData: { noSpaceAfterFlags: false } },
       { convertShapeToPath: false },
-      { mergePaths: { noSpaceAfterFlags: false } },
+      { mergePaths: false },
       { removeAttrs: { attrs: '(fill|stroke.*)' } },
+      { removeTitle: true },
     ],
   });
 

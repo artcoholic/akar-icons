@@ -17,7 +17,12 @@ const Utensils = props => {
       {...otherProps}
       id="Utensils"
     >
-      <path d="M11 8V2H2v6a4 4 0 0 0 4 4h1a4 4 0 0 0 4-4zM15 16V2h3a4 4 0 0 1 4 4v10h-4M15 16v5a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-5M5 16v5a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-5M5 6V2M8 6V2"></path>
+      <path d="M11 8V2H2v6a4 4 0 0 0 4 4h1a4 4 0 0 0 4-4z"></path>
+      <path d="M15 16V2h3a4 4 0 0 1 4 4v10h-4"></path>
+      <path d="M15 16v5a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-5"></path>
+      <path d="M5 16v5a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-5"></path>
+      <path d="M5 6V2"></path>
+      <path d="M8 6V2"></path>
     </svg>
   );
 };

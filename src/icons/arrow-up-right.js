@@ -17,7 +17,8 @@ const ArrowUpRight = props => {
       {...otherProps}
       id="ArrowUpRight"
     >
-      <path d="M18 6L6 18M8 6h10v10"></path>
+      <path d="M18 6L6 18"></path>
+      <path d="M8 6h10v10"></path>
     </svg>
   );
 };

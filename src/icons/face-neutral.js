@@ -18,7 +18,9 @@ const FaceNeutral = props => {
       id="FaceNeutral"
     >
       <circle cx="12" cy="12" r="10"></circle>
-      <path d="M8 9.05v-.1M16 9.05v-.1M8 14h8"></path>
+      <path d="M8 9.05v-.1"></path>
+      <path d="M16 9.05v-.1"></path>
+      <path d="M8 14h8"></path>
     </svg>
   );
 };

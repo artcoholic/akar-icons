@@ -17,7 +17,8 @@ const ChevronVertical = props => {
       {...otherProps}
       id="ChevronVertical"
     >
-      <path d="M8 7l4-4 4 4M8 17l4 4 4-4"></path>
+      <path d="M8 17l4 4 4-4"></path>
+      <path d="M8 7l4-4 4 4"></path>
     </svg>
   );
 };

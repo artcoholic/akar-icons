@@ -17,7 +17,10 @@ const NormalScreen = props => {
       {...otherProps}
       id="NormalScreen"
     >
-      <path d="M7 2v5H2M17 2v5h5M2 17h5v5M22 17h-5v5"></path>
+      <path d="M7 2v5H2"></path>
+      <path d="M17 2v5h5"></path>
+      <path d="M2 17h5v5"></path>
+      <path d="M22 17h-5v5"></path>
     </svg>
   );
 };
