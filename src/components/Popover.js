@@ -223,7 +223,7 @@ const Popover = ({ open, setOpen, name, icons, size }) => {
               <div className="label">React snippet</div>
               <div className="snippet-box">
                 <input type="text" value={`<${name} size={${size}} />`} id="reactSnippet" />
-                <button className="copy-btn" onClick={copySnippet}>
+                <button className="copy-snippet-btn" onClick={copySnippet}>
                   <span class="tooltip" id="myTooltip">
                     {copiedSnippet ? 'Copied!' : 'Copy snippet'}
                   </span>

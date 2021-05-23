@@ -88,9 +88,6 @@ export default ({ query, updateQuery, icons }) => {
 
   function onSearch({ currentTarget }) {
     updateQuery(currentTarget.value)
-    gtag('event', 'search', {
-      search_term: `${currentTarget.value}`
-    });
   };
 
   function onClear() {

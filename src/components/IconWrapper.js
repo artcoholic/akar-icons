@@ -45,10 +45,6 @@ export default ({ children, icon, setOpen, setName }) => {
   const handleClick = (i) => {
     setOpen(true);
     setName(i);
-    gtag('event', 'select_content', {
-      content_type: `${i}`,
-      item_id: `${i}`
-    })
   }
   return (
     <IconWrapper onClick={() => { handleClick(icon); }}>
