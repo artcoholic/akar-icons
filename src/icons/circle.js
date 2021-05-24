@@ -17,7 +17,7 @@ const Circle = props => {
       {...otherProps}
       id="Circle"
     >
-      <circle cx="12" cy="12" r="9"></circle>
+      <circle cx="12" cy="12" r="10"></circle>
     </svg>
   );
 };

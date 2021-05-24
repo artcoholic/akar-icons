@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const CircleFill = props => {
+const CheckBoxFill = props => {
   const { color, size, ...otherProps } = props;
   return (
     <svg
@@ -11,22 +11,26 @@ const CircleFill = props => {
       viewBox="0 0 24 24"
       fill={color}
       {...otherProps}
-      id="CircleFill"
+      id="CheckBoxFill"
     >
-      <circle cx="12" cy="12" r="11"></circle>
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M7 2a5 5 0 0 0-5 5v10a5 5 0 0 0 5 5h10a5 5 0 0 0 5-5V7a5 5 0 0 0-5-5H7zm8.73 8.684a1 1 0 1 0-1.46-1.368l-3.083 3.29-1.523-1.353a1 1 0 0 0-1.328 1.494l2.25 2a1 1 0 0 0 1.393-.063l3.75-4z"
+      ></path>
     </svg>
   );
 };
 
-CircleFill.propTypes = {
+CheckBoxFill.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
 };
 
-CircleFill.defaultProps = {
+CheckBoxFill.defaultProps = {
   color: 'currentColor',
   size: '24',
   display: 'block'
 };
 
-export default CircleFill;
+export default CheckBoxFill;

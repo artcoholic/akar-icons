@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Bell = props => {
+const EyeSlashed = props => {
   const { color, size, ...otherProps } = props;
   return (
     <svg
@@ -15,24 +15,25 @@ const Bell = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
-      id="Bell"
+      id="EyeSlashed"
     >
-      <path d="M12.721 5.003L11.255 5c-3.344-.008-6.247 2.709-6.27 6v3.79c0 .79-.1 1.561-.531 2.218l-.287.438C3.73 18.11 4.2 19 4.985 19h14.03c.785 0 1.254-.89.818-1.554l-.287-.438c-.43-.657-.531-1.429-.531-2.219v-3.788c-.04-3.292-2.95-5.99-6.294-5.998z"></path>
-      <path d="M15 19a3 3 0 1 1-6 0"></path>
-      <path d="M12 2a2 2 0 0 1 2 2v1h-4V4a2 2 0 0 1 2-2z"></path>
+      <path d="M6.873 17.129c-1.845-1.31-3.305-3.014-4.13-4.09a1.693 1.693 0 0 1 0-2.077C4.236 9.013 7.818 5 12 5c1.876 0 3.63.807 5.13 1.874"></path>
+      <path d="M14.13 9.887a3 3 0 1 0-4.243 4.242"></path>
+      <path d="M4 20L20 4"></path>
+      <path d="M10 18.704A7.124 7.124 0 0 0 12 19c4.182 0 7.764-4.013 9.257-5.962a1.694 1.694 0 0 0-.001-2.078A22.939 22.939 0 0 0 19.57 9"></path>
     </svg>
   );
 };
 
-Bell.propTypes = {
+EyeSlashed.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
 };
 
-Bell.defaultProps = {
+EyeSlashed.defaultProps = {
   color: 'currentColor',
   size: '24',
   display: 'block'
 };
 
-export default Bell;
+export default EyeSlashed;

@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const CircleFill = props => {
+const ToggleOnFill = props => {
   const { color, size, ...otherProps } = props;
   return (
     <svg
@@ -11,22 +11,26 @@ const CircleFill = props => {
       viewBox="0 0 24 24"
       fill={color}
       {...otherProps}
-      id="CircleFill"
+      id="ToggleOnFill"
     >
-      <circle cx="12" cy="12" r="11"></circle>
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M7 7a5 5 0 0 0 0 10h10a5 5 0 0 0 0-10H7zm10 2.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5z"
+      ></path>
     </svg>
   );
 };
 
-CircleFill.propTypes = {
+ToggleOnFill.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
 };
 
-CircleFill.defaultProps = {
+ToggleOnFill.defaultProps = {
   color: 'currentColor',
   size: '24',
   display: 'block'
 };
 
-export default CircleFill;
+export default ToggleOnFill;

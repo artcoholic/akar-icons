@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Bell = props => {
+const BatteryCharging = props => {
   const { color, size, ...otherProps } = props;
   return (
     <svg
@@ -15,24 +15,24 @@ const Bell = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
-      id="Bell"
+      id="BatteryCharging"
     >
-      <path d="M12.721 5.003L11.255 5c-3.344-.008-6.247 2.709-6.27 6v3.79c0 .79-.1 1.561-.531 2.218l-.287.438C3.73 18.11 4.2 19 4.985 19h14.03c.785 0 1.254-.89.818-1.554l-.287-.438c-.43-.657-.531-1.429-.531-2.219v-3.788c-.04-3.292-2.95-5.99-6.294-5.998z"></path>
-      <path d="M15 19a3 3 0 1 1-6 0"></path>
-      <path d="M12 2a2 2 0 0 1 2 2v1h-4V4a2 2 0 0 1 2-2z"></path>
+      <rect x="2" y="6" width="18" height="12" rx="2"></rect>
+      <path d="M20 10h1.5a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5H20v-4z"></path>
+      <path d="M11.4 9L9 12h4l-2.4 3"></path>
     </svg>
   );
 };
 
-Bell.propTypes = {
+BatteryCharging.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
 };
 
-Bell.defaultProps = {
+BatteryCharging.defaultProps = {
   color: 'currentColor',
   size: '24',
   display: 'block'
 };
 
-export default Bell;
+export default BatteryCharging;
