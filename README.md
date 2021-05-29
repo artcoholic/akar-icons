@@ -16,7 +16,7 @@ Explore all icons at [akaricons.com](https://akaricons.com). Simply click the ic
 ---
 
 ## For developers
-Akar icons are currently available as individual React components. Start using it today.
+Akar icons are currently available as individual React components.
 
 ### 1. Installation
 Install with npm:
