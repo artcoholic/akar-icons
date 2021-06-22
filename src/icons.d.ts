@@ -262,6 +262,7 @@ export const FaceHappy: Icon;
 export const FaceNeutral: Icon;
 export const FaceSad: Icon;
 export const FaceVerySad: Icon;
+export const FaceWink: Icon;
 export const ThumbsUp: Icon;
 export const ThumbsDown: Icon;
 export const VictoryHand: Icon;

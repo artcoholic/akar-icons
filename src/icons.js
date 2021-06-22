@@ -253,6 +253,7 @@ export { default as FaceHappy } from './icons/face-happy';
 export { default as FaceNeutral } from './icons/face-neutral';
 export { default as FaceSad } from './icons/face-sad';
 export { default as FaceVerySad } from './icons/face-very-sad';
+export { default as FaceWink } from './icons/face-wink';
 export { default as ThumbsUp } from './icons/thumbs-up';
 export { default as ThumbsDown } from './icons/thumbs-down';
 export { default as VictoryHand } from './icons/victory-hand';
