@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styled, { ThemeProvider } from 'styled-components';
 import * as icons from './icons';
-import UseDarkMode from './components/UseDarkmode';
+import { useDarkMode } from './components/UseDarkmode';
 import Header from './components/Header';
 import IconWrapper from './components/IconWrapper';
 import Popover from './components/Popover';
@@ -89,7 +89,7 @@ const fuse = new Fuse(DATA.flat(), {
 })
 
 const App = () => {
-  const [theme, themeToggler, mountedComponent] = UseDarkMode();
+  const [theme, themeToggler, mountedComponent] = useDarkMode();
   const themeMode = theme === 'light' ? lightTheme : darkTheme;
 
   const [open, setOpen] = useState(false);
