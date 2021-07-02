@@ -8,7 +8,7 @@ import Popover from './components/Popover';
 import Footer from './components/Footer';
 import CustomizationBar from './components/CustomizationBar';
 import SearchResults from './components/SearchResults';
-import { lightTheme, darkTheme, GlobalStyles } from './theme';
+import { theme, GlobalStyles } from './theme';
 
 import upperCamelCase from 'uppercamelcase';
 import Fuse from 'fuse.js';
@@ -107,7 +107,7 @@ const App = () => {
   // if (!mountedComponent) return <div />
   return (
     <>
-      <ThemeProvider theme={lightTheme}>
+      <ThemeProvider theme={theme}>
         <GlobalStyles />
         <Header
           icons={icons}
