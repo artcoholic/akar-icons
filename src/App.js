@@ -1,14 +1,15 @@
 import React, { useState } from 'react';
 import styled, { ThemeProvider } from 'styled-components';
+import { useDarkMode } from './components/useDarkMode';
+import { lightTheme, darkTheme, GlobalStyles } from './theme';
 import * as icons from './icons';
+
 import Header from './components/Header';
 import IconWrapper from './components/IconWrapper';
 import Popover from './components/Popover';
 import Footer from './components/Footer';
 import CustomizationBar from './components/CustomizationBar';
 import SearchResults from './components/SearchResults';
-import { lightTheme, darkTheme, GlobalStyles } from './theme';
-import { useDarkMode } from './components/useDarkMode';
 
 import upperCamelCase from 'uppercamelcase';
 import Fuse from 'fuse.js';
