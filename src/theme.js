@@ -36,27 +36,12 @@ const dark = {
   }
 }
 
-export const theme = {
+const theme = {
   breakpoints: ['768px'],
-  colors: {
-    bg: {
-      primary: 'white',
-      secondary: '#D5F4FD',
-      tertiary: '#F1FCFF',
-      transparent: 'rgba(255, 255, 255, 0.8)',
-    },
-    content: {
-      primary: '#082D41',
-      secondary: '#D5F4FD',
-      tertiary: '#E1F0FF',
-    },
-    boxShadow: 'rgba(15,23,32,0.15)',
-    border: '#F1FCFF'
-  }
 }
 
-// export const lightTheme = { ...theme, ...light };
-// export const darkTheme = { ...theme, ...dark };
+export const lightTheme = { ...theme, ...light };
+export const darkTheme = { ...theme, ...dark };
 
 export const GlobalStyles = createGlobalStyle`
   body {

@@ -62,7 +62,7 @@ const ResetButton = styled.button`
 
 export default ({ stroke, setStroke, size, setSize, query, updateQuery, icons, height }) => {
   const [isStuck, setIsStuck] = useState(false);
-  const isEnabled = query !== '' || stroke != 2 || size != 24;
+  const isEnabled = query !== '' || stroke !== 2 || size !== 24;
 
   useScrollPosition(({ currPos }) => {
     setIsStuck(currPos.y < -height);

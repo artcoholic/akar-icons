@@ -138,8 +138,8 @@ const Toggle = styled.button`
 const Header = ({
   icons,
   setHeight,
-  // theme, 
-  // themeToggler 
+  theme,
+  themeToggler
 }) => {
   const ref = useRef(null);
 
@@ -179,9 +179,9 @@ const Header = ({
           <Title>Perfectly rounded icon library made for designers and developers</Title>
           <SubTitle>Use these icons to bring life into your user interface and experience. Free to use for your personal and commercial projects. Start creating!</SubTitle>
         </Wrapper>
-        {/* <Toggle onClick={themeToggler}>
+        <Toggle onClick={themeToggler}>
           {theme === 'light' ? <icons.MoonFill /> : <icons.SunFill />}
-        </Toggle> */}
+        </Toggle>
         <Wrapper
           justifyContent="center"
         >
