@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled, { ThemeProvider } from 'styled-components';
-import useDarkMode from './components/useDarkMode';
+import DarkMode from './components/DarkMode';
 import { lightTheme, darkTheme, GlobalStyles } from './theme';
 import * as icons from './icons';
 
@@ -90,7 +90,7 @@ const fuse = new Fuse(DATA.flat(), {
 })
 
 const App = () => {
-  const [theme, themeToggler, mountedComponent] = useDarkMode();
+  const [theme, themeToggler, mountedComponent] = DarkMode();
   const themeMode = theme === 'light' ? lightTheme : darkTheme;
 
   const [open, setOpen] = useState(false);
