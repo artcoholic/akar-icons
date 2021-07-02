@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled, { ThemeProvider } from 'styled-components';
-import { useDarkMode } from './components/useDarkmode';
+import useDarkMode from './components/useDarkmode';
 import { lightTheme, darkTheme, GlobalStyles } from './theme';
 import * as icons from './icons';
 
