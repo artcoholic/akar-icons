@@ -17,8 +17,10 @@ const Clipboard = props => {
       {...otherProps}
       id="Clipboard"
     >
-      <path d="M15 4h4a1 1 0 0 1 1 1v15a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h4"></path>
-      <path d="M9 5a3 3 0 0 1 3-3v0a3 3 0 0 1 3 3v1H9V5z"></path>
+      <path d="M15.5 4H18a2 2 0 0 1 2 2v13a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2.5"></path>
+      <path d="M8.621 3.515A2 2 0 0 1 10.561 2h2.877a2 2 0 0 1 1.94 1.515L16 6H8l.621-2.485z"></path>
+      <path d="M9 12h6"></path>
+      <path d="M9 16h6"></path>
     </svg>
   );
 };

@@ -1,6 +1,6 @@
 {
   "name": "akar-icons",
-  "version": "1.5.3",
+  "version": "1.6.0",
   "description": "A perfectly rounded icon library made for everyone.",
   "main": "dist/index.js",
   "typings": "dist/icons.d.ts",
@@ -44,7 +44,8 @@
     "react-dom": "^16.13.1",
     "styled-components": "^5.1.1",
     "styled-system": "^5.1.5",
-    "tinykeys": "^1.1.3"
+    "tinykeys": "^1.1.3",
+    "use-dark-mode": "^2.3.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.5.5",
@@ -69,10 +70,10 @@
     "rollup-plugin-babel": "^4.3.3",
     "rollup-plugin-copy": "^3.3.0",
     "rollup-plugin-livereload": "^2.0.0",
-    "rollup-plugin-postcss": "^3.1.3",
+    "rollup-plugin-postcss": "^1.6.3",
     "rollup-plugin-serve": "^1.0.3",
     "rollup-plugin-terser": "^7.0.2",
-    "svgo": "^1.3.0",
+    "svgo": "^2.3.1",
     "uppercamelcase": "^3.0.0"
   }
 }

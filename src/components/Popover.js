@@ -166,9 +166,8 @@ const CopySVGContainer = styled.div`
   }
 `
 
-const Popover = ({ open, setOpen, name, icons, size }) => {
+const Popover = ({ open, setOpen, name, icons, size, copiedSVG, setCopiedSVG, addSpace }) => {
   const [copiedSnippet, setCopiedSnippet] = useState(false);
-  const [copiedSVG, setCopiedSVG] = useState(false);
 
   useEffect(() => {
     const timeout = setTimeout(() => { setCopiedSnippet(false); }, 3000);
@@ -181,7 +180,6 @@ const Popover = ({ open, setOpen, name, icons, size }) => {
   }, [copiedSVG]);
 
   const Icon = icons[name];
-  const addSpace = str => str.replace(/([a-z])([A-Z])/g, '$1 $2');
   const copySVG = (i) => {
     const svg = document.getElementById(`${i}`);
     const s = new XMLSerializer();

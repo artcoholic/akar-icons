@@ -1,13 +1,15 @@
 import React, { useState } from 'react';
 import styled, { ThemeProvider } from 'styled-components';
+import { useDarkMode } from './components/useDarkmode';
+import { lightTheme, darkTheme, GlobalStyles } from './theme';
 import * as icons from './icons';
+
 import Header from './components/Header';
 import IconWrapper from './components/IconWrapper';
 import Popover from './components/Popover';
 import Footer from './components/Footer';
 import CustomizationBar from './components/CustomizationBar';
 import SearchResults from './components/SearchResults';
-import theme from './theme';
 
 import upperCamelCase from 'uppercamelcase';
 import Fuse from 'fuse.js';
@@ -85,22 +87,31 @@ const fuse = new Fuse(DATA.flat(), {
 })
 
 const App = () => {
+  const [theme, themeToggler, mountedComponent] = useDarkMode();
+  const themeMode = theme === 'light' ? lightTheme : darkTheme;
+
   const [open, setOpen] = useState(false);
   const [name, setName] = useState();
   const [query, updateQuery] = useState('');
   const [stroke, setStroke] = useState(2);
   const [size, setSize] = useState(24);
   const [height, setHeight] = useState(0);
+  const [copiedSVG, setCopiedSVG] = useState(false);
 
   const fuseResults = fuse.search(query);
   const results = query ? fuseResults.map(search => upperCamelCase(search.item.name)) : ICON_KEYS;
 
+  const addSpace = str => str.replace(/([a-z])([A-Z])/g, '$1 $2');
+  if (!mountedComponent) return <div />
   return (
     <>
-      <ThemeProvider theme={theme}>
+      <ThemeProvider theme={themeMode}>
+        <GlobalStyles />
         <Header
           icons={icons}
           setHeight={setHeight}
+          theme={theme}
+          themeToggler={themeToggler}
         />
         <Container>
           <CustomizationBar
@@ -125,7 +136,15 @@ const App = () => {
               const Icon = icons[key];
 
               return (
-                <IconWrapper key={index} icon={key} setOpen={setOpen} setName={setName}>
+                <IconWrapper
+                  key={index}
+                  icon={key}
+                  setOpen={setOpen}
+                  setName={setName}
+                  copiedSVG={copiedSVG}
+                  setCopiedSVG={setCopiedSVG}
+                  addSpace={addSpace}
+                >
                   <IconContainer>
                     <Icon strokeWidth={stroke} size={size} />
                   </IconContainer>
@@ -134,7 +153,16 @@ const App = () => {
             })}
           </SearchResults>
         </Container>
-        <Popover open={open} setOpen={setOpen} name={name} icons={icons} size={size} />
+        <Popover
+          open={open}
+          setOpen={setOpen}
+          name={name}
+          icons={icons}
+          size={size}
+          copiedSVG={copiedSVG}
+          setCopiedSVG={setCopiedSVG}
+          addSpace={addSpace}
+        />
         <Footer icons={icons} />
       </ThemeProvider>
     </>

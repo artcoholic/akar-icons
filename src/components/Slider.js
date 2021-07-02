@@ -7,7 +7,7 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: flex-end;
   flex-basis: 100%;
-  margin: 16px 4px 0 ;
+  margin: 16px 4px 0;
   ${space}
   @media (min-width: 768px) {
     margin: 0 12px;
@@ -17,17 +17,17 @@ const Container = styled.div`
     display: flex;
     justify-content: space-between;
     font-size: 14px;
-    color: #1B1C32;
   }
   
   input[type=range] {
     width: 100%;
     appearance: none;
     margin-top: 8px;
+    background: ${props => props.theme.colors.bg.primary};
     
     &::-webkit-slider-runnable-track {
       height: 16px;
-      background: #f5f7f9;
+      background: ${props => props.theme.colors.bg.tertiary};
       border: none;
       border-radius: 8px;
       bottom: 0;
@@ -39,14 +39,14 @@ const Container = styled.div`
       height: 16px;
       width: 16px;
       border-radius: 50%;
-      background: #1B1C32;
+      background: ${props => props.theme.colors.content.primary};
       margin-top: 0;
       transition: all 150ms ease-out;
-    &:active {
-      cursor: grabbing;
-      transform: scale(1.5);
-      box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
-    }
+      &:active {
+        cursor: grabbing;
+        transform: scale(1.5);
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+      }
     }
     &:focus {
       outline: none;
