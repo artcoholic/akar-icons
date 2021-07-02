@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled, { ThemeProvider } from 'styled-components';
-import UseDarkMode from './components/UseDarkmode';
+// import UseDarkMode from './components/UseDarkmode';
 import { lightTheme, darkTheme, GlobalStyles } from './theme';
 import * as icons from './icons';
 
@@ -90,8 +90,8 @@ const fuse = new Fuse(DATA.flat(), {
 })
 
 const App = () => {
-  const [theme, themeToggler, mountedComponent] = UseDarkMode();
-  const themeMode = theme === 'light' ? lightTheme : darkTheme;
+  // const [theme, themeToggler, mountedComponent] = UseDarkMode();
+  // const themeMode = theme === 'light' ? lightTheme : darkTheme;
 
   const [open, setOpen] = useState(false);
   const [name, setName] = useState();
@@ -105,16 +105,16 @@ const App = () => {
   const results = query ? fuseResults.map(search => upperCamelCase(search.item.name)) : ICON_KEYS;
 
   const addSpace = str => str.replace(/([a-z])([A-Z])/g, '$1 $2');
-  if (!mountedComponent) return <div />
+  // if (!mountedComponent) return <div />
   return (
     <>
-      <ThemeProvider theme={themeMode}>
+      <ThemeProvider theme={lightTheme}>
         <GlobalStyles />
         <Header
           icons={icons}
           setHeight={setHeight}
-          theme={theme}
-          themeToggler={themeToggler}
+        // theme={theme}
+        // themeToggler={themeToggler}
         />
         <Container>
           <CustomizationBar
