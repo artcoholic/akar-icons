@@ -25,9 +25,9 @@ const IconWrapper = styled.button`
     }
   }
   &:focus, &:active {
-    background: white;
+    background: ${props => props.theme.colors.bg.primary};
     outline: none;
-    box-shadow: 0 0 0 2px #1B1C32;
+    box-shadow: 0 0 0 2px ${props => props.theme.colors.content.primary};
   }
   span {
     position: absolute;

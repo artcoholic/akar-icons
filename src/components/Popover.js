@@ -21,12 +21,12 @@ const Container = styled.div`
 `
 
 const Wrapper = styled.div`
-  background: rgba(255, 255, 255, 0.8);
+  background: ${props => props.theme.colors.bg.transparent};
   backdrop-filter: blur(12px);
-  color: black;
+  color: ${props => props.theme.colors.content.primary};
   border-radius: 8px;
-  border: .5px solid #e6eaef;
-  box-shadow: rgb(45 59 66 / 0.1) 0px 6px 12px 0px;
+  border: 1px solid ${props => props.theme.colors.border};
+  box-shadow: ${props => props.theme.colors.boxShadow} 0px 6px 12px 0px;
   display: flex;
   flex-direction: column;
   max-width: 480px;
@@ -44,13 +44,14 @@ const Header = styled.div`
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  border-bottom: 1px solid #e6eaef;
+  border-bottom: 1px solid ${props => props.theme.colors.content.tertiary};
   .icon-wrapper {
+    --pattern-color: ${props => props.theme.colors.content.tertiary};
     padding: 12px;
-    background-image: linear-gradient(45deg, #f2f2f2 25%, transparent 25%), 
-                      linear-gradient(-45deg, #f2f2f2 25%, transparent 25%), 
-                      linear-gradient(45deg, transparent 75%, #f2f2f2 75%), 
-                      linear-gradient(-45deg, transparent 75%, #f2f2f2 75%);
+    background-image: linear-gradient(45deg, var(--pattern-color) 25%, transparent 25%), 
+                      linear-gradient(-45deg, var(--pattern-color) 25%, transparent 25%), 
+                      linear-gradient(45deg, transparent 75%, var(--pattern-color) 50%), 
+                      linear-gradient(-45deg, transparent 75%, var(--pattern-color) 50%);
     background-size: 10px 10px;
     background-position: 0 0, 0 5px, 5px -5px, -5px 0px;
     border-radius: 4px;
@@ -66,7 +67,10 @@ const Header = styled.div`
     padding: 16px;
     margin-right: 8px;
     &:hover {
-      background: #f5f7f9;
+      background: ${props => props.theme.colors.bg.secondary};
+    }
+    svg {
+      color: ${props => props.theme.colors.content.primary};
     }
   }
 `
@@ -78,13 +82,13 @@ const ReactCode = styled.div`
     margin-bottom: .5em;
   }
   .snippet-box {
-    background-color: #f5f7f9;
+    background-color: ${props => props.theme.colors.bg.tertiary};
     padding: 4px;
     border-radius: 4px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid #e6eaef;
+    border: 1px solid ${props => props.theme.colors.content.tertiary};
     input {
       font-size: 14px;
       padding: 0 1em;
@@ -96,6 +100,7 @@ const ReactCode = styled.div`
       outline: none;
       font-family: monospace;
       width: 100%;
+      color: ${props => props.theme.colors.content.primary};;
     }
     .copy-snippet-btn {
       background-color: none;
@@ -105,16 +110,19 @@ const ReactCode = styled.div`
       justify-content: center;
       position: relative;
       &:hover {
-        background-color: #dae4e8;
+        background-color: ${props => props.theme.colors.bg.secondary};
         .tooltip {
           opacity: 1;
           top: -30px;
         }
       }
+      svg {
+        color: ${props => props.theme.colors.content.primary};
+      }
       .tooltip {
         position: absolute;
-        background-color: #1B1C32;
-        color: white;
+        background-color: ${props => props.theme.colors.content.primary};
+        color: ${props => props.theme.colors.bg.primary};
         text-align: center;
         border-radius: 2px;
         font-size: 10px;
@@ -133,7 +141,7 @@ const ReactCode = styled.div`
           margin-left: -4px;
           border-width: 4px;
           border-style: solid;
-          border-color: #1B1C32 transparent transparent transparent;
+          border-color: ${props => props.theme.colors.content.primary} transparent transparent transparent;
         }
       }
     }
@@ -147,8 +155,8 @@ const CopySVGContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #1B1C32;
-    color: #CDCDD8;
+    background-color: ${props => props.theme.colors.content.primary};
+    color: ${props => props.theme.colors.content.secondary};
     padding: 15px;
     &:focus {
     outline: none;

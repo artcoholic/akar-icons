@@ -30,14 +30,17 @@ const NoResults = styled.span`
   grid-column: 1 / -1;
   text-align: center;
   padding: 4em 0;
-  color: #1B1C32;
+  color: ${props => props.theme.colors.content.primary};
   display: flex;
   align-items: center;
   justify-content: center;
   flex-flow: column wrap;
   code {
     margin-left: 2px;
-    border-bottom: 1px dotted #1B1C32;
+    border-bottom: 1px dotted ${props => props.theme.colors.content.primary};
+  }
+  span:first-child {
+    color: ${props => props.theme.colors.bg.secondary};
   }
 `
 
@@ -54,13 +57,13 @@ const SecondaryLinks = styled.a`
   transition: all 150ms ease-out;
   display: flex;
   align-items: center;
-  background: #f5f7f9;
-  color: #1B1C32;
+  background: ${props => props.theme.colors.bg.tertiary};
+  color: ${props => props.theme.colors.content.primary};
   padding: 8px 12px;
   border-radius: 4px;
   font-size: 14px;
   &:hover {
-    background: #C9D5D9;
+    background: ${props => props.theme.colors.bg.secondary};
   }
   svg {
     margin-right: 4px;
@@ -127,7 +130,7 @@ const App = () => {
           <SearchResults>
             {results.length === 0 && (
               <NoResults>
-                <span style={{ fontSize: "6em", color: "#DAE4E8" }}>( · _ · )</span>
+                <span style={{ fontSize: "6em" }}>( · _ · )</span>
                 <span style={{ margin: "2em 0 1em 0" }}>There are no icons for <code>{query}</code></span>
                 <SecondaryLinks href="https://github.com/artcoholic/akar-icons/issues/new?assignees=artcoholic&labels=enhancement&template=icon-request.md&title=%5BICON+REQUEST%5D" target="_blank"><icons.File size={14} />Request an icon</SecondaryLinks>
               </NoResults>

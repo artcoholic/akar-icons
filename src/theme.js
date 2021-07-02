@@ -13,7 +13,7 @@ const light = {
       secondary: '#D5F4FD',
       tertiary: '#E1F0FF',
     },
-    boxShadow: 'rgb(15,23,32 / 0.3)',
+    boxShadow: 'rgba(15,23,32,0.15)',
     border: '#F1FCFF'
   }
 }
@@ -31,6 +31,7 @@ const dark = {
       secondary: '#082636',
       tertiary: '#102A4C',
     },
+    boxShadow: 'rgba(15,23,32,0)',
     border: '#082636',
   }
 }
@@ -47,6 +48,8 @@ export const GlobalStyles = createGlobalStyle`
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: ${props => props.theme.colors.content.primary};
     background-color: ${props => props.theme.colors.bg.primary};
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   h1, h2, h3, h4, h5, h6, p {
