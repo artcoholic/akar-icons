@@ -5,11 +5,11 @@ const Footer = styled.footer`
   display: flex;
   justify-content: space-between;
   padding: 12px;
-  border-top: 1px solid #e6eaef;
+  border-top: 1px solid ${props => props.theme.colors.border};
   font-size: .875em;
   flex-flow: column wrap;
   a {
-    color: #1B1C32;
+    color: ${props => props.theme.colors.content.primary};
   }
   @media (min-width: 768px) {
     padding: 12px 16px;
@@ -24,10 +24,10 @@ const LinkWrapper = styled.a`
   margin: 4px;
   border-radius: 4px;
   padding: 8px 12px;
-  background: #f5f7f9;
+  background: ${props => props.theme.colors.bg.tertiary};
   &:hover {
     text-decoration: none;
-    background: #C9D5D9;
+    background: ${props => props.theme.colors.bg.secondary};
   }
   &:focus {
     outline: none;
@@ -38,7 +38,7 @@ const LinkWrapper = styled.a`
 const MadeByContainer = styled.div`
   display: flex;
   align-items: center;
-  border-top: 1px solid #f5f7f9;
+  border-top: 1px solid ${props => props.theme.colors.border};
   padding-top: 12px;
   margin-top: 12px;
   @media (min-width: 768px) {

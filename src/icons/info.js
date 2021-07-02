@@ -18,7 +18,7 @@ const Info = props => {
       id="Info"
     >
       <circle cx="12" cy="12" r="10"></circle>
-      <path d="M11.5 7h.5"></path>
+      <path d="M12 7h.01"></path>
       <path d="M10 11h2v5"></path>
       <path d="M10 16h4"></path>
     </svg>

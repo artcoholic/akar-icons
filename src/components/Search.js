@@ -6,7 +6,7 @@ const Container = styled.div`
   align-items: center;
   position: relative;
   box-sizing: border-box;
-  color: #1B1C32;
+  color: ${props => props.theme.colors.content.primary};
   order: -1;
   flex-grow: 1;
   flex-basis: 0;
@@ -21,17 +21,18 @@ const SearchInput = styled.input`
   border-radius: 4px;
   padding: 12px 16px 12px 48px;
   width: 100%;
-  background: #f5f7f9;
+  background: ${props => props.theme.colors.bg.tertiary};
   line-height:1.5;
   -webkit-appearance: none;
-  color: #1B1C32;
+  color: ${props => props.theme.colors.content.primary};
   &:focus, &:active {
    outline: none;
-   box-shadow: 0 0 0 2px #1B1C32;
-   background: white;
+   box-shadow: 0 0 0 2px ${props => props.theme.colors.content.primary};
+   background: ${props => props.theme.colors.bg.primary};
   }
   &::placeholder  {
-    color:#CDCDD8;
+    color: ${props => props.theme.colors.content.primary};
+    opacity: 0.5;
   }
 `
 
@@ -43,7 +44,7 @@ const ClearButton = styled.button`
   background: none;
   border: none;
   cursor: pointer;
-  color: #1B1C32;
+  color: ${props => props.theme.colors.content.primary};
   border-radius: 4px;
   svg {
     display: block;
@@ -69,14 +70,14 @@ const SearchIcon = styled.div`
 const ForwardSlash = styled.span`
   position: absolute;
   right: 14px;
-  border: 1px solid #DAE4E8;
+  border: 1px solid ${props => props.theme.colors.content.tertiary};
   padding: 2px 8px 4px;
-  color: #DAE4E8;
+  color: ${props => props.theme.colors.content.tertiary};
   border-radius: 4px;
   font-weight: 300;
-  background-color: white;
+  background-color: ${props => props.theme.colors.bg.primary};
   visibility: hidden;
-  box-shadow: rgb(45 59 66 / 0.15) 0px 2px 4px 0px;
+  box-shadow: rgba(15,23,32,0.1) 0px 2px 4px 0px;
   @media (min-width: 768px) {
     visibility: visible;
   }

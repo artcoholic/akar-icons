@@ -18,9 +18,9 @@ const FaceWink = props => {
       id="FaceWink"
     >
       <circle cx="12" cy="12" r="10"></circle>
-      <path d="M15.766 15.319c-.967 1.251-2.68 2.242-4.766 1.513"></path>
-      <path d="M8 9.01V9"></path>
-      <path d="M17 10h-2"></path>
+      <path d="M7 9h2"></path>
+      <path d="M16 9.05v-.1"></path>
+      <path d="M16 15c-.5 1-1.79 2-4 2s-3.5-1-4-2"></path>
     </svg>
   );
 };

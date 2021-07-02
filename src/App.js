@@ -1,13 +1,15 @@
 import React, { useState } from 'react';
 import styled, { ThemeProvider } from 'styled-components';
+import { useDarkMode } from './components/useDarkmode';
+import { lightTheme, darkTheme, GlobalStyles } from './theme';
 import * as icons from './icons';
+
 import Header from './components/Header';
 import IconWrapper from './components/IconWrapper';
 import Popover from './components/Popover';
 import Footer from './components/Footer';
 import CustomizationBar from './components/CustomizationBar';
 import SearchResults from './components/SearchResults';
-import theme from './theme';
 
 import upperCamelCase from 'uppercamelcase';
 import Fuse from 'fuse.js';
@@ -28,14 +30,17 @@ const NoResults = styled.span`
   grid-column: 1 / -1;
   text-align: center;
   padding: 4em 0;
-  color: #1B1C32;
+  color: ${props => props.theme.colors.content.primary};
   display: flex;
   align-items: center;
   justify-content: center;
   flex-flow: column wrap;
   code {
     margin-left: 2px;
-    border-bottom: 1px dotted #1B1C32;
+    border-bottom: 1px dotted ${props => props.theme.colors.content.primary};
+  }
+  span:first-child {
+    color: ${props => props.theme.colors.bg.secondary};
   }
 `
 
@@ -52,13 +57,13 @@ const SecondaryLinks = styled.a`
   transition: all 150ms ease-out;
   display: flex;
   align-items: center;
-  background: #f5f7f9;
-  color: #1B1C32;
+  background: ${props => props.theme.colors.bg.tertiary};
+  color: ${props => props.theme.colors.content.primary};
   padding: 8px 12px;
   border-radius: 4px;
   font-size: 14px;
   &:hover {
-    background: #C9D5D9;
+    background: ${props => props.theme.colors.bg.secondary};
   }
   svg {
     margin-right: 4px;
@@ -85,22 +90,31 @@ const fuse = new Fuse(DATA.flat(), {
 })
 
 const App = () => {
+  const [theme, themeToggler, mountedComponent] = useDarkMode();
+  const themeMode = theme === 'light' ? lightTheme : darkTheme;
+
   const [open, setOpen] = useState(false);
   const [name, setName] = useState();
   const [query, updateQuery] = useState('');
   const [stroke, setStroke] = useState(2);
   const [size, setSize] = useState(24);
   const [height, setHeight] = useState(0);
+  const [copiedSVG, setCopiedSVG] = useState(false);
 
   const fuseResults = fuse.search(query);
   const results = query ? fuseResults.map(search => upperCamelCase(search.item.name)) : ICON_KEYS;
 
+  const addSpace = str => str.replace(/([a-z])([A-Z])/g, '$1 $2');
+  if (!mountedComponent) return <div />
   return (
     <>
-      <ThemeProvider theme={theme}>
+      <ThemeProvider theme={themeMode}>
+        <GlobalStyles />
         <Header
           icons={icons}
           setHeight={setHeight}
+          theme={theme}
+          themeToggler={themeToggler}
         />
         <Container>
           <CustomizationBar
@@ -116,7 +130,7 @@ const App = () => {
           <SearchResults>
             {results.length === 0 && (
               <NoResults>
-                <span style={{ fontSize: "6em", color: "#DAE4E8" }}>( · _ · )</span>
+                <span style={{ fontSize: "6em" }}>( · _ · )</span>
                 <span style={{ margin: "2em 0 1em 0" }}>There are no icons for <code>{query}</code></span>
                 <SecondaryLinks href="https://github.com/artcoholic/akar-icons/issues/new?assignees=artcoholic&labels=enhancement&template=icon-request.md&title=%5BICON+REQUEST%5D" target="_blank"><icons.File size={14} />Request an icon</SecondaryLinks>
               </NoResults>
@@ -125,7 +139,15 @@ const App = () => {
               const Icon = icons[key];
 
               return (
-                <IconWrapper key={index} icon={key} setOpen={setOpen} setName={setName}>
+                <IconWrapper
+                  key={index}
+                  icon={key}
+                  setOpen={setOpen}
+                  setName={setName}
+                  copiedSVG={copiedSVG}
+                  setCopiedSVG={setCopiedSVG}
+                  addSpace={addSpace}
+                >
                   <IconContainer>
                     <Icon strokeWidth={stroke} size={size} />
                   </IconContainer>
@@ -134,7 +156,16 @@ const App = () => {
             })}
           </SearchResults>
         </Container>
-        <Popover open={open} setOpen={setOpen} name={name} icons={icons} size={size} />
+        <Popover
+          open={open}
+          setOpen={setOpen}
+          name={name}
+          icons={icons}
+          size={size}
+          copiedSVG={copiedSVG}
+          setCopiedSVG={setCopiedSVG}
+          addSpace={addSpace}
+        />
         <Footer icons={icons} />
       </ThemeProvider>
     </>

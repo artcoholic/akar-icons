@@ -2,20 +2,21 @@ import React, { useEffect, useRef } from 'react';
 import styled from 'styled-components';
 import { flexbox, space, color, layout } from 'styled-system';
 
-const Header = styled.header`
+const Container = styled.header`
   display: block;
   width: 100%;
-  background: white;
+  background: ${props => props.theme.colors.bg.primary};
   box-sizing: border-box;
   @media (min-width: 768px) {
     padding: 0px 24px;
   }
 `
 const InnerContainer = styled.div`
-  background: #DAE4E8;
+  background: ${props => props.theme.colors.bg.secondary};
   width: 100%;
   padding: 48px 24px 24px;
   box-sizing: border-box;
+  position: relative;
   @media (min-width: 768px) {
     padding: 96px 48px;
     border-radius: 12px;
@@ -65,8 +66,6 @@ const ButtonLink = styled.a`
   border: 0;
   padding: 15px 1.2em;
   font-weight: 300;
-  background: ${props => props.primary ? "#1B1C32" : "white"};
-  color: ${props => props.primary ? "#CDCDD8" : "#1B1C32"};
   border-radius: 4px;
   display: flex;
   align-items: center;
@@ -119,7 +118,24 @@ const HeaderTitle = styled.span`
   font-size: .75em;
 `
 
-export default ({ icons, setHeight }) => {
+const Toggle = styled.button`
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 6px;
+  border: none;
+  border-radius: 8px;
+  background-color: ${props => props.theme.colors.bg.secondary};
+  cursor: pointer;
+  svg {
+    fill: ${props => props.theme.colors.content.primary};
+  }
+  &:hover {
+    background-color: ${props => props.theme.colors.bg.tertiary};
+  }
+`
+
+const Header = ({ icons, setHeight, theme, themeToggler }) => {
   const ref = useRef(null);
 
   useEffect(() => {
@@ -134,7 +150,7 @@ export default ({ icons, setHeight }) => {
   }, []);
 
   return (
-    <Header id="myHeader" ref={ref}>
+    <Container id="myHeader" ref={ref}>
       <Wrapper
         justifyContent="center"
         padding="12px 0"
@@ -158,18 +174,22 @@ export default ({ icons, setHeight }) => {
           <Title>Perfectly rounded icon library made for designers and developers</Title>
           <SubTitle>Use these icons to bring life into your user interface and experience. Free to use for your personal and commercial projects. Start creating!</SubTitle>
         </Wrapper>
+        <Toggle onClick={themeToggler}>
+          {theme === 'light' ? <icons.MoonFill /> : <icons.SunFill />}
+        </Toggle>
         <Wrapper
           justifyContent="center"
         >
-          <ButtonLink primary href="https://github.com/artcoholic/akar-icons#readme" target="_blank" rel="noopener">
+          <ButtonLink bg="content.primary" color="content.secondary" href="https://github.com/artcoholic/akar-icons#readme" target="_blank" rel="noopener">
             <icons.Paper size={16} style={{ marginRight: 8 }} /> Read the docs <icons.ArrowUpRight size={16} style={{ marginLeft: 8 }} />
           </ButtonLink>
-          <ButtonLink href="https://paypal.me/awibawa/5" target="_blank" rel="noopener">
+          <ButtonLink bg="bg.primary" color="content.primary" href="https://paypal.me/awibawa/5" target="_blank" rel="noopener">
             <icons.Coin size={16} style={{ marginRight: 8 }} /> Donate <icons.ArrowUpRight size={16} style={{ marginLeft: 8 }} />
           </ButtonLink>
         </Wrapper>
       </InnerContainer>
-    </Header>
+    </Container>
   )
 }
 
+export default Header;

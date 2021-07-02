@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styled from 'styled-components';
 
 const IconWrapper = styled.button`
@@ -6,17 +6,17 @@ const IconWrapper = styled.button`
   box-sizing: border-box;
   flex-direction: column;
   align-items: center;
-  background: #f5f7f9;
+  background: ${props => props.theme.colors.bg.tertiary};
   padding: 24px;
   border-radius: 4px;
   border: 0;
   cursor: pointer;
   transition: all 150ms ease-out;
   position: relative;
-  color: #1B1C32;
+  color: ${props => props.theme.colors.content.primary};
   -webkit-appearance: none;
   &:hover {
-    background: #dae4e8;
+    background: ${props => props.theme.colors.bg.secondary};
   }
   &:focus, &:hover {
     span {
@@ -25,9 +25,9 @@ const IconWrapper = styled.button`
     }
   }
   &:focus, &:active {
-    background: white;
+    background: ${props => props.theme.colors.bg.primary};
     outline: none;
-    box-shadow: 0 0 0 2px #1B1C32;
+    box-shadow: 0 0 0 2px ${props => props.theme.colors.content.primary};
   }
   span {
     position: absolute;
@@ -39,15 +39,29 @@ const IconWrapper = styled.button`
   }
 `
 
-export default ({ children, icon, setOpen, setName }) => {
-  const addSpace = str => str.replace(/([a-z])([A-Z])/g, '$1 $2');
+export default ({ children, icon, setOpen, setName, copiedSVG, setCopiedSVG, addSpace }) => {
+
+  useEffect(() => {
+    const timeout = setTimeout(() => { setCopiedSVG(false); }, 3000);
+    return () => clearTimeout(timeout);
+  }, [copiedSVG]);
 
   const handleClick = (i) => {
     setOpen(true);
     setName(i);
+    const svg = document.getElementById(`${i}`);
+    const s = new XMLSerializer();
+    const str = s.serializeToString(svg);
+    const el = document.createElement('textarea');
+    el.value = str;
+    document.body.appendChild(el);
+    el.select();
+    document.execCommand("copy");
+    document.body.removeChild(el);
+    setCopiedSVG(true);
   }
   return (
-    <IconWrapper onClick={() => { handleClick(icon); }}>
+    <IconWrapper onClick={() => { handleClick(icon) }}>
       {children}
       <span>{addSpace(icon)}</span>
     </IconWrapper>
