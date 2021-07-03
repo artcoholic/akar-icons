@@ -41,7 +41,6 @@ const Container = styled.div`
       border-radius: 50%;
       background: ${props => props.theme.colors.content.primary};
       margin-top: 0;
-      transition: all 150ms ease-out;
       &:active {
         cursor: grabbing;
         transform: scale(1.5);

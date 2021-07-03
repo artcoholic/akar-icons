@@ -25,6 +25,7 @@ const SearchInput = styled.input`
   line-height:1.5;
   -webkit-appearance: none;
   color: ${props => props.theme.colors.content.primary};
+  transition: ${props => props.theme.transition};
   &:focus, &:active {
    outline: none;
    box-shadow: 0 0 0 2px ${props => props.theme.colors.content.primary};
@@ -32,6 +33,7 @@ const SearchInput = styled.input`
   }
   &::placeholder  {
     color: ${props => props.theme.colors.content.primary};
+    transition: ${props => props.theme.transition};
     opacity: 0.5;
   }
 `
@@ -62,6 +64,7 @@ const SearchIcon = styled.div`
   left: 0px;
   padding: 0 14px;
   box-sizing: border-box;
+  transition: ${props => props.theme.transition};
   svg {
     display: block;
   }
@@ -78,6 +81,7 @@ const ForwardSlash = styled.span`
   background-color: ${props => props.theme.colors.bg.primary};
   visibility: hidden;
   box-shadow: rgba(15,23,32,0.1) 0px 2px 4px 0px;
+  transition: ${props => props.theme.transition};
   @media (min-width: 768px) {
     visibility: visible;
   }

@@ -44,10 +44,14 @@ export const lightTheme = { ...theme, ...light };
 export const darkTheme = { ...theme, ...dark };
 
 export const GlobalStyles = createGlobalStyle`
+  * {
+    transition: all 150ms ease-out;
+  }
+
   body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: ${props => props.theme.colors.content.primary};
-    background-color: ${props => props.theme.colors.bg.primary};
+    background: ${props => props.theme.colors.bg.primary};
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }

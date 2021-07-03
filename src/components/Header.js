@@ -72,7 +72,6 @@ const ButtonLink = styled.a`
   align-content: center;
   cursor: pointer;
   margin: 12px 0 0 0;
-  transition: all 150ms ease-out;
   width: 100%;
   display: flex;
   justify-content: space-between;

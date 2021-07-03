@@ -11,7 +11,6 @@ const IconWrapper = styled.button`
   border-radius: 4px;
   border: 0;
   cursor: pointer;
-  transition: all 150ms ease-out;
   position: relative;
   color: ${props => props.theme.colors.content.primary};
   -webkit-appearance: none;
@@ -34,7 +33,6 @@ const IconWrapper = styled.button`
     bottom: 0px;
     font-size: 12px;
     opacity: 0;
-    transition: all 150ms ease-out;
     padding: 0 24px;
   }
 `

@@ -13,7 +13,6 @@ const Container = styled.div`
   button {
     border: none;
     background: none;
-    transition: all 150ms ease-out;
     border-radius: 4px;
     cursor: pointer;
     padding: 0;
@@ -131,7 +130,6 @@ const ReactCode = styled.div`
         text-transform: uppercase;
         padding: .5em .75em;
         white-space: nowrap;
-        transition: all 150ms ease-out;
         pointer-events: none;
         &::after {
           content: '';

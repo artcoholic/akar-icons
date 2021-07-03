@@ -54,7 +54,6 @@ const IconContainer = styled.div`
 `
 
 const SecondaryLinks = styled.a`
-  transition: all 150ms ease-out;
   display: flex;
   align-items: center;
   background: ${props => props.theme.colors.bg.tertiary};

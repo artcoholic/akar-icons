@@ -14,7 +14,6 @@ const Container = styled.form`
   border-radius: 8px;
   padding: ${({ isStuck }) => isStuck ? '16px' : '8px 0 16px 0'};
   box-sizing: border-box;
-  transition: box-shadow 300ms ease-out, padding 150ms ease-out;
   box-shadow: ${({ isStuck }) => isStuck ? 'rgba(15,23,32,0.1) 0px 6px 12px 0px' : 'none'};
   border: ${({ isStuck }) => isStuck ? '.5px solid' : 'none'};
   border-color: ${props => props.theme.colors.content.tertiary};
@@ -39,7 +38,6 @@ const Wrapper = styled.div`
 const ResetButton = styled.button`
   border: none;
   font-size: 12px;
-  transition: all 150ms ease-out;
   border-radius: 4px;
   background: ${({ disabled }) => disabled ? '#F2F2F2' : '#FFD542'};
   color: ${({ disabled }) => disabled ? '#BDBDBD' : '#082D41'};

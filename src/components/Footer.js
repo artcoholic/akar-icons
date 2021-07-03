@@ -18,7 +18,6 @@ const Footer = styled.footer`
 `
 
 const LinkWrapper = styled.a`
-  transition: all 150ms ease-out;
   display: flex;
   align-items: center;
   margin: 4px;
