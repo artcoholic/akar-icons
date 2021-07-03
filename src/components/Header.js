@@ -178,7 +178,7 @@ const Header = ({
           <Title>Perfectly rounded icon library made for designers and developers</Title>
           <SubTitle>Use these icons to bring life into your user interface and experience. Free to use for your personal and commercial projects. Start creating!</SubTitle>
         </Wrapper>
-        <Toggle onClick={themeToggler}>
+        <Toggle onClick={themeToggler} aria-label="Theme Toggle">
           {theme === 'light' ? <icons.MoonFill /> : <icons.SunFill />}
         </Toggle>
         <Wrapper
