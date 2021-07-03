@@ -45,7 +45,7 @@ export const darkTheme = { ...theme, ...dark };
 
 export const GlobalStyles = createGlobalStyle`
   * {
-    transition: all 150ms ease-out;
+    transition: background 150ms ease-out, box-shadow 150ms ease-out, transform 150ms ease-out;
   }
 
   body {

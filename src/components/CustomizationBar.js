@@ -21,7 +21,7 @@ const Container = styled.form`
   display: flex;
   justify-content: space-between;
   flex-flow: row wrap;
-  
+  transition: padding 150ms ease-out;
   @media (min-width: 768px) {
     flex-flow: row nowrap;
     top: 24px;

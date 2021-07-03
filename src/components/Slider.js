@@ -23,7 +23,7 @@ const Container = styled.div`
     width: 100%;
     appearance: none;
     margin-top: 8px;
-    background: ${props => props.theme.colors.bg.primary};
+    background: transparent;
     
     &::-webkit-slider-runnable-track {
       height: 16px;

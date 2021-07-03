@@ -20,7 +20,7 @@ const IconWrapper = styled.button`
   &:focus, &:hover {
     span {
       opacity: 1;
-      bottom: 16px;
+      transform: translateY(-16px);
     }
   }
   &:focus, &:active {

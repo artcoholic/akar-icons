@@ -112,7 +112,7 @@ const ReactCode = styled.div`
         background-color: ${props => props.theme.colors.bg.secondary};
         .tooltip {
           opacity: 1;
-          top: -30px;
+          transform: translateY(-8px);
         }
       }
       svg {
