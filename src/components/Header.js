@@ -124,13 +124,13 @@ const Toggle = styled.button`
   padding: 6px;
   border: none;
   border-radius: 8px;
-  background-color: ${props => props.theme.colors.bg.secondary};
+  background-color: ${props => props.theme.colors.bg.tertiary};
   cursor: pointer;
   svg {
     fill: ${props => props.theme.colors.content.primary};
   }
   &:hover {
-    background-color: ${props => props.theme.colors.bg.tertiary};
+    background-color: ${props => props.theme.colors.bg.primary};
   }
 `
 
