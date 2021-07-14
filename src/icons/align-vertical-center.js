@@ -17,7 +17,7 @@ const AlignVerticalCenter = props => {
       {...otherProps}
       id="AlignVerticalCenter"
     >
-      <path d="M22 12H2"></path>
+      <path d="M21 12H3"></path>
       <path d="M6 16v4h4v-4"></path>
       <path d="M14 16v2h4v-2"></path>
       <path d="M14 8V6h4v2"></path>

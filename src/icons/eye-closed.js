@@ -17,12 +17,11 @@ const EyeClosed = props => {
       {...otherProps}
       id="EyeClosed"
     >
-      <path d="M21.124 11.309a.842.842 0 0 1 0 1.382C19.559 13.836 16.062 16 12 16s-7.559-2.164-9.124-3.309a.842.842 0 0 1 0-1.382C4.441 10.164 7.938 8 12 8s7.559 2.164 9.124 3.309z"></path>
-      <path d="M12 16v3"></path>
-      <path d="M19 14l2 2.5"></path>
-      <path d="M16 15.5l1 3"></path>
-      <path d="M7 18.5l1-3"></path>
-      <path d="M5 14l-2 2.5"></path>
+      <path d="M2 10s3.5 4 10 4 10-4 10-4"></path>
+      <path d="M4 11.645L2 14"></path>
+      <path d="M22 14l-1.996-2.352"></path>
+      <path d="M8.914 13.68L8 16.5"></path>
+      <path d="M15.063 13.688L16 16.5"></path>
     </svg>
   );
 };

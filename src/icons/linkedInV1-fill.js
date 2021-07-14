@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const LinkedInFill = props => {
+const LinkedInV1Fill = props => {
   const { color, size, ...otherProps } = props;
   return (
     <svg
@@ -11,7 +11,7 @@ const LinkedInFill = props => {
       viewBox="0 0 24 24"
       fill={color}
       {...otherProps}
-      id="LinkedInFill"
+      id="LinkedInV1Fill"
     >
       <path
         fillRule="evenodd"
@@ -22,15 +22,15 @@ const LinkedInFill = props => {
   );
 };
 
-LinkedInFill.propTypes = {
+LinkedInV1Fill.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
 };
 
-LinkedInFill.defaultProps = {
+LinkedInV1Fill.defaultProps = {
   color: 'currentColor',
   size: '24',
   display: 'block'
 };
 
-export default LinkedInFill;
+export default LinkedInV1Fill;

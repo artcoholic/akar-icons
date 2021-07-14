@@ -17,7 +17,7 @@ const AlignToMiddle = props => {
       {...otherProps}
       id="AlignToMiddle"
     >
-      <path d="M22 12H2"></path>
+      <path d="M21 12H3"></path>
       <path d="M12 2v6"></path>
       <path d="M12 22v-6"></path>
       <path d="M9 5l3 3 3-3"></path>

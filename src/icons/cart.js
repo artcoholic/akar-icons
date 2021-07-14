@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const AlignLeft = props => {
+const Cart = props => {
   const { color, size, ...otherProps } = props;
   return (
     <svg
@@ -15,24 +15,25 @@ const AlignLeft = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
-      id="AlignLeft"
+      id="Cart"
     >
-      <path d="M2 3v18"></path>
-      <rect x="6" y="6" width="16" height="4"></rect>
-      <rect x="6" y="14" width="10" height="4"></rect>
+      <path d="M5 7h13.79a2 2 0 0 1 1.99 2.199l-.6 6A2 2 0 0 1 18.19 17H8.64a2 2 0 0 1-1.962-1.608L5 7z"></path>
+      <path d="M5 7l-.81-3.243A1 1 0 0 0 3.22 3H2"></path>
+      <path d="M8 21h2"></path>
+      <path d="M16 21h2"></path>
     </svg>
   );
 };
 
-AlignLeft.propTypes = {
+Cart.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
 };
 
-AlignLeft.defaultProps = {
+Cart.defaultProps = {
   color: 'currentColor',
   size: '24',
   display: 'block'
 };
 
-export default AlignLeft;
+export default Cart;

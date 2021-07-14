@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const AlignLeft = props => {
+const ZoomFill = props => {
   const { color, size, ...otherProps } = props;
   return (
     <svg
@@ -9,30 +9,28 @@ const AlignLeft = props => {
       width={size}
       height={size}
       viewBox="0 0 24 24"
-      fill="none"
-      stroke={color}
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
+      fill={color}
       {...otherProps}
-      id="AlignLeft"
+      id="ZoomFill"
     >
-      <path d="M2 3v18"></path>
-      <rect x="6" y="6" width="16" height="4"></rect>
-      <rect x="6" y="14" width="10" height="4"></rect>
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M24 12c0 6.627-5.373 12-12 12S0 18.627 0 12 5.373 0 12 0s12 5.373 12 12zM6 16.2h9V9.6a1.8 1.8 0 0 0-1.8-1.8h-9v6.6A1.8 1.8 0 0 0 6 16.2zm10.2-2.4l3.6 2.4V7.8l-3.6 2.4v3.6z"
+      ></path>
     </svg>
   );
 };
 
-AlignLeft.propTypes = {
+ZoomFill.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
 };
 
-AlignLeft.defaultProps = {
+ZoomFill.defaultProps = {
   color: 'currentColor',
   size: '24',
   display: 'block'
 };
 
-export default AlignLeft;
+export default ZoomFill;

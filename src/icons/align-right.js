@@ -17,7 +17,7 @@ const AlignRight = props => {
       {...otherProps}
       id="AlignRight"
     >
-      <path d="M22 2v20"></path>
+      <path d="M22 3v18"></path>
       <rect x="2" y="6" width="16" height="4"></rect>
       <rect x="8" y="14" width="10" height="4"></rect>
     </svg>
