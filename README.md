@@ -11,7 +11,7 @@ A perfectly rounded icon library made for designers, developers, and pretty much
 ---
 
 ## For Designers
-Explore all icons at [akaricons.com](https://akaricons.com). Simply click the icon you'd like to use then click the `Copy SVG` button to paste it on your favorite application (Figma, Sketch, XD).
+Explore all icons at [akaricons.com](https://akaricons.com). Simply click the icon you'd like to use then paste it on your favorite application (Figma, Sketch, XD). Your selection is automatically copied to your clipboard.
 
 ---
 
