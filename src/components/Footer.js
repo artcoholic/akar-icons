@@ -28,10 +28,6 @@ const LinkWrapper = styled.a`
     text-decoration: none;
     background: ${props => props.theme.colors.bg.secondary};
   }
-  &:focus {
-    outline: none;
-    box-shadow: 0 0 0 4px rgba(0, 95, 204, 0.3);
-  }
 `
 
 const MadeByContainer = styled.div`
@@ -54,12 +50,12 @@ const style = {
 export default ({ icons }) =>
   <Footer>
     <div style={{ display: 'flex', flexFlow: 'row wrap' }}>
-      <LinkWrapper href="https://github.com/artcoholic/akar-icons/issues/new?assignees=artcoholic&labels=enhancement&template=icon-request.md&title=%5BICON+REQUEST%5D" target="_blank" rel="noopener"><icons.File size={14} style={style} /> Request an icon</LinkWrapper>
-      <LinkWrapper href="https://github.com/artcoholic/akar-icons/issues/new?assignees=artcoholic&labels=bug&template=bug_report.md&title=%5BBUG%5D" target="_blank" rel="noopener"><icons.Bug size={14} style={style} /> Report a bug</LinkWrapper>
-      <LinkWrapper href="https://paypal.me/awibawa/5" target="_blank" rel="noopener"><icons.Coin size={14} style={style} /> Donate</LinkWrapper>
+      <LinkWrapper className="button" href="https://github.com/artcoholic/akar-icons/issues/new?assignees=artcoholic&labels=enhancement&template=icon-request.md&title=%5BICON+REQUEST%5D" target="_blank" rel="noopener"><icons.File size={14} style={style} /> Request an icon</LinkWrapper>
+      <LinkWrapper className="button" href="https://github.com/artcoholic/akar-icons/issues/new?assignees=artcoholic&labels=bug&template=bug_report.md&title=%5BBUG%5D" target="_blank" rel="noopener"><icons.Bug size={14} style={style} /> Report a bug</LinkWrapper>
+      <LinkWrapper className="button" href="https://paypal.me/awibawa/5" target="_blank" rel="noopener"><icons.Coin size={14} style={style} /> Donate</LinkWrapper>
     </div>
     <MadeByContainer>
-      <LinkWrapper href="https://twitter.com/agwibawa" target="_blank" rel="noopener" bg="#1DA1F2">
+      <LinkWrapper className="button" href="https://twitter.com/agwibawa" target="_blank" rel="noopener" bg="#1DA1F2">
         Made by <icons.TwitterFill size={14} color="#1DA1F2" style={{ margin: '0 4px' }} /> agwibawa
       </LinkWrapper>
     </MadeByContainer>

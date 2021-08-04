@@ -41,6 +41,7 @@ const Container = styled.div`
       border-radius: 50%;
       background: ${props => props.theme.colors.content.primary};
       margin-top: 0;
+      transition: transform 150ms ease-out;
       &:active {
         cursor: grabbing;
         transform: scale(1.5);
@@ -50,7 +51,7 @@ const Container = styled.div`
     &:focus {
       outline: none;
       &::-webkit-slider-thumb {
-        box-shadow: 0 0 0 4px rgba(0, 95, 204, 0.3);
+        box-shadow: 0 0 0 4px deepskyblue;
       }
     }
   }

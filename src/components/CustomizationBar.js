@@ -48,10 +48,6 @@ const ResetButton = styled.button`
   &:enabled:hover {
     background-color: #e8c031;
   }
-  &:focus {
-    outline: none;
-    box-shadow: 0 0 0 4px rgba(0, 95, 204, 0.3);
-  }
   @media (min-width: 768px) {
     order: 0;
     margin-left: 12px;

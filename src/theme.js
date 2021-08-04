@@ -63,4 +63,14 @@ export const GlobalStyles = createGlobalStyle`
   a, a:hover {
     text-decoration: none;
   }
+
+  button, .button {
+    outline: none;
+    &:focus {
+      box-shadow: 0 0 0 4px deepskyblue;
+    }
+    &:active {
+      box-shadow: none;
+    }
+  }
 `

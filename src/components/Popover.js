@@ -156,10 +156,6 @@ const CopySVGContainer = styled.div`
     background-color: ${props => props.theme.colors.content.primary};
     color: ${props => props.theme.colors.content.secondary};
     padding: 15px;
-    &:focus {
-    outline: none;
-    box-shadow: 0 0 0 4px rgba(0, 95, 204, 0.3);
-    }
     &:hover {
       box-shadow: rgb(45 59 66 / 0.15) 0px 6px 12px 0px;
     }

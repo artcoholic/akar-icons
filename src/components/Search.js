@@ -53,10 +53,6 @@ const ClearButton = styled.button`
     position: relative;
     left: 0;
   }
-  &:focus {
-    outline: none;
-    box-shadow: 0 0 0 4px rgba(0, 95, 204, 0.3);
-  }
 `
 
 const SearchIcon = styled.div`

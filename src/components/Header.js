@@ -77,10 +77,6 @@ const ButtonLink = styled.a`
   justify-content: space-between;
   ${color}
 
-  &:focus {
-    outline: none;
-    box-shadow: 0 0 0 4px rgba(0, 95, 204, 0.3);
-  }
   &:hover {
     box-shadow: rgb(45 59 66 / 0.15) 0px 6px 12px 0px;
   }
@@ -181,13 +177,11 @@ const Header = ({
         <Toggle onClick={themeToggler} aria-label="Theme Toggle">
           {theme === 'light' ? <icons.MoonFill /> : <icons.SunFill />}
         </Toggle>
-        <Wrapper
-          justifyContent="center"
-        >
-          <ButtonLink bg="content.primary" color="content.secondary" href="https://github.com/artcoholic/akar-icons#readme" target="_blank" rel="noopener">
+        <Wrapper justifyContent="center">
+          <ButtonLink className="button" bg="content.primary" color="content.secondary" href="https://github.com/artcoholic/akar-icons#readme" target="_blank" rel="noopener">
             <icons.Paper size={16} style={{ marginRight: 8 }} /> Read the docs <icons.ArrowUpRight size={16} style={{ marginLeft: 8 }} />
           </ButtonLink>
-          <ButtonLink bg="bg.primary" color="content.primary" href="https://paypal.me/awibawa/5" target="_blank" rel="noopener">
+          <ButtonLink className="button" bg="bg.primary" color="content.primary" href="https://paypal.me/awibawa/5" target="_blank" rel="noopener">
             <icons.Coin size={16} style={{ marginRight: 8 }} /> Donate <icons.ArrowUpRight size={16} style={{ marginLeft: 8 }} />
           </ButtonLink>
         </Wrapper>

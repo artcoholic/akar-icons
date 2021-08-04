@@ -67,10 +67,6 @@ const SecondaryLinks = styled.a`
   svg {
     margin-right: 4px;
   }
-  &:focus {
-    outline: none;
-    box-shadow: 0 0 0 4px rgba(0, 95, 204, 0.3);
-  }
 `
 
 const DATA = Object.values(data).map(x => [x])
@@ -131,7 +127,7 @@ const App = () => {
               <NoResults>
                 <span style={{ fontSize: "6em" }}>( · _ · )</span>
                 <span style={{ margin: "2em 0 1em 0" }}>There are no icons for <code>{query}</code></span>
-                <SecondaryLinks href="https://github.com/artcoholic/akar-icons/issues/new?assignees=artcoholic&labels=enhancement&template=icon-request.md&title=%5BICON+REQUEST%5D" target="_blank"><icons.File size={14} />Request an icon</SecondaryLinks>
+                <SecondaryLinks className="button" href="https://github.com/artcoholic/akar-icons/issues/new?assignees=artcoholic&labels=enhancement&template=icon-request.md&title=%5BICON+REQUEST%5D" target="_blank"><icons.File size={14} />Request an icon</SecondaryLinks>
               </NoResults>
             )}
             {results.map((key, index) => {
