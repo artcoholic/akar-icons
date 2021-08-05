@@ -72,7 +72,7 @@ Explore all icons at [akaricons.com](https://akaricons.com).
 
 ## Related Projects
 * [akar-icons-svelte](https://github.com/WilliamVenner/akar-icons-svelte) - Akar icons as Svelte components
-* [blade-akar-icons](https://github.com/codeat3/blade-akar-icons) - A package to easily make use of Blade Akar Icons in your Laravel Blade views.
+* [blade-akar-icons](https://github.com/codeat3/blade-akar-icons) - A package to easily make use of Akar Icons in your Laravel Blade views.
 
 ## Author
 Arturo Wibawa ([@agwibawa](https://twitter.com/agwibawa))
