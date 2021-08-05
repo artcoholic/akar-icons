@@ -71,7 +71,7 @@ const ForwardSlash = styled.span`
   right: 14px;
   border: 1px solid ${props => props.theme.colors.content.tertiary};
   padding: 2px 8px 4px;
-  color: ${props => props.theme.colors.content.tertiary};
+  color: ${props => props.theme.colors.content.primary};
   border-radius: 4px;
   font-weight: 300;
   background-color: ${props => props.theme.colors.bg.primary};

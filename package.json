@@ -1,6 +1,6 @@
 {
   "name": "akar-icons",
-  "version": "1.8.0",
+  "version": "1.8.1",
   "description": "A perfectly rounded icon library made for everyone.",
   "main": "dist/index.js",
   "typings": "dist/icons.d.ts",
@@ -8,7 +8,11 @@
     "dist"
   ],
   "repository": "https://github.com/artcoholic/akar-icons.git",
-  "author": "artcoholic",
+  "author": {
+    "name": "Arturo Wibawa",
+    "email": "agwibawa@gmail.com",
+    "url": "https://arturowibawa.com"
+  },
   "keywords": [
     "react",
     "icons",
