@@ -9,8 +9,7 @@ const Container = styled.form`
   margin: 0;
   position: sticky;
   top: 16px;
-  background: ${props => props.theme.colors.bg.transparent};
-  backdrop-filter: blur(12px);
+  background: ${props => props.theme.colors.bg.primary};
   border-radius: 8px;
   padding: ${({ isStuck }) => isStuck ? '16px' : '8px 0 16px 0'};
   box-sizing: border-box;

@@ -5,7 +5,7 @@ import { space } from 'styled-system';
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   flex-basis: 100%;
   margin: 16px 4px 0;
   ${space}
@@ -17,33 +17,31 @@ const Container = styled.div`
     display: flex;
     justify-content: space-between;
     font-size: 14px;
+    margin-bottom: 16px;
   }
   
   input[type=range] {
     width: 100%;
     appearance: none;
-    margin-top: 8px;
     background: transparent;
     
     &::-webkit-slider-runnable-track {
-      height: 16px;
-      background: ${props => props.theme.colors.bg.tertiary};
+      height: 2px;
+      background: ${props => props.theme.colors.bg.secondary};
       border: none;
-      border-radius: 8px;
-      bottom: 0;
     }
     &::-webkit-slider-thumb {
       appearance: none;
-      cursor: grab;
+      cursor: pointer;
       border: none;
       height: 16px;
       width: 16px;
       border-radius: 50%;
-      background: ${props => props.theme.colors.content.primary};
-      margin-top: 0;
+      background: ${props => props.theme.colors.bg.primary};
+      border: 1px solid ${props => props.theme.colors.content.primary};
+      margin-top: -7px;
       transition: transform 150ms ease-out;
       &:active {
-        cursor: grabbing;
         transform: scale(1.5);
         box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
       }

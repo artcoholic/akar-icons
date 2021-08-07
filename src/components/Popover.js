@@ -20,8 +20,7 @@ const Container = styled.div`
 `
 
 const Wrapper = styled.div`
-  background: ${props => props.theme.colors.bg.transparent};
-  backdrop-filter: blur(12px);
+  background: ${props => props.theme.colors.bg.primary};
   color: ${props => props.theme.colors.content.primary};
   border-radius: 8px;
   border: 1px solid ${props => props.theme.colors.border};
