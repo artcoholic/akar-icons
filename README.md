@@ -2,19 +2,13 @@
 ![npm](https://img.shields.io/npm/dm/akar-icons?style=for-the-badge)
 
 # akar-icons
-A perfectly rounded icon library made for designers, developers, and pretty much everyone.
+A perfectly rounded icon library made for designers, developers, and pretty much everyone. Explore all of our icons at [akaricons.com](https://akaricons.com). 
 
 <a href="https://akaricons.com" target="_blank">
   <img alt="akar icons" src="https://repository-images.githubusercontent.com/306119910/c3a57000-2be0-11eb-88a2-2714f9bafcd4">
 </a>
 
-## For Designers
-Explore all of our icons at [akaricons.com](https://akaricons.com). Simply click the icon you'd like to use then paste it on your favorite application (Figma, Sketch, XD). Your selection is automatically copied to your clipboard.
-
----
-
-## For developers
-This library is made for React developers.
+## Get Started
 
 ### 1. Installation
 Install with npm:
@@ -66,9 +60,10 @@ const MyComponent = () => {
 export default MyComponent;
 ```
 
-Explore all icons at [akaricons.com](https://akaricons.com).
+Explore all of our icons at [akaricons.com](https://akaricons.com).
 
 ## Related Projects
+* [akar-icons-app](https://github.com/artcoholic/akar-icons-app) - Homepage repo of Akar icons.
 * [akar-icons-fonts](https://github.com/artcoholic/akar-icons-fonts) - Akar icons as icon fonts.
 * [akar-icons-svelte](https://github.com/WilliamVenner/akar-icons-svelte) - Akar icons as Svelte components.
 * [blade-akar-icons](https://github.com/codeat3/blade-akar-icons) - A package to easily make use of Akar Icons in your Laravel Blade views.

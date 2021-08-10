@@ -2,8 +2,9 @@ node_modules
 
 .env
 
-dist
-docs
+/dist
+/docs
+/build
 yarn-error.log
 yarn.lock
 .DS_Store

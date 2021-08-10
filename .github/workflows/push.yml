@@ -6,17 +6,15 @@ on:
     # file paths to consider in the event. Optional; defaults to all.
     paths:
       - package.json
-
 jobs:
   icon_automation:
     name: figma icon automation
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v1
-
-    - uses: actions/setup-node@v1
+    - uses: actions/checkout@v2
+    - uses: actions/setup-node@v2
       with:
-        node-version: '10.x'
+        node-version: '12.x'
     - run: yarn install
     - name: Figma Action
       uses: primer/figma-action@v1.0.0-alpha.2
@@ -31,10 +29,3 @@ jobs:
     - run: yarn publish
       env:
         NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
-    - run: yarn build
-    - name: GitHub Pages
-      uses: crazy-max/ghaction-github-pages@v1.2.5
-      with:
-        build_dir: docs
-      env:
-        GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
