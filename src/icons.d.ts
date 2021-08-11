@@ -1,13 +1,13 @@
-//// <reference types="react" />
-import { ComponentType, SVGAttributes } from 'react';
+/// <reference types="react" />
+  import { ComponentType, SVGAttributes } from 'react';
 
-interface Props extends SVGAttributes<SVGElement> {
-  color?: string;
-  size?: string | number;
-}
+  interface Props extends SVGAttributes<SVGElement> {
+    color?: string;
+    size?: string | number;
+  }
 
-type Icon = ComponentType<Props>;
-export const ArrowLeft: Icon;
+  type Icon = ComponentType<Props>;
+  export const ArrowLeft: Icon;
 export const ArrowRight: Icon;
 export const ArrowUp: Icon;
 export const ArrowDown: Icon;
@@ -82,7 +82,7 @@ export const SoundDown: Icon;
 export const SoundOn: Icon;
 export const SoundOff: Icon;
 export const SoundUp: Icon;
-export const Infinity: Icon;
+export const Infinite: Icon;
 export const AirplayAudio: Icon;
 export const AirplayVideo: Icon;
 export const Miniplayer: Icon;
@@ -106,8 +106,8 @@ export const AlignToTop: Icon;
 export const AlignToMiddle: Icon;
 export const AlignToBottom: Icon;
 export const Block: Icon;
-export const MoreHorizontal: Icon;
-export const MoreVertical: Icon;
+export const MoreHorizontalFill: Icon;
+export const MoreVerticalFill: Icon;
 export const Wifi: Icon;
 export const Bluetooth: Icon;
 export const Location: Icon;
@@ -262,6 +262,7 @@ export const ShippingBoxV2: Icon;
 export const Cart: Icon;
 export const Basket: Icon;
 export const OpenEnvelope: Icon;
+export const Clock: Icon;
 export const Person: Icon;
 export const PersonAdd: Icon;
 export const PersonCheck: Icon;
@@ -277,6 +278,8 @@ export const ThumbsDown: Icon;
 export const VictoryHand: Icon;
 export const PointingUp: Icon;
 export const RockOn: Icon;
+export const PeopleMultiple: Icon;
+export const PeopleGroup: Icon;
 export const FacebookFill: Icon;
 export const TwitterFill: Icon;
 export const LinkedInV1Fill: Icon;

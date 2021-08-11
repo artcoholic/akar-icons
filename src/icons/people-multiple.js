@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const MoreVertical = props => {
+const PeopleMultiple = props => {
   const { color, size, ...otherProps } = props;
   return (
     <svg
@@ -15,24 +15,25 @@ const MoreVertical = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
-      id="MoreVertical"
+      id="PeopleMultiple"
     >
-      <circle cx="12" cy="4" r="1" transform="rotate(90 12 4)"></circle>
-      <circle cx="12" cy="12" r="1" transform="rotate(90 12 12)"></circle>
-      <circle cx="12" cy="20" r="1" transform="rotate(90 12 20)"></circle>
+      <circle cx="7" cy="5" r="3"></circle>
+      <path d="M10 12H5.898a3 3 0 0 0-2.976 2.628l-.641 5.124A2 2 0 0 0 4.266 22H9"></path>
+      <path d="M21.719 19.752l-.64-5.124A3 3 0 0 0 18.101 12h-2.204a3 3 0 0 0-2.976 2.628l-.641 5.124A2 2 0 0 0 14.266 22h5.468a2 2 0 0 0 1.985-2.248z"></path>
+      <circle cx="17" cy="5" r="3"></circle>
     </svg>
   );
 };
 
-MoreVertical.propTypes = {
+PeopleMultiple.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
 };
 
-MoreVertical.defaultProps = {
+PeopleMultiple.defaultProps = {
   color: 'currentColor',
   size: '24',
   display: 'block'
 };
 
-export default MoreVertical;
+export default PeopleMultiple;

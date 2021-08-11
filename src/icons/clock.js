@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const MoreHorizontal = props => {
+const Clock = props => {
   const { color, size, ...otherProps } = props;
   return (
     <svg
@@ -15,24 +15,23 @@ const MoreHorizontal = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
-      id="MoreHorizontal"
+      id="Clock"
     >
-      <circle cx="4" cy="12" r="1"></circle>
-      <circle cx="12" cy="12" r="1"></circle>
-      <circle cx="20" cy="12" r="1"></circle>
+      <circle cx="12" cy="12" r="10"></circle>
+      <path d="M15 16l-2.414-2.414A2 2 0 0 1 12 12.172V6"></path>
     </svg>
   );
 };
 
-MoreHorizontal.propTypes = {
+Clock.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
 };
 
-MoreHorizontal.defaultProps = {
+Clock.defaultProps = {
   color: 'currentColor',
   size: '24',
   display: 'block'
 };
 
-export default MoreHorizontal;
+export default Clock;
