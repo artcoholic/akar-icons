@@ -15,7 +15,6 @@ const Bluetooth = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
-      id="Bluetooth"
     >
       <path d="M5 7l12 10-6 5V2l6 5L5 17"></path>
     </svg>
@@ -29,8 +28,7 @@ Bluetooth.propTypes = {
 
 Bluetooth.defaultProps = {
   color: 'currentColor',
-  size: '24',
-  display: 'block'
+  size: '24'
 };
 
 export default Bluetooth;

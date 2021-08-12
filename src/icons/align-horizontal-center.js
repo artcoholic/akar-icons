@@ -15,7 +15,6 @@ const AlignHorizontalCenter = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
-      id="AlignHorizontalCenter"
     >
       <path d="M12 3v18"></path>
       <path d="M16 6h4v4h-4"></path>
@@ -33,8 +32,7 @@ AlignHorizontalCenter.propTypes = {
 
 AlignHorizontalCenter.defaultProps = {
   color: 'currentColor',
-  size: '24',
-  display: 'block'
+  size: '24'
 };
 
 export default AlignHorizontalCenter;

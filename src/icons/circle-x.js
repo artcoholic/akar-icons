@@ -15,7 +15,6 @@ const CircleX = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
-      id="CircleX"
     >
       <path d="M15 15L9 9m6 0l-6 6"></path>
       <circle cx="12" cy="12" r="10"></circle>
@@ -30,8 +29,7 @@ CircleX.propTypes = {
 
 CircleX.defaultProps = {
   color: 'currentColor',
-  size: '24',
-  display: 'block'
+  size: '24'
 };
 
 export default CircleX;

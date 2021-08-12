@@ -15,7 +15,6 @@ const ArrowRepeat = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
-      id="ArrowRepeat"
     >
       <path d="M18 2l3 3-3 3"></path>
       <path d="M6 22l-3-3 3-3"></path>
@@ -32,8 +31,7 @@ ArrowRepeat.propTypes = {
 
 ArrowRepeat.defaultProps = {
   color: 'currentColor',
-  size: '24',
-  display: 'block'
+  size: '24'
 };
 
 export default ArrowRepeat;

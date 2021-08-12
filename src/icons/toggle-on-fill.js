@@ -11,7 +11,6 @@ const ToggleOnFill = props => {
       viewBox="0 0 24 24"
       fill={color}
       {...otherProps}
-      id="ToggleOnFill"
     >
       <path
         fillRule="evenodd"
@@ -29,8 +28,7 @@ ToggleOnFill.propTypes = {
 
 ToggleOnFill.defaultProps = {
   color: 'currentColor',
-  size: '24',
-  display: 'block'
+  size: '24'
 };
 
 export default ToggleOnFill;

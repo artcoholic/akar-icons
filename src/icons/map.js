@@ -15,7 +15,6 @@ const Map = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
-      id="Map"
     >
       <path d="M8.368 4.79l-2.736-.913A2 2 0 0 0 3 5.775v11.783a2 2 0 0 0 1.368 1.898l4 1.333a2 2 0 0 0 1.264 0l4.736-1.578a2 2 0 0 1 1.264 0l2.736.912A2 2 0 0 0 21 18.224V6.442a2 2 0 0 0-1.367-1.898l-4-1.333a2 2 0 0 0-1.265 0L9.631 4.789a2 2 0 0 1-1.264 0z"></path>
       <path d="M9 5v16"></path>
@@ -31,8 +30,7 @@ Map.propTypes = {
 
 Map.defaultProps = {
   color: 'currentColor',
-  size: '24',
-  display: 'block'
+  size: '24'
 };
 
 export default Map;

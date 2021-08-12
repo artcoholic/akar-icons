@@ -15,7 +15,6 @@ const Devices = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
-      id="Devices"
     >
       <path d="M10 15H4V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v2"></path>
       <path d="M2 18h12"></path>
@@ -32,8 +31,7 @@ Devices.propTypes = {
 
 Devices.defaultProps = {
   color: 'currentColor',
-  size: '24',
-  display: 'block'
+  size: '24'
 };
 
 export default Devices;

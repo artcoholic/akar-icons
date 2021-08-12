@@ -15,7 +15,6 @@ const PointingUp = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
-      id="PointingUp"
     >
       <path d="M19 16l.87-11.735a2.102 2.102 0 0 0-4.181-.433L15 9"></path>
       <path d="M8 15v-3a2 2 0 1 0-4 0v4"></path>
@@ -34,8 +33,7 @@ PointingUp.propTypes = {
 
 PointingUp.defaultProps = {
   color: 'currentColor',
-  size: '24',
-  display: 'block'
+  size: '24'
 };
 
 export default PointingUp;

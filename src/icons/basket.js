@@ -15,7 +15,6 @@ const Basket = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
-      id="Basket"
     >
       <path d="M2.31 11.242A1 1 0 0 1 3.28 10h17.44a1 1 0 0 1 .97 1.242l-1.811 7.243A2 2 0 0 1 17.939 20H6.061a2 2 0 0 1-1.94-1.515L2.31 11.243z"></path>
       <path d="M9 14v2"></path>
@@ -33,8 +32,7 @@ Basket.propTypes = {
 
 Basket.defaultProps = {
   color: 'currentColor',
-  size: '24',
-  display: 'block'
+  size: '24'
 };
 
 export default Basket;

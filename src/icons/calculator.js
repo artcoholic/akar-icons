@@ -15,7 +15,6 @@ const Calculator = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
-      id="Calculator"
     >
       <path d="M2 6a4 4 0 0 1 4-4h12a4 4 0 0 1 4 4v5H2V6z"></path>
       <path d="M18.5 16.5h-3"></path>
@@ -33,8 +32,7 @@ Calculator.propTypes = {
 
 Calculator.defaultProps = {
   color: 'currentColor',
-  size: '24',
-  display: 'block'
+  size: '24'
 };
 
 export default Calculator;

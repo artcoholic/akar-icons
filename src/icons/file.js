@@ -15,7 +15,6 @@ const File = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
-      id="File"
     >
       <path d="M4 4v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8.342a2 2 0 0 0-.602-1.43l-4.44-4.342A2 2 0 0 0 13.56 2H6a2 2 0 0 0-2 2z"></path>
       <path d="M9 13h6"></path>
@@ -32,8 +31,7 @@ File.propTypes = {
 
 File.defaultProps = {
   color: 'currentColor',
-  size: '24',
-  display: 'block'
+  size: '24'
 };
 
 export default File;

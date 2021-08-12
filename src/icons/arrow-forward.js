@@ -15,7 +15,6 @@ const ArrowForward = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
-      id="ArrowForward"
     >
       <path d="M16 5l5 5-5 5"></path>
       <path d="M21 10h-8C7.477 10 3 14.477 3 20v1"></path>
@@ -30,8 +29,7 @@ ArrowForward.propTypes = {
 
 ArrowForward.defaultProps = {
   color: 'currentColor',
-  size: '24',
-  display: 'block'
+  size: '24'
 };
 
 export default ArrowForward;

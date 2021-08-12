@@ -15,7 +15,6 @@ const Wifi = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
-      id="Wifi"
     >
       <path d="M2 10c6-6.667 14-6.667 20 0"></path>
       <path d="M6 14c3.6-4 8.4-4 12 0"></path>
@@ -31,8 +30,7 @@ Wifi.propTypes = {
 
 Wifi.defaultProps = {
   color: 'currentColor',
-  size: '24',
-  display: 'block'
+  size: '24'
 };
 
 export default Wifi;

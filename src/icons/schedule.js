@@ -15,7 +15,6 @@ const Schedule = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
-      id="Schedule"
     >
       <path d="M9 20H6a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4h11a4 4 0 0 1 4 4v3"></path>
       <path d="M8 2v2"></path>
@@ -34,8 +33,7 @@ Schedule.propTypes = {
 
 Schedule.defaultProps = {
   color: 'currentColor',
-  size: '24',
-  display: 'block'
+  size: '24'
 };
 
 export default Schedule;

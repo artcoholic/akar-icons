@@ -15,7 +15,6 @@ const ChevronLeft = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
-      id="ChevronLeft"
     >
       <path d="M15 4l-8 8 8 8"></path>
     </svg>
@@ -29,8 +28,7 @@ ChevronLeft.propTypes = {
 
 ChevronLeft.defaultProps = {
   color: 'currentColor',
-  size: '24',
-  display: 'block'
+  size: '24'
 };
 
 export default ChevronLeft;

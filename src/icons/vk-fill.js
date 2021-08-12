@@ -11,7 +11,6 @@ const VkFill = props => {
       viewBox="0 0 24 24"
       fill={color}
       {...otherProps}
-      id="VkFill"
     >
       <path
         fillRule="evenodd"
@@ -29,8 +28,7 @@ VkFill.propTypes = {
 
 VkFill.defaultProps = {
   color: 'currentColor',
-  size: '24',
-  display: 'block'
+  size: '24'
 };
 
 export default VkFill;

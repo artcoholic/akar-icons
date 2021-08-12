@@ -11,7 +11,6 @@ const LinkedInV1Fill = props => {
       viewBox="0 0 24 24"
       fill={color}
       {...otherProps}
-      id="LinkedInV1Fill"
     >
       <path
         fillRule="evenodd"
@@ -29,8 +28,7 @@ LinkedInV1Fill.propTypes = {
 
 LinkedInV1Fill.defaultProps = {
   color: 'currentColor',
-  size: '24',
-  display: 'block'
+  size: '24'
 };
 
 export default LinkedInV1Fill;

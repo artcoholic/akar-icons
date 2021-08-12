@@ -15,7 +15,6 @@ const CircleMinus = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
-      id="CircleMinus"
     >
       <path d="M16 12H8"></path>
       <circle cx="12" cy="12" r="10"></circle>
@@ -30,8 +29,7 @@ CircleMinus.propTypes = {
 
 CircleMinus.defaultProps = {
   color: 'currentColor',
-  size: '24',
-  display: 'block'
+  size: '24'
 };
 
 export default CircleMinus;

@@ -15,7 +15,6 @@ const Circle = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
-      id="Circle"
     >
       <circle cx="12" cy="12" r="10"></circle>
     </svg>
@@ -29,8 +28,7 @@ Circle.propTypes = {
 
 Circle.defaultProps = {
   color: 'currentColor',
-  size: '24',
-  display: 'block'
+  size: '24'
 };
 
 export default Circle;

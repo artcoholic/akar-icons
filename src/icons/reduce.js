@@ -15,7 +15,6 @@ const Reduce = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
-      id="Reduce"
     >
       <path d="M14 10l7-7m-7 7h6m-6 0V4M3 21l7-7m0 0v6m0-6H4"></path>
     </svg>
@@ -29,8 +28,7 @@ Reduce.propTypes = {
 
 Reduce.defaultProps = {
   color: 'currentColor',
-  size: '24',
-  display: 'block'
+  size: '24'
 };
 
 export default Reduce;

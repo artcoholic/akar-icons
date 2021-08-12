@@ -15,7 +15,6 @@ const Enlarge = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
-      id="Enlarge"
     >
       <path d="M14.5 9.5L21 3m0 0h-6m6 0v6M3 21l6.5-6.5M3 21v-6m0 6h6"></path>
     </svg>
@@ -29,8 +28,7 @@ Enlarge.propTypes = {
 
 Enlarge.defaultProps = {
   color: 'currentColor',
-  size: '24',
-  display: 'block'
+  size: '24'
 };
 
 export default Enlarge;

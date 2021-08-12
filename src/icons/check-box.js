@@ -15,7 +15,6 @@ const CheckBox = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
-      id="CheckBox"
     >
       <rect x="3" y="3" width="18" height="18" rx="4"></rect>
       <path d="M9 12l2.25 2L15 10"></path>
@@ -30,8 +29,7 @@ CheckBox.propTypes = {
 
 CheckBox.defaultProps = {
   color: 'currentColor',
-  size: '24',
-  display: 'block'
+  size: '24'
 };
 
 export default CheckBox;

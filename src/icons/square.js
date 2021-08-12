@@ -15,7 +15,6 @@ const Square = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
-      id="Square"
     >
       <rect x="3" y="3" width="18" height="18" rx="2"></rect>
     </svg>
@@ -29,8 +28,7 @@ Square.propTypes = {
 
 Square.defaultProps = {
   color: 'currentColor',
-  size: '24',
-  display: 'block'
+  size: '24'
 };
 
 export default Square;

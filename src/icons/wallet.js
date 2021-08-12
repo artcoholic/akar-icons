@@ -15,7 +15,6 @@ const Wallet = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
-      id="Wallet"
     >
       <path d="M2 6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6z"></path>
       <path d="M2 8h20"></path>
@@ -31,8 +30,7 @@ Wallet.propTypes = {
 
 Wallet.defaultProps = {
   color: 'currentColor',
-  size: '24',
-  display: 'block'
+  size: '24'
 };
 
 export default Wallet;

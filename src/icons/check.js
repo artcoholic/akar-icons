@@ -15,7 +15,6 @@ const Check = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
-      id="Check"
     >
       <path d="M4 12l6 6L20 6"></path>
     </svg>
@@ -29,8 +28,7 @@ Check.propTypes = {
 
 Check.defaultProps = {
   color: 'currentColor',
-  size: '24',
-  display: 'block'
+  size: '24'
 };
 
 export default Check;

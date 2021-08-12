@@ -15,7 +15,6 @@ const Miniplayer = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
-      id="Miniplayer"
     >
       <rect x="2" y="4" width="20" height="16" rx="2"></rect>
       <rect x="13" y="13" width="9" height="7" rx="2"></rect>
@@ -30,8 +29,7 @@ Miniplayer.propTypes = {
 
 Miniplayer.defaultProps = {
   color: 'currentColor',
-  size: '24',
-  display: 'block'
+  size: '24'
 };
 
 export default Miniplayer;

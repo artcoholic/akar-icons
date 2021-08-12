@@ -15,7 +15,6 @@ const LockOff = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
-      id="LockOff"
     >
       <rect x="3" y="10" width="18" height="12" rx="2"></rect>
       <path d="M6 10V5a3 3 0 0 1 3-3h6a3 3 0 0 1 3 3v1"></path>
@@ -30,8 +29,7 @@ LockOff.propTypes = {
 
 LockOff.defaultProps = {
   color: 'currentColor',
-  size: '24',
-  display: 'block'
+  size: '24'
 };
 
 export default LockOff;

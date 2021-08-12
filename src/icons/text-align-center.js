@@ -15,7 +15,6 @@ const TextAlignCenter = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
-      id="TextAlignCenter"
     >
       <path d="M3 6h18M7 12h10M5 18h14"></path>
     </svg>
@@ -29,8 +28,7 @@ TextAlignCenter.propTypes = {
 
 TextAlignCenter.defaultProps = {
   color: 'currentColor',
-  size: '24',
-  display: 'block'
+  size: '24'
 };
 
 export default TextAlignCenter;

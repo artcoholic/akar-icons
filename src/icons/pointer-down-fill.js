@@ -11,7 +11,6 @@ const PointerDownFill = props => {
       viewBox="0 0 24 24"
       fill={color}
       {...otherProps}
-      id="PointerDownFill"
     >
       <path
         fillRule="evenodd"
@@ -29,8 +28,7 @@ PointerDownFill.propTypes = {
 
 PointerDownFill.defaultProps = {
   color: 'currentColor',
-  size: '24',
-  display: 'block'
+  size: '24'
 };
 
 export default PointerDownFill;

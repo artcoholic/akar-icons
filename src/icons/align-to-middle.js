@@ -15,7 +15,6 @@ const AlignToMiddle = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
-      id="AlignToMiddle"
     >
       <path d="M21 12H3"></path>
       <path d="M12 2v6"></path>
@@ -33,8 +32,7 @@ AlignToMiddle.propTypes = {
 
 AlignToMiddle.defaultProps = {
   color: 'currentColor',
-  size: '24',
-  display: 'block'
+  size: '24'
 };
 
 export default AlignToMiddle;

@@ -11,7 +11,6 @@ const ZoomFill = props => {
       viewBox="0 0 24 24"
       fill={color}
       {...otherProps}
-      id="ZoomFill"
     >
       <path
         fillRule="evenodd"
@@ -29,8 +28,7 @@ ZoomFill.propTypes = {
 
 ZoomFill.defaultProps = {
   color: 'currentColor',
-  size: '24',
-  display: 'block'
+  size: '24'
 };
 
 export default ZoomFill;

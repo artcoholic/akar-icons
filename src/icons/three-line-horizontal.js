@@ -15,7 +15,6 @@ const ThreeLineHorizontal = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
-      id="ThreeLineHorizontal"
     >
       <path d="M5 6h14M5 12h14M5 18h14"></path>
     </svg>
@@ -29,8 +28,7 @@ ThreeLineHorizontal.propTypes = {
 
 ThreeLineHorizontal.defaultProps = {
   color: 'currentColor',
-  size: '24',
-  display: 'block'
+  size: '24'
 };
 
 export default ThreeLineHorizontal;

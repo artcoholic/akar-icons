@@ -15,7 +15,6 @@ const CircleCheck = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
-      id="CircleCheck"
     >
       <path d="M8 12.5l3 3 5-6"></path>
       <circle cx="12" cy="12" r="10"></circle>
@@ -30,8 +29,7 @@ CircleCheck.propTypes = {
 
 CircleCheck.defaultProps = {
   color: 'currentColor',
-  size: '24',
-  display: 'block'
+  size: '24'
 };
 
 export default CircleCheck;

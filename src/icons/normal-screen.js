@@ -15,7 +15,6 @@ const NormalScreen = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
-      id="NormalScreen"
     >
       <path d="M7 2v5H2"></path>
       <path d="M17 2v5h5"></path>
@@ -32,8 +31,7 @@ NormalScreen.propTypes = {
 
 NormalScreen.defaultProps = {
   color: 'currentColor',
-  size: '24',
-  display: 'block'
+  size: '24'
 };
 
 export default NormalScreen;

@@ -15,7 +15,6 @@ const Heptagon = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
-      id="Heptagon"
     >
       <path d="M11.114 2.438a2 2 0 0 1 1.772 0l6.275 3.1a2 2 0 0 1 1.066 1.358l1.569 7.047a2 2 0 0 1-.374 1.662l-4.371 5.623a2 2 0 0 1-1.579.772H8.528a2 2 0 0 1-1.579-.772l-4.371-5.623a2 2 0 0 1-.374-1.662l1.569-7.047a2 2 0 0 1 1.066-1.359l6.275-3.1z"></path>
     </svg>
@@ -29,8 +28,7 @@ Heptagon.propTypes = {
 
 Heptagon.defaultProps = {
   color: 'currentColor',
-  size: '24',
-  display: 'block'
+  size: '24'
 };
 
 export default Heptagon;

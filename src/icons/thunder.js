@@ -15,7 +15,6 @@ const Thunder = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
-      id="Thunder"
     >
       <path d="M17.79 3.603A1 1 0 0 0 16.99 2H10.58a1 1 0 0 0-.867.502l-4.853 8.456a1 1 0 0 0 .868 1.497H9L5.916 20.52c-.445 1.02.76 1.953 1.57 1.215L20 9.331h-6.539l4.328-5.728z"></path>
     </svg>
@@ -29,8 +28,7 @@ Thunder.propTypes = {
 
 Thunder.defaultProps = {
   color: 'currentColor',
-  size: '24',
-  display: 'block'
+  size: '24'
 };
 
 export default Thunder;

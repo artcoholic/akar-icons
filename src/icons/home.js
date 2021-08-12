@@ -15,7 +15,6 @@ const Home = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
-      id="Home"
     >
       <path d="M22 20v-7.826a4 4 0 0 0-1.253-2.908l-7.373-6.968a2 2 0 0 0-2.748 0L3.253 9.266A4 4 0 0 0 2 12.174V20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2z"></path>
     </svg>
@@ -29,8 +28,7 @@ Home.propTypes = {
 
 Home.defaultProps = {
   color: 'currentColor',
-  size: '24',
-  display: 'block'
+  size: '24'
 };
 
 export default Home;

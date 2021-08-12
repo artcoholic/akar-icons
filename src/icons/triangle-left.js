@@ -15,7 +15,6 @@ const TriangleLeft = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
-      id="TriangleLeft"
     >
       <path d="M7 12l8-6v12l-8-6z"></path>
     </svg>
@@ -29,8 +28,7 @@ TriangleLeft.propTypes = {
 
 TriangleLeft.defaultProps = {
   color: 'currentColor',
-  size: '24',
-  display: 'block'
+  size: '24'
 };
 
 export default TriangleLeft;

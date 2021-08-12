@@ -11,7 +11,6 @@ const CircleMinusFill = props => {
       viewBox="0 0 24 24"
       fill={color}
       {...otherProps}
-      id="CircleMinusFill"
     >
       <path
         fillRule="evenodd"
@@ -29,8 +28,7 @@ CircleMinusFill.propTypes = {
 
 CircleMinusFill.defaultProps = {
   color: 'currentColor',
-  size: '24',
-  display: 'block'
+  size: '24'
 };
 
 export default CircleMinusFill;

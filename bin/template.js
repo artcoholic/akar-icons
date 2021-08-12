@@ -27,7 +27,7 @@ const getElementCode = (ComponentName, attrs, svgCode) => `
   const ${ComponentName} = (props) => {
     const { color, size, ...otherProps } = props;
     return (
-      <svg ${attrs} id='${ComponentName}'>
+      <svg ${attrs}>
         ${svgCode}
       </svg>
     )
@@ -44,7 +44,6 @@ const getElementCode = (ComponentName, attrs, svgCode) => `
   ${ComponentName}.defaultProps = {
     color: 'currentColor',
     size: '24',
-    display: 'block',
   }
 
   export default ${ComponentName}

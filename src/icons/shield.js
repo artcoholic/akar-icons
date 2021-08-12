@@ -15,7 +15,6 @@ const Shield = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
-      id="Shield"
     >
       <path d="M13.147 21.197l1.67-1.168a13.393 13.393 0 0 0 5.447-13.624.837.837 0 0 0-.453-.586L12 2 4.19 5.819a.837.837 0 0 0-.454.586 13.393 13.393 0 0 0 5.448 13.624l1.67 1.168a2 2 0 0 0 2.293 0z"></path>
     </svg>
@@ -29,8 +28,7 @@ Shield.propTypes = {
 
 Shield.defaultProps = {
   color: 'currentColor',
-  size: '24',
-  display: 'block'
+  size: '24'
 };
 
 export default Shield;

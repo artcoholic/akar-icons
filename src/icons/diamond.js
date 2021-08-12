@@ -15,7 +15,6 @@ const Diamond = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
-      id="Diamond"
     >
       <path d="M4.511 13.542c-.681-.852-.681-2.232 0-3.084l6.256-7.82c.68-.85 1.785-.85 2.466 0l6.256 7.82c.681.852.681 2.232 0 3.084l-6.256 7.82c-.68.85-1.785.85-2.466 0l-6.256-7.82z"></path>
     </svg>
@@ -29,8 +28,7 @@ Diamond.propTypes = {
 
 Diamond.defaultProps = {
   color: 'currentColor',
-  size: '24',
-  display: 'block'
+  size: '24'
 };
 
 export default Diamond;

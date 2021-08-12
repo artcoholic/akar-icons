@@ -15,7 +15,6 @@ const Clock = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
-      id="Clock"
     >
       <circle cx="12" cy="12" r="10"></circle>
       <path d="M15 16l-2.414-2.414A2 2 0 0 1 12 12.172V6"></path>
@@ -30,8 +29,7 @@ Clock.propTypes = {
 
 Clock.defaultProps = {
   color: 'currentColor',
-  size: '24',
-  display: 'block'
+  size: '24'
 };
 
 export default Clock;

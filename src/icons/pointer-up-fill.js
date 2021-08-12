@@ -11,7 +11,6 @@ const PointerUpFill = props => {
       viewBox="0 0 24 24"
       fill={color}
       {...otherProps}
-      id="PointerUpFill"
     >
       <path
         fillRule="evenodd"
@@ -29,8 +28,7 @@ PointerUpFill.propTypes = {
 
 PointerUpFill.defaultProps = {
   color: 'currentColor',
-  size: '24',
-  display: 'block'
+  size: '24'
 };
 
 export default PointerUpFill;

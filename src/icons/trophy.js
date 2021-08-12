@@ -15,7 +15,6 @@ const Trophy = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
-      id="Trophy"
     >
       <path d="M5 4a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v5a7 7 0 0 1-7 7v0a7 7 0 0 1-7-7V4z"></path>
       <path d="M9 22h6l-3-5-3 5z"></path>
@@ -32,8 +31,7 @@ Trophy.propTypes = {
 
 Trophy.defaultProps = {
   color: 'currentColor',
-  size: '24',
-  display: 'block'
+  size: '24'
 };
 
 export default Trophy;

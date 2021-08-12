@@ -15,7 +15,6 @@ const Airpods = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
-      id="Airpods"
     >
       <path d="M14 7c0 2.21 1.644 4 4 4s4-1.79 4-4-1.644-4-4-4-4 1.79-4 4z"></path>
       <path d="M10 7c0 2.21-1.644 4-4 4S2 9.21 2 7s1.644-4 4-4 4 1.79 4 4z"></path>
@@ -36,8 +35,7 @@ Airpods.propTypes = {
 
 Airpods.defaultProps = {
   color: 'currentColor',
-  size: '24',
-  display: 'block'
+  size: '24'
 };
 
 export default Airpods;

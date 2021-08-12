@@ -15,7 +15,6 @@ const Globe = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
-      id="Globe"
     >
       <circle cx="12" cy="12" r="10"></circle>
       <ellipse
@@ -37,8 +36,7 @@ Globe.propTypes = {
 
 Globe.defaultProps = {
   color: 'currentColor',
-  size: '24',
-  display: 'block'
+  size: '24'
 };
 
 export default Globe;

@@ -15,7 +15,6 @@ const VictoryHand = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
-      id="VictoryHand"
     >
       <path d="M12 11l-1-7.272c0-.466.185-.913.515-1.243 1.024-1.024 2.777-.44 2.982.994L16 10l1.508-6.328a1.682 1.682 0 0 1 3.276.73L19 16"></path>
       <path d="M19 16c-.536 4-3.358 6-7.5 6C7.358 22 4 20 4 16"></path>
@@ -32,8 +31,7 @@ VictoryHand.propTypes = {
 
 VictoryHand.defaultProps = {
   color: 'currentColor',
-  size: '24',
-  display: 'block'
+  size: '24'
 };
 
 export default VictoryHand;

@@ -11,7 +11,6 @@ const ToggleOffFill = props => {
       viewBox="0 0 24 24"
       fill={color}
       {...otherProps}
-      id="ToggleOffFill"
     >
       <path
         fillRule="evenodd"
@@ -29,8 +28,7 @@ ToggleOffFill.propTypes = {
 
 ToggleOffFill.defaultProps = {
   color: 'currentColor',
-  size: '24',
-  display: 'block'
+  size: '24'
 };
 
 export default ToggleOffFill;

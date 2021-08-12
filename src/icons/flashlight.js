@@ -15,7 +15,6 @@ const Flashlight = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
-      id="Flashlight"
     >
       <path d="M5 4v1c0 1.636 2 4 3 5l.75 9.01A3.26 3.26 0 0 0 12 22v0a3.26 3.26 0 0 0 3.25-2.99L16 10c1-1 3-3.364 3-5V4"></path>
       <path d="M12 11v2"></path>
@@ -31,8 +30,7 @@ Flashlight.propTypes = {
 
 Flashlight.defaultProps = {
   color: 'currentColor',
-  size: '24',
-  display: 'block'
+  size: '24'
 };
 
 export default Flashlight;

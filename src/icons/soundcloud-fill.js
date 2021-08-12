@@ -11,7 +11,6 @@ const SoundcloudFill = props => {
       viewBox="0 0 24 24"
       fill={color}
       {...otherProps}
-      id="SoundcloudFill"
     >
       <path d="M1.16 16.466c.049 0 .09-.039.098-.093l.27-2.022-.27-2.069c-.007-.054-.05-.093-.099-.093-.05 0-.094.04-.1.093l-.236 2.069.236 2.021c.006.055.05.094.1.094z"></path>
       <path d="M.272 15.697c.048 0 .088-.036.095-.09l.209-1.256-.209-1.28c-.007-.053-.047-.09-.095-.09-.051 0-.09.037-.098.09L0 14.351l.174 1.256c.008.053.047.09.098.09z"></path>
@@ -38,8 +37,7 @@ SoundcloudFill.propTypes = {
 
 SoundcloudFill.defaultProps = {
   color: 'currentColor',
-  size: '24',
-  display: 'block'
+  size: '24'
 };
 
 export default SoundcloudFill;

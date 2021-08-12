@@ -15,7 +15,6 @@ const CircleAlert = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
-      id="CircleAlert"
     >
       <circle cx="12" cy="12" r="10"></circle>
       <path d="M12 7v6m0 3.5v.5"></path>
@@ -30,8 +29,7 @@ CircleAlert.propTypes = {
 
 CircleAlert.defaultProps = {
   color: 'currentColor',
-  size: '24',
-  display: 'block'
+  size: '24'
 };
 
 export default CircleAlert;

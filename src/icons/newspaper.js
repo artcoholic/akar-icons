@@ -15,7 +15,6 @@ const Newspaper = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
-      id="Newspaper"
     >
       <path d="M5 21h12a4 4 0 0 0 4-4V5a2 2 0 0 0-2-2H9a2 2 0 0 0-2 2v13c0 1.657-.343 3-2 3z"></path>
       <path d="M3 10a2 2 0 0 1 2-2h2v10.5c0 1.38-.62 2.5-2 2.5s-2-1.12-2-2.5V10z"></path>
@@ -33,8 +32,7 @@ Newspaper.propTypes = {
 
 Newspaper.defaultProps = {
   color: 'currentColor',
-  size: '24',
-  display: 'block'
+  size: '24'
 };
 
 export default Newspaper;

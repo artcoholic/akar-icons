@@ -15,7 +15,6 @@ const Play = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
-      id="Play"
     >
       <path d="M6 4v16"></path>
       <path d="M20 12L6 20"></path>
@@ -31,8 +30,7 @@ Play.propTypes = {
 
 Play.defaultProps = {
   color: 'currentColor',
-  size: '24',
-  display: 'block'
+  size: '24'
 };
 
 export default Play;

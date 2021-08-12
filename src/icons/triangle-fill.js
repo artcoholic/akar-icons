@@ -11,7 +11,6 @@ const TriangleFill = props => {
       viewBox="0 0 24 24"
       fill={color}
       {...otherProps}
-      id="TriangleFill"
     >
       <path d="M10.285 3.858c.777-1.294 2.653-1.294 3.43 0l8.468 14.113c.8 1.333-.16 3.029-1.715 3.029H3.532c-1.554 0-2.514-1.696-1.715-3.029l8.468-14.113z"></path>
     </svg>
@@ -25,8 +24,7 @@ TriangleFill.propTypes = {
 
 TriangleFill.defaultProps = {
   color: 'currentColor',
-  size: '24',
-  display: 'block'
+  size: '24'
 };
 
 export default TriangleFill;

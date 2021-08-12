@@ -15,7 +15,6 @@ const ChatAdd = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
-      id="ChatAdd"
     >
       <path d="M12 8v3m0 0v3m0-3h3m-3 0H9"></path>
       <path d="M14 19c3.771 0 5.657 0 6.828-1.172C22 16.657 22 14.771 22 11c0-3.771 0-5.657-1.172-6.828C19.657 3 17.771 3 14 3h-4C6.229 3 4.343 3 3.172 4.172 2 5.343 2 7.229 2 11c0 3.771 0 5.657 1.172 6.828.653.654 1.528.943 2.828 1.07"></path>
@@ -31,8 +30,7 @@ ChatAdd.propTypes = {
 
 ChatAdd.defaultProps = {
   color: 'currentColor',
-  size: '24',
-  display: 'block'
+  size: '24'
 };
 
 export default ChatAdd;

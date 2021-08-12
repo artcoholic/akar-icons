@@ -15,7 +15,6 @@ const DotGrid = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
-      id="DotGrid"
     >
       <circle cx="4" cy="4" r="1" transform="rotate(90 4 4)"></circle>
       <circle cx="12" cy="4" r="1" transform="rotate(90 12 4)"></circle>
@@ -37,8 +36,7 @@ DotGrid.propTypes = {
 
 DotGrid.defaultProps = {
   color: 'currentColor',
-  size: '24',
-  display: 'block'
+  size: '24'
 };
 
 export default DotGrid;

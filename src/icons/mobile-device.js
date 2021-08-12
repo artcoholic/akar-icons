@@ -15,7 +15,6 @@ const MobileDevice = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
-      id="MobileDevice"
     >
       <rect x="6" y="2" width="12" height="20" rx="2"></rect>
       <path d="M11.95 18h.1"></path>
@@ -30,8 +29,7 @@ MobileDevice.propTypes = {
 
 MobileDevice.defaultProps = {
   color: 'currentColor',
-  size: '24',
-  display: 'block'
+  size: '24'
 };
 
 export default MobileDevice;

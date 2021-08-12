@@ -15,7 +15,6 @@ const Cross = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
-      id="Cross"
     >
       <path d="M20 20L4 4m16 0L4 20"></path>
     </svg>
@@ -29,8 +28,7 @@ Cross.propTypes = {
 
 Cross.defaultProps = {
   color: 'currentColor',
-  size: '24',
-  display: 'block'
+  size: '24'
 };
 
 export default Cross;

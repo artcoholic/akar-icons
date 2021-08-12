@@ -15,7 +15,6 @@ const ChevronUp = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
-      id="ChevronUp"
     >
       <path d="M4 15l8-8 8 8"></path>
     </svg>
@@ -29,8 +28,7 @@ ChevronUp.propTypes = {
 
 ChevronUp.defaultProps = {
   color: 'currentColor',
-  size: '24',
-  display: 'block'
+  size: '24'
 };
 
 export default ChevronUp;

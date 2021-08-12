@@ -15,7 +15,6 @@ const Utensils = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
-      id="Utensils"
     >
       <path d="M11 8V3a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v5a4 4 0 0 0 4 4h1a4 4 0 0 0 4-4z"></path>
       <path d="M15 16V2h3a4 4 0 0 1 4 4v10h-4"></path>
@@ -34,8 +33,7 @@ Utensils.propTypes = {
 
 Utensils.defaultProps = {
   color: 'currentColor',
-  size: '24',
-  display: 'block'
+  size: '24'
 };
 
 export default Utensils;

@@ -15,7 +15,6 @@ const CircleChevronRight = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
-      id="CircleChevronRight"
     >
       <circle cx="12" cy="12" r="10"></circle>
       <path d="M10.5 8l4 4-4 4"></path>
@@ -30,8 +29,7 @@ CircleChevronRight.propTypes = {
 
 CircleChevronRight.defaultProps = {
   color: 'currentColor',
-  size: '24',
-  display: 'block'
+  size: '24'
 };
 
 export default CircleChevronRight;

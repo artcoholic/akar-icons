@@ -15,7 +15,6 @@ const ArrowDownThick = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
-      id="ArrowDownThick"
     >
       <path d="M12 21l9-7h-4.99L16 3H8v11H3l9 7z"></path>
     </svg>
@@ -29,8 +28,7 @@ ArrowDownThick.propTypes = {
 
 ArrowDownThick.defaultProps = {
   color: 'currentColor',
-  size: '24',
-  display: 'block'
+  size: '24'
 };
 
 export default ArrowDownThick;

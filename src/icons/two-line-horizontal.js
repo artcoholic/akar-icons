@@ -15,7 +15,6 @@ const TwoLineHorizontal = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
-      id="TwoLineHorizontal"
     >
       <path d="M5 9h14M5 15h14"></path>
     </svg>
@@ -29,8 +28,7 @@ TwoLineHorizontal.propTypes = {
 
 TwoLineHorizontal.defaultProps = {
   color: 'currentColor',
-  size: '24',
-  display: 'block'
+  size: '24'
 };
 
 export default TwoLineHorizontal;

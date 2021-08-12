@@ -15,7 +15,6 @@ const WatchDevice = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
-      id="WatchDevice"
     >
       <path d="M5 7a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V7z"></path>
       <path d="M9 22h6"></path>
@@ -31,8 +30,7 @@ WatchDevice.propTypes = {
 
 WatchDevice.defaultProps = {
   color: 'currentColor',
-  size: '24',
-  display: 'block'
+  size: '24'
 };
 
 export default WatchDevice;

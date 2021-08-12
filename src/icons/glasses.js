@@ -15,7 +15,6 @@ const Glasses = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
-      id="Glasses"
     >
       <circle cx="6" cy="14" r="4"></circle>
       <circle cx="18" cy="14" r="4"></circle>
@@ -33,8 +32,7 @@ Glasses.propTypes = {
 
 Glasses.defaultProps = {
   color: 'currentColor',
-  size: '24',
-  display: 'block'
+  size: '24'
 };
 
 export default Glasses;

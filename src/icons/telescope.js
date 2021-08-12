@@ -15,7 +15,6 @@ const Telescope = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
-      id="Telescope"
     >
       <path d="M7 21l6-8 8 8"></path>
       <path d="M5.228 7.303l13.532-5.06a1 1 0 0 1 1.108.285l.19.22A8 8 0 0 1 22 7.973v.616a1 1 0 0 1-.65.937l-13.536 5.06-2.586-7.283z"></path>
@@ -32,8 +31,7 @@ Telescope.propTypes = {
 
 Telescope.defaultProps = {
   color: 'currentColor',
-  size: '24',
-  display: 'block'
+  size: '24'
 };
 
 export default Telescope;

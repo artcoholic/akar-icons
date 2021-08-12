@@ -15,7 +15,6 @@ const Grid = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
-      id="Grid"
     >
       <rect x="3" y="3" width="7" height="7" rx="1"></rect>
       <rect x="3" y="14" width="7" height="7" rx="1"></rect>
@@ -32,8 +31,7 @@ Grid.propTypes = {
 
 Grid.defaultProps = {
   color: 'currentColor',
-  size: '24',
-  display: 'block'
+  size: '24'
 };
 
 export default Grid;

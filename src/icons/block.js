@@ -15,7 +15,6 @@ const Block = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
-      id="Block"
     >
       <circle cx="12" cy="12" r="10"></circle>
       <path d="M5 19L19 5"></path>
@@ -30,8 +29,7 @@ Block.propTypes = {
 
 Block.defaultProps = {
   color: 'currentColor',
-  size: '24',
-  display: 'block'
+  size: '24'
 };
 
 export default Block;

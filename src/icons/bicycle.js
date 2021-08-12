@@ -15,7 +15,6 @@ const Bicycle = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
-      id="Bicycle"
     >
       <circle cx="6" cy="15" r="4"></circle>
       <circle cx="18" cy="15" r="4"></circle>
@@ -34,8 +33,7 @@ Bicycle.propTypes = {
 
 Bicycle.defaultProps = {
   color: 'currentColor',
-  size: '24',
-  display: 'block'
+  size: '24'
 };
 
 export default Bicycle;

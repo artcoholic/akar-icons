@@ -15,7 +15,6 @@ const ThreeLineVertical = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
-      id="ThreeLineVertical"
     >
       <path d="M12 19V5m6 14V5M6 19V5"></path>
     </svg>
@@ -29,8 +28,7 @@ ThreeLineVertical.propTypes = {
 
 ThreeLineVertical.defaultProps = {
   color: 'currentColor',
-  size: '24',
-  display: 'block'
+  size: '24'
 };
 
 export default ThreeLineVertical;

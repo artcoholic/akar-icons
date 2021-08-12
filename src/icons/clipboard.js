@@ -15,7 +15,6 @@ const Clipboard = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
-      id="Clipboard"
     >
       <path d="M15.5 4H18a2 2 0 0 1 2 2v13a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2.5"></path>
       <path d="M8.621 3.515A2 2 0 0 1 10.561 2h2.877a2 2 0 0 1 1.94 1.515L16 6H8l.621-2.485z"></path>
@@ -32,8 +31,7 @@ Clipboard.propTypes = {
 
 Clipboard.defaultProps = {
   color: 'currentColor',
-  size: '24',
-  display: 'block'
+  size: '24'
 };
 
 export default Clipboard;

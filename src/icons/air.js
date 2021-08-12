@@ -15,7 +15,6 @@ const Air = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
-      id="Air"
     >
       <path d="M3 8h7a3 3 0 1 0-3-3"></path>
       <path d="M4 16h11a3 3 0 1 1-3 3"></path>
@@ -31,8 +30,7 @@ Air.propTypes = {
 
 Air.defaultProps = {
   color: 'currentColor',
-  size: '24',
-  display: 'block'
+  size: '24'
 };
 
 export default Air;

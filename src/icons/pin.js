@@ -15,7 +15,6 @@ const Pin = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
-      id="Pin"
     >
       <path d="M5 10.726l-3 .505L11.23 2l-.504 3M12 16.881l-.77 2.042 7.693-7.692-2.042.769m-1.804 3.077L21 21M3.538 9.692l6.154-6.154.236.341a52.22 52.22 0 0 0 7.376 8.518l.235.218-4.924 4.923-.218-.234A52.22 52.22 0 0 0 3.88 9.928l-.34-.236z"></path>
     </svg>
@@ -29,8 +28,7 @@ Pin.propTypes = {
 
 Pin.defaultProps = {
   color: 'currentColor',
-  size: '24',
-  display: 'block'
+  size: '24'
 };
 
 export default Pin;

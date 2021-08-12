@@ -11,7 +11,6 @@ const InstagramFill = props => {
       viewBox="0 0 24 24"
       fill={color}
       {...otherProps}
-      id="InstagramFill"
     >
       <path
         fillRule="evenodd"
@@ -29,8 +28,7 @@ InstagramFill.propTypes = {
 
 InstagramFill.defaultProps = {
   color: 'currentColor',
-  size: '24',
-  display: 'block'
+  size: '24'
 };
 
 export default InstagramFill;

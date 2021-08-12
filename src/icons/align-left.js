@@ -15,7 +15,6 @@ const AlignLeft = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
-      id="AlignLeft"
     >
       <path d="M2 3v18"></path>
       <rect x="6" y="6" width="16" height="4"></rect>
@@ -31,8 +30,7 @@ AlignLeft.propTypes = {
 
 AlignLeft.defaultProps = {
   color: 'currentColor',
-  size: '24',
-  display: 'block'
+  size: '24'
 };
 
 export default AlignLeft;

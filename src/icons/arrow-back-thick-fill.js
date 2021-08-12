@@ -11,7 +11,6 @@ const ArrowBackThickFill = props => {
       viewBox="0 0 24 24"
       fill={color}
       {...otherProps}
-      id="ArrowBackThickFill"
     >
       <path
         fillRule="evenodd"
@@ -29,8 +28,7 @@ ArrowBackThickFill.propTypes = {
 
 ArrowBackThickFill.defaultProps = {
   color: 'currentColor',
-  size: '24',
-  display: 'block'
+  size: '24'
 };
 
 export default ArrowBackThickFill;

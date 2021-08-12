@@ -15,7 +15,6 @@ const Lifesaver = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
-      id="Lifesaver"
     >
       <g clipPath="url(#clip0)">
         <circle cx="12" cy="12" r="10" transform="rotate(45 12 12)"></circle>
@@ -41,8 +40,7 @@ Lifesaver.propTypes = {
 
 Lifesaver.defaultProps = {
   color: 'currentColor',
-  size: '24',
-  display: 'block'
+  size: '24'
 };
 
 export default Lifesaver;

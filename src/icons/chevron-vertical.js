@@ -15,7 +15,6 @@ const ChevronVertical = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
-      id="ChevronVertical"
     >
       <path d="M8 17l4 4 4-4"></path>
       <path d="M8 7l4-4 4 4"></path>
@@ -30,8 +29,7 @@ ChevronVertical.propTypes = {
 
 ChevronVertical.defaultProps = {
   color: 'currentColor',
-  size: '24',
-  display: 'block'
+  size: '24'
 };
 
 export default ChevronVertical;

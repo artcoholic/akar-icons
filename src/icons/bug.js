@@ -15,7 +15,6 @@ const Bug = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
-      id="Bug"
     >
       <path d="M5 9a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v5a7 7 0 0 1-7 7v0a7 7 0 0 1-7-7V9z"></path>
       <path d="M8 6v-.425c0-.981.384-1.96 1.326-2.238 1.525-.45 3.823-.45 5.348 0C15.616 3.615 16 4.594 16 5.575V6"></path>
@@ -37,8 +36,7 @@ Bug.propTypes = {
 
 Bug.defaultProps = {
   color: 'currentColor',
-  size: '24',
-  display: 'block'
+  size: '24'
 };
 
 export default Bug;

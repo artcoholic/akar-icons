@@ -15,7 +15,6 @@ const LinkOut = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
-      id="LinkOut"
     >
       <path d="M13.5 10.5L21 3"></path>
       <path d="M16 3h5v5"></path>
@@ -31,8 +30,7 @@ LinkOut.propTypes = {
 
 LinkOut.defaultProps = {
   color: 'currentColor',
-  size: '24',
-  display: 'block'
+  size: '24'
 };
 
 export default LinkOut;

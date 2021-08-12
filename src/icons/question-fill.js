@@ -11,7 +11,6 @@ const QuestionFill = props => {
       viewBox="0 0 24 24"
       fill={color}
       {...otherProps}
-      id="QuestionFill"
     >
       <path
         fillRule="evenodd"
@@ -29,8 +28,7 @@ QuestionFill.propTypes = {
 
 QuestionFill.defaultProps = {
   color: 'currentColor',
-  size: '24',
-  display: 'block'
+  size: '24'
 };
 
 export default QuestionFill;

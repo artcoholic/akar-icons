@@ -15,7 +15,6 @@ const AlignToTop = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
-      id="AlignToTop"
     >
       <path d="M12 22V7"></path>
       <path d="M5 14l7-7 7 7"></path>
@@ -31,8 +30,7 @@ AlignToTop.propTypes = {
 
 AlignToTop.defaultProps = {
   color: 'currentColor',
-  size: '24',
-  display: 'block'
+  size: '24'
 };
 
 export default AlignToTop;

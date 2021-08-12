@@ -15,7 +15,6 @@ const Tag = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
-      id="Tag"
     >
       <path d="M15.244 21.366a2.164 2.164 0 0 1-3.061 0l-8.549-8.549A2.164 2.164 0 0 1 3 11.287V5.163C3 3.97 3.97 3 5.164 3h6.123c.573 0 1.124.228 1.53.634l8.549 8.549a2.164 2.164 0 0 1 0 3.061l-6.122 6.122z"></path>
       <path d="M6.5 6.5L7 7"></path>
@@ -30,8 +29,7 @@ Tag.propTypes = {
 
 Tag.defaultProps = {
   color: 'currentColor',
-  size: '24',
-  display: 'block'
+  size: '24'
 };
 
 export default Tag;

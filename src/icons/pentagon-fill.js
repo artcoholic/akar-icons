@@ -11,7 +11,6 @@ const PentagonFill = props => {
       viewBox="0 0 24 24"
       fill={color}
       {...otherProps}
-      id="PentagonFill"
     >
       <path
         fillRule="evenodd"
@@ -29,8 +28,7 @@ PentagonFill.propTypes = {
 
 PentagonFill.defaultProps = {
   color: 'currentColor',
-  size: '24',
-  display: 'block'
+  size: '24'
 };
 
 export default PentagonFill;

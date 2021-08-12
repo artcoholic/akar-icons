@@ -15,7 +15,6 @@ const Plant = props => {
       strokeLinecap="round"
       strokeLinejoin="round"
       {...otherProps}
-      id="Plant"
     >
       <path d="M11.964 6.97s-3.075.306-4.685-1.035C5.669 4.593 6.036 2.03 6.036 2.03s3.075-.306 4.686 1.035c1.61 1.342 1.242 3.905 1.242 3.905z"></path>
       <path d="M12.036 6.97s3.075.306 4.685-1.035c1.61-1.342 1.243-3.905 1.243-3.905s-3.075-.306-4.685 1.035c-1.61 1.342-1.243 3.905-1.243 3.905z"></path>
@@ -32,8 +31,7 @@ Plant.propTypes = {
 
 Plant.defaultProps = {
   color: 'currentColor',
-  size: '24',
-  display: 'block'
+  size: '24'
 };
 
 export default Plant;
