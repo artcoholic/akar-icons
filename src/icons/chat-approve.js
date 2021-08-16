@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Thunder = props => {
+const ChatApprove = props => {
   const { color, size, ...otherProps } = props;
   return (
     <svg
@@ -16,19 +16,21 @@ const Thunder = props => {
       strokeLinejoin="round"
       {...otherProps}
     >
-      <path d="M17.684 3.603c.521-.659.03-1.603-.836-1.603h-6.716c-.375 0-.722.192-.909.502l-5.082 8.456c-.401.666.103 1.497.908 1.497h3.429l-3.23 8.065c-.467 1.02.795 1.953 1.643 1.215L20 9.331h-6.849l4.533-5.728z"></path>
+      <path d="M14 19c3.771 0 5.657 0 6.828-1.172C22 16.657 22 14.771 22 11c0-3.771 0-5.657-1.172-6.828C19.657 3 17.771 3 14 3h-4C6.229 3 4.343 3 3.172 4.172 2 5.343 2 7.229 2 11c0 3.771 0 5.657 1.172 6.828.653.654 1.528.943 2.828 1.07"></path>
+      <path d="M9 11l2.25 2L15 9"></path>
+      <path d="M14 19c-1.236 0-2.598.5-3.841 1.145-1.998 1.037-2.997 1.556-3.489 1.225-.492-.33-.399-1.355-.212-3.404L6.5 17.5"></path>
     </svg>
   );
 };
 
-Thunder.propTypes = {
+ChatApprove.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
 };
 
-Thunder.defaultProps = {
+ChatApprove.defaultProps = {
   color: 'currentColor',
   size: '24'
 };
 
-export default Thunder;
+export default ChatApprove;
