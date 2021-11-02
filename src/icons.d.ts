@@ -279,6 +279,8 @@ export const VapeKit: Icon;
 export const Briefcase: Icon;
 export const Boat: Icon;
 export const Crown: Icon;
+export const Sword: Icon;
+export const DoubleSword: Icon;
 export const Person: Icon;
 export const PersonAdd: Icon;
 export const PersonCheck: Icon;

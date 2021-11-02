@@ -270,6 +270,8 @@ export { default as VapeKit } from './icons/vape-kit';
 export { default as Briefcase } from './icons/briefcase';
 export { default as Boat } from './icons/boat';
 export { default as Crown } from './icons/crown';
+export { default as Sword } from './icons/sword';
+export { default as DoubleSword } from './icons/double-sword';
 export { default as Person } from './icons/person';
 export { default as PersonAdd } from './icons/person-add';
 export { default as PersonCheck } from './icons/person-check';
