@@ -12,7 +12,7 @@ const GraphqlFill = props => {
       fill={color}
       {...otherProps}
     >
-      <g clipPath="url(#clip0_950:628)">
+      <g clipPath="url(#clip0_950_628)">
         <path
           fillRule="evenodd"
           clipRule="evenodd"
@@ -20,7 +20,7 @@ const GraphqlFill = props => {
         ></path>
       </g>
       <defs>
-        <clipPath id="clip0_950:628">
+        <clipPath id="clip0_950_628">
           <rect width="24" height="24"></rect>
         </clipPath>
       </defs>

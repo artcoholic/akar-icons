@@ -16,7 +16,7 @@ const Lifesaver = props => {
       strokeLinejoin="round"
       {...otherProps}
     >
-      <g clipPath="url(#clip0_73:30)">
+      <g clipPath="url(#clip0_73_30)">
         <circle cx="12" cy="12" r="10" transform="rotate(45 12 12)"></circle>
         <circle cx="12" cy="12" r="4" transform="rotate(45 12 12)"></circle>
         <path d="M19.071 4.929l-4.243 4.243"></path>
@@ -25,7 +25,7 @@ const Lifesaver = props => {
         <path d="M9.172 9.172L4.929 4.929"></path>
       </g>
       <defs>
-        <clipPath id="clip0_73:30">
+        <clipPath id="clip0_73_30">
           <rect width="24" height="24"></rect>
         </clipPath>
       </defs>
