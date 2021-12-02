@@ -289,6 +289,7 @@ export const Crown: Icon;
 export const Sword: Icon;
 export const DoubleSword: Icon;
 export const Key: Icon;
+export const Dental: Icon;
 export const Person: Icon;
 export const PersonAdd: Icon;
 export const PersonCheck: Icon;

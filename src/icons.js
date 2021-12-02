@@ -280,6 +280,7 @@ export { default as Crown } from './icons/crown';
 export { default as Sword } from './icons/sword';
 export { default as DoubleSword } from './icons/double-sword';
 export { default as Key } from './icons/key';
+export { default as Dental } from './icons/dental';
 export { default as Person } from './icons/person';
 export { default as PersonAdd } from './icons/person-add';
 export { default as PersonCheck } from './icons/person-check';
