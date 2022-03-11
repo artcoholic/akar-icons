@@ -68,7 +68,6 @@ Explore all of our icons at [akaricons.com](https://akaricons.com).
 * [akar-icons-web-components](https://github.com/awmleer/akar-icons-web-components) - Akar icons as web components, fully customizable and use anywhere.
 * [akar-icons-svelte](https://github.com/WilliamVenner/akar-icons-svelte) - Akar icons as Svelte components.
 * [blade-akar-icons](https://github.com/codeat3/blade-akar-icons) - A package to easily make use of Akar Icons in your Laravel Blade views.
-* [akar_icons_flutter](https://github.com/alann-maulana/akar_icons_flutter) - Akar icons package for Flutter.
 
 ## Author
 Arturo Wibawa ([@agwibawa](https://twitter.com/agwibawa))
