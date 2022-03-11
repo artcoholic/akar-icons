@@ -334,6 +334,7 @@ export { default as TwitchFill } from './icons/twitch-fill';
 export { default as SnapchatFill } from './icons/snapchat-fill';
 export { default as OctocatFill } from './icons/octocat-fill';
 export { default as DiscordFill } from './icons/discord-fill';
+export { default as BehanceFill } from './icons/behance-fill';
 export { default as Circle } from './icons/circle';
 export { default as CircleFill } from './icons/circle-fill';
 export { default as Triangle } from './icons/triangle';

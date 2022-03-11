@@ -343,6 +343,7 @@ export const TwitchFill: Icon;
 export const SnapchatFill: Icon;
 export const OctocatFill: Icon;
 export const DiscordFill: Icon;
+export const BehanceFill: Icon;
 export const Circle: Icon;
 export const CircleFill: Icon;
 export const Triangle: Icon;
