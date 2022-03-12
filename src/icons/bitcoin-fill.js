@@ -12,7 +12,7 @@ const BitcoinFill = props => {
       fill={color}
       {...otherProps}
     >
-      <g clipPath="url(#clip0_399_390)">
+      <g clipPath="url(#clip0)">
         <path d="M11.385 15.275c1.111-.004 3.54-.013 3.512-1.558-.027-1.58-2.36-1.485-3.497-1.438-.127.005-.24.01-.332.011l.052 2.987c.075-.002.165-.002.265-.002z"></path>
         <path d="M11.267 10.922c.927-.001 2.95-.003 2.926-1.408-.026-1.437-1.969-1.352-2.918-1.31-.107.005-.2.009-.278.01l.047 2.709.223-.001z"></path>
         <path
@@ -22,7 +22,7 @@ const BitcoinFill = props => {
         ></path>
       </g>
       <defs>
-        <clipPath id="clip0_399_390">
+        <clipPath id="clip0">
           <rect width="24" height="24"></rect>
         </clipPath>
       </defs>

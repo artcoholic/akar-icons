@@ -12,7 +12,7 @@ const HtmlFill = props => {
       fill={color}
       {...otherProps}
     >
-      <g clipPath="url(#clip0_950_633)">
+      <g clipPath="url(#clip0)">
         <path d="M5.08 0h1.082v1.069h.99V0h1.082v3.236H7.152V2.153h-.99v1.083H5.081V0z"></path>
         <path d="M9.656 1.073h-.952V0h2.987v1.073h-.953v2.163H9.656V1.073z"></path>
         <path d="M12.165 0h1.128l.694 1.137L14.68 0h1.128v3.236h-1.077V1.632l-.744 1.151h-.019l-.745-1.15v1.603h-1.058V0z"></path>
@@ -24,7 +24,7 @@ const HtmlFill = props => {
         ></path>
       </g>
       <defs>
-        <clipPath id="clip0_950_633">
+        <clipPath id="clip0">
           <rect width="24" height="24"></rect>
         </clipPath>
       </defs>
