@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Dashboard = props => {
+const PanelTop = props => {
   const { color, size, ...otherProps } = props;
   return (
     <svg
@@ -16,21 +16,20 @@ const Dashboard = props => {
       strokeLinejoin="round"
       {...otherProps}
     >
-      <rect x="2" y="2" width="8" height="20" rx="2"></rect>
-      <rect x="14" y="2" width="8" height="8" rx="2"></rect>
-      <rect x="14" y="14" width="8" height="8" rx="2"></rect>
+      <rect x="2" y="3" width="20" height="18" rx="2"></rect>
+      <path d="M22 9H2"></path>
     </svg>
   );
 };
 
-Dashboard.propTypes = {
+PanelTop.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
 };
 
-Dashboard.defaultProps = {
+PanelTop.defaultProps = {
   color: 'currentColor',
   size: '24'
 };
 
-export default Dashboard;
+export default PanelTop;

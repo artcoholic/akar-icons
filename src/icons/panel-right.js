@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const SidebarLeft = props => {
+const PanelRight = props => {
   const { color, size, ...otherProps } = props;
   return (
     <svg
@@ -17,19 +17,19 @@ const SidebarLeft = props => {
       {...otherProps}
     >
       <rect x="2" y="3" width="20" height="18" rx="2"></rect>
-      <path d="M9 3v18"></path>
+      <path d="M15 3v18"></path>
     </svg>
   );
 };
 
-SidebarLeft.propTypes = {
+PanelRight.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
 };
 
-SidebarLeft.defaultProps = {
+PanelRight.defaultProps = {
   color: 'currentColor',
   size: '24'
 };
 
-export default SidebarLeft;
+export default PanelRight;
