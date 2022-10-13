@@ -12,11 +12,18 @@ const NpmFill = props => {
       fill={color}
       {...otherProps}
     >
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M24 0H0v24h24V0zM2.578 2.578H21.42V21.42H16.67V7.33h-4.752V21.42h-9.34V2.578z"
-      ></path>
+      <g clipPath="url(#clip0_950_637)">
+        <path
+          fillRule="evenodd"
+          clipRule="evenodd"
+          d="M24 0H0v24h24V0zM2.578 2.578H21.42V21.42H16.67V7.33h-4.752V21.42h-9.34V2.578z"
+        ></path>
+      </g>
+      <defs>
+        <clipPath id="clip0_950_637">
+          <rect width="24" height="24"></rect>
+        </clipPath>
+      </defs>
     </svg>
   );
 };
