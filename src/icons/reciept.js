@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Coin = props => {
+const Reciept = props => {
   const { color, size, ...otherProps } = props;
   return (
     <svg
@@ -16,27 +16,23 @@ const Coin = props => {
       strokeLinejoin="round"
       {...otherProps}
     >
-      <ellipse
-        cx="9.5"
-        cy="10"
-        rx="9.5"
-        ry="10"
-        transform="matrix(-1 0 0 1 20 2)"
-      ></ellipse>
-      <path d="M13 8.8a3.583 3.583 0 0 0-2.25-.8C8.679 8 7 9.79 7 12s1.679 4 3.75 4c.844 0 1.623-.298 2.25-.8"></path>
-      <path d="M10 2c4.333 0 13 1 13 10s-8.667 10-13 10"></path>
+      <path d="M19 21H7a4 4 0 0 1-4-4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v13c0 1.657.343 3 2 3z"></path>
+      <path d="M21 10a2 2 0 0 0-2-2h-2v10.5c0 1.38.62 2.5 2 2.5s2-1.12 2-2.5V10z"></path>
+      <path d="M13 11H7"></path>
+      <path d="M13 7H7"></path>
+      <path d="M10 15H7"></path>
     </svg>
   );
 };
 
-Coin.propTypes = {
+Reciept.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
 };
 
-Coin.defaultProps = {
+Reciept.defaultProps = {
   color: 'currentColor',
   size: '24'
 };
 
-export default Coin;
+export default Reciept;

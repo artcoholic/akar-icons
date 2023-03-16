@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Coin = props => {
+const ForkRight = props => {
   const { color, size, ...otherProps } = props;
   return (
     <svg
@@ -16,27 +16,21 @@ const Coin = props => {
       strokeLinejoin="round"
       {...otherProps}
     >
-      <ellipse
-        cx="9.5"
-        cy="10"
-        rx="9.5"
-        ry="10"
-        transform="matrix(-1 0 0 1 20 2)"
-      ></ellipse>
-      <path d="M13 8.8a3.583 3.583 0 0 0-2.25-.8C8.679 8 7 9.79 7 12s1.679 4 3.75 4c.844 0 1.623-.298 2.25-.8"></path>
-      <path d="M10 2c4.333 0 13 1 13 10s-8.667 10-13 10"></path>
+      <path d="M9 3v18M9 3l4 4M9 3L5 7"></path>
+      <path d="M16 10l4 4-4 4"></path>
+      <path d="M9 21v0a7 7 0 0 1 7-7h4"></path>
     </svg>
   );
 };
 
-Coin.propTypes = {
+ForkRight.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
 };
 
-Coin.defaultProps = {
+ForkRight.defaultProps = {
   color: 'currentColor',
   size: '24'
 };
 
-export default Coin;
+export default ForkRight;
