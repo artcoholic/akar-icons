@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Dice5 = props => {
+const Data = props => {
   const { color, size, ...otherProps } = props;
   return (
     <svg
@@ -16,29 +16,22 @@ const Dice5 = props => {
       strokeLinejoin="round"
       {...otherProps}
     >
-      <rect x="3" y="3" width="18" height="18" rx="2"></rect>
-      <path d="M8 8h.5"></path>
-      <path d="M15.5 8h.5"></path>
-      <path d="M12 12h.5"></path>
-      <path d="M12.25 11.75v.5"></path>
-      <path d="M8 16h.5"></path>
-      <path d="M15.5 16h.5"></path>
-      <path d="M8.25 7.75v.5"></path>
-      <path d="M8.25 15.75v.5"></path>
-      <path d="M15.75 7.75v.5"></path>
-      <path d="M15.75 15.75v.5"></path>
+      <ellipse cx="12" cy="6" rx="8" ry="3"></ellipse>
+      <path d="M6.037 12C4.77 12.53 4 13.232 4 14c0 1.657 3.582 3 8 3s8-1.343 8-3c0-.768-.77-1.47-2.037-2"></path>
+      <path d="M4 6v4c0 1.657 3.582 3 8 3s8-1.343 8-3V6"></path>
+      <path d="M4 14v4c0 1.657 3.582 3 8 3s8-1.343 8-3v-4"></path>
     </svg>
   );
 };
 
-Dice5.propTypes = {
+Data.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
 };
 
-Dice5.defaultProps = {
+Data.defaultProps = {
   color: 'currentColor',
   size: '24'
 };
 
-export default Dice5;
+export default Data;

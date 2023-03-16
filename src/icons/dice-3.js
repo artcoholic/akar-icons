@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Dice6 = props => {
+const Dice3 = props => {
   const { color, size, ...otherProps } = props;
   return (
     <svg
@@ -17,30 +17,24 @@ const Dice6 = props => {
       {...otherProps}
     >
       <rect x="3" y="3" width="18" height="18" rx="2"></rect>
-      <path d="M8 8h.5"></path>
+      <path d="M12.25 11.75v.5"></path>
       <path d="M8.25 7.75v.5"></path>
-      <path d="M8.25 11.75v.5"></path>
-      <path d="M8.25 15.75v.5"></path>
-      <path d="M15.5 8h.5"></path>
-      <path d="M15.75 7.75v.5"></path>
-      <path d="M15.75 11.75v.5"></path>
       <path d="M15.75 15.75v.5"></path>
-      <path d="M8 12h.5"></path>
-      <path d="M15.5 12h.5"></path>
-      <path d="M8 16h.5"></path>
+      <path d="M8 8h.5"></path>
+      <path d="M12 12h.5"></path>
       <path d="M15.5 16h.5"></path>
     </svg>
   );
 };
 
-Dice6.propTypes = {
+Dice3.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
 };
 
-Dice6.defaultProps = {
+Dice3.defaultProps = {
   color: 'currentColor',
   size: '24'
 };
 
-export default Dice6;
+export default Dice3;

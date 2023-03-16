@@ -3,6 +3,11 @@
 <path d="M8 8H8.5" stroke="black" stroke-width="2" stroke-linecap="round"/>
 <path d="M15.5 8H16" stroke="black" stroke-width="2" stroke-linecap="round"/>
 <path d="M12 12H12.5" stroke="black" stroke-width="2" stroke-linecap="round"/>
+<path d="M12.25 11.75V12.25" stroke="black" stroke-width="2" stroke-linecap="round"/>
 <path d="M8 16H8.5" stroke="black" stroke-width="2" stroke-linecap="round"/>
 <path d="M15.5 16H16" stroke="black" stroke-width="2" stroke-linecap="round"/>
+<path d="M8.25 7.75V8.25" stroke="black" stroke-width="2" stroke-linecap="round"/>
+<path d="M8.25 15.75V16.25" stroke="black" stroke-width="2" stroke-linecap="round"/>
+<path d="M15.75 7.75V8.25" stroke="black" stroke-width="2" stroke-linecap="round"/>
+<path d="M15.75 15.75V16.25" stroke="black" stroke-width="2" stroke-linecap="round"/>
 </svg>
