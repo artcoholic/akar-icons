@@ -12,8 +12,11 @@ const RadioFill = props => {
       fill={color}
       {...otherProps}
     >
-      <path d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10S2 17.523 2 12z"></path>
-      <path d="M8 12a4 4 0 1 1 8 0 4 4 0 0 1-8 0z"></path>
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm0 6a4 4 0 1 0 0 8 4 4 0 0 0 0-8z"
+      ></path>
     </svg>
   );
 };
