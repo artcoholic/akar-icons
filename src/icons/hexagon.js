@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Hexagon = props => {
-  const { color, size, ...otherProps } = props;
+const Hexagon = ({ color = "currentColor", size = "24", ...otherProps }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -24,11 +23,6 @@ const Hexagon = props => {
 Hexagon.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
-};
-
-Hexagon.defaultProps = {
-  color: 'currentColor',
-  size: '24'
 };
 
 export default Hexagon;

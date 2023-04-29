@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Airpods = props => {
-  const { color, size, ...otherProps } = props;
+const Airpods = ({ color = "currentColor", size = "24", ...otherProps }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -31,11 +30,6 @@ const Airpods = props => {
 Airpods.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
-};
-
-Airpods.defaultProps = {
-  color: 'currentColor',
-  size: '24'
 };
 
 export default Airpods;

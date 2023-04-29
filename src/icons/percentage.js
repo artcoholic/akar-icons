@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Percentage = props => {
-  const { color, size, ...otherProps } = props;
+const Percentage = ({ color = "currentColor", size = "24", ...otherProps }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -26,11 +25,6 @@ const Percentage = props => {
 Percentage.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
-};
-
-Percentage.defaultProps = {
-  color: 'currentColor',
-  size: '24'
 };
 
 export default Percentage;

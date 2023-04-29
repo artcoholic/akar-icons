@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Alarm = props => {
-  const { color, size, ...otherProps } = props;
+const Alarm = ({ color = "currentColor", size = "24", ...otherProps }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -30,11 +29,6 @@ const Alarm = props => {
 Alarm.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
-};
-
-Alarm.defaultProps = {
-  color: 'currentColor',
-  size: '24'
 };
 
 export default Alarm;

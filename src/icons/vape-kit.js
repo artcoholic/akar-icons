@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const VapeKit = props => {
-  const { color, size, ...otherProps } = props;
+const VapeKit = ({ color = "currentColor", size = "24", ...otherProps }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -30,11 +29,6 @@ const VapeKit = props => {
 VapeKit.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
-};
-
-VapeKit.defaultProps = {
-  color: 'currentColor',
-  size: '24'
 };
 
 export default VapeKit;

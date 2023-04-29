@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const DjangoFill = props => {
-  const { color, size, ...otherProps } = props;
+const DjangoFill = ({ color = "currentColor", size = "24", ...otherProps }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -26,11 +25,6 @@ const DjangoFill = props => {
 DjangoFill.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
-};
-
-DjangoFill.defaultProps = {
-  color: 'currentColor',
-  size: '24'
 };
 
 export default DjangoFill;

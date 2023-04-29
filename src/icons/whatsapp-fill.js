@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const WhatsappFill = props => {
-  const { color, size, ...otherProps } = props;
+const WhatsappFill = ({ color = "currentColor", size = "24", ...otherProps }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -31,11 +30,6 @@ const WhatsappFill = props => {
 WhatsappFill.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
-};
-
-WhatsappFill.defaultProps = {
-  color: 'currentColor',
-  size: '24'
 };
 
 export default WhatsappFill;

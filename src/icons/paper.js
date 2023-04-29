@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Paper = props => {
-  const { color, size, ...otherProps } = props;
+const Paper = ({ color = "currentColor", size = "24", ...otherProps }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -25,11 +24,6 @@ const Paper = props => {
 Paper.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
-};
-
-Paper.defaultProps = {
-  color: 'currentColor',
-  size: '24'
 };
 
 export default Paper;

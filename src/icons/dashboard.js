@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Dashboard = props => {
-  const { color, size, ...otherProps } = props;
+const Dashboard = ({ color = "currentColor", size = "24", ...otherProps }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -26,11 +25,6 @@ const Dashboard = props => {
 Dashboard.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
-};
-
-Dashboard.defaultProps = {
-  color: 'currentColor',
-  size: '24'
 };
 
 export default Dashboard;

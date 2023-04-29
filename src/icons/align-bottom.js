@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const AlignBottom = props => {
-  const { color, size, ...otherProps } = props;
+const AlignBottom = ({ color = "currentColor", size = "24", ...otherProps }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -26,11 +25,6 @@ const AlignBottom = props => {
 AlignBottom.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
-};
-
-AlignBottom.defaultProps = {
-  color: 'currentColor',
-  size: '24'
 };
 
 export default AlignBottom;

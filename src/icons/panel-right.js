@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const PanelRight = props => {
-  const { color, size, ...otherProps } = props;
+const PanelRight = ({ color = "currentColor", size = "24", ...otherProps }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -25,11 +24,6 @@ const PanelRight = props => {
 PanelRight.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
-};
-
-PanelRight.defaultProps = {
-  color: 'currentColor',
-  size: '24'
 };
 
 export default PanelRight;

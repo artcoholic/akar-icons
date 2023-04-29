@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const DragHorizontalFill = props => {
-  const { color, size, ...otherProps } = props;
+const DragHorizontalFill = ({ color = "currentColor", size = "24", ...otherProps }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -49,11 +48,6 @@ const DragHorizontalFill = props => {
 DragHorizontalFill.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
-};
-
-DragHorizontalFill.defaultProps = {
-  color: 'currentColor',
-  size: '24'
 };
 
 export default DragHorizontalFill;

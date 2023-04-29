@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const FaceNeutral = props => {
-  const { color, size, ...otherProps } = props;
+const FaceNeutral = ({ color = "currentColor", size = "24", ...otherProps }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -27,11 +26,6 @@ const FaceNeutral = props => {
 FaceNeutral.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
-};
-
-FaceNeutral.defaultProps = {
-  color: 'currentColor',
-  size: '24'
 };
 
 export default FaceNeutral;

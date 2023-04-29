@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Video = props => {
-  const { color, size, ...otherProps } = props;
+const Video = ({ color = "currentColor", size = "24", ...otherProps }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -25,11 +24,6 @@ const Video = props => {
 Video.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
-};
-
-Video.defaultProps = {
-  color: 'currentColor',
-  size: '24'
 };
 
 export default Video;

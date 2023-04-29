@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const VkFill = props => {
-  const { color, size, ...otherProps } = props;
+const VkFill = ({ color = "currentColor", size = "24", ...otherProps }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -19,16 +18,6 @@ const VkFill = props => {
       ></path>
     </svg>
   );
-};
-
-VkFill.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
-};
-
-VkFill.defaultProps = {
-  color: 'currentColor',
-  size: '24'
 };
 
 export default VkFill;

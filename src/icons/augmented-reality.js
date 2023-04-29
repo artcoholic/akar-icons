@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const AugmentedReality = props => {
-  const { color, size, ...otherProps } = props;
+const AugmentedReality = ({ color = "currentColor", size = "24", ...otherProps }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -29,11 +28,6 @@ const AugmentedReality = props => {
 AugmentedReality.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
-};
-
-AugmentedReality.defaultProps = {
-  color: 'currentColor',
-  size: '24'
 };
 
 export default AugmentedReality;

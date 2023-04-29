@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const AlignHorizontalCenter = props => {
-  const { color, size, ...otherProps } = props;
+const AlignHorizontalCenter = ({ color = "currentColor", size = "24", ...otherProps }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -28,11 +27,6 @@ const AlignHorizontalCenter = props => {
 AlignHorizontalCenter.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
-};
-
-AlignHorizontalCenter.defaultProps = {
-  color: 'currentColor',
-  size: '24'
 };
 
 export default AlignHorizontalCenter;
