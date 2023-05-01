@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const ChatAdd = props => {
-  const { color, size, ...otherProps } = props;
+const ChatAdd = ({ color = "currentColor", size = "24", ...otherProps }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -26,11 +25,6 @@ const ChatAdd = props => {
 ChatAdd.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
-};
-
-ChatAdd.defaultProps = {
-  color: 'currentColor',
-  size: '24'
 };
 
 export default ChatAdd;

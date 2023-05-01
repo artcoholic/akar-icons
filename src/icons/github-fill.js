@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const GithubFill = props => {
-  const { color, size, ...otherProps } = props;
+const GithubFill = ({ color = "currentColor", size = "24", ...otherProps }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -31,11 +30,6 @@ const GithubFill = props => {
 GithubFill.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
-};
-
-GithubFill.defaultProps = {
-  color: 'currentColor',
-  size: '24'
 };
 
 export default GithubFill;

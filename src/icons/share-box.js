@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const ShareBox = props => {
-  const { color, size, ...otherProps } = props;
+const ShareBox = ({ color = "currentColor", size = "24", ...otherProps }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -25,11 +24,6 @@ const ShareBox = props => {
 ShareBox.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
-};
-
-ShareBox.defaultProps = {
-  color: 'currentColor',
-  size: '24'
 };
 
 export default ShareBox;

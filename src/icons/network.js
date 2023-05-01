@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Network = props => {
-  const { color, size, ...otherProps } = props;
+const Network = ({ color = "currentColor", size = "24", ...otherProps }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -27,11 +26,6 @@ const Network = props => {
 Network.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
-};
-
-Network.defaultProps = {
-  color: 'currentColor',
-  size: '24'
 };
 
 export default Network;

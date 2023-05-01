@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Calculator = props => {
-  const { color, size, ...otherProps } = props;
+const Calculator = ({ color = "currentColor", size = "24", ...otherProps }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -28,11 +27,6 @@ const Calculator = props => {
 Calculator.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
-};
-
-Calculator.defaultProps = {
-  color: 'currentColor',
-  size: '24'
 };
 
 export default Calculator;

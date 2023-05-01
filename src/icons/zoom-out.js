@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const ZoomOut = props => {
-  const { color, size, ...otherProps } = props;
+const ZoomOut = ({ color = "currentColor", size = "24", ...otherProps }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -25,11 +24,6 @@ const ZoomOut = props => {
 ZoomOut.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
-};
-
-ZoomOut.defaultProps = {
-  color: 'currentColor',
-  size: '24'
 };
 
 export default ZoomOut;

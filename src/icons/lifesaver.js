@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Lifesaver = props => {
-  const { color, size, ...otherProps } = props;
+const Lifesaver = ({ color = "currentColor", size = "24", ...otherProps }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -36,11 +35,6 @@ const Lifesaver = props => {
 Lifesaver.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
-};
-
-Lifesaver.defaultProps = {
-  color: 'currentColor',
-  size: '24'
 };
 
 export default Lifesaver;

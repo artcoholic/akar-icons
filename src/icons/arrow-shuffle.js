@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const ArrowShuffle = props => {
-  const { color, size, ...otherProps } = props;
+const ArrowShuffle = ({ color = "currentColor", size = "24", ...otherProps }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -26,11 +25,6 @@ const ArrowShuffle = props => {
 ArrowShuffle.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
-};
-
-ArrowShuffle.defaultProps = {
-  color: 'currentColor',
-  size: '24'
 };
 
 export default ArrowShuffle;

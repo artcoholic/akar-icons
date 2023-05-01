@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const GoogleFill = props => {
-  const { color, size, ...otherProps } = props;
+const GoogleFill = ({ color = "currentColor", size = "24", ...otherProps }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -20,11 +19,6 @@ const GoogleFill = props => {
 GoogleFill.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
-};
-
-GoogleFill.defaultProps = {
-  color: 'currentColor',
-  size: '24'
 };
 
 export default GoogleFill;

@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Descending = props => {
-  const { color, size, ...otherProps } = props;
+const Descending = ({ color = "currentColor", size = "24", ...otherProps }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -27,11 +26,6 @@ const Descending = props => {
 Descending.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
-};
-
-Descending.defaultProps = {
-  color: 'currentColor',
-  size: '24'
 };
 
 export default Descending;

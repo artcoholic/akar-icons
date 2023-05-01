@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Hashtag = props => {
-  const { color, size, ...otherProps } = props;
+const Hashtag = ({ color = "currentColor", size = "24", ...otherProps }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -27,11 +26,6 @@ const Hashtag = props => {
 Hashtag.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
-};
-
-Hashtag.defaultProps = {
-  color: 'currentColor',
-  size: '24'
 };
 
 export default Hashtag;

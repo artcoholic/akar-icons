@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const CircleTriangleUpFill = props => {
-  const { color, size, ...otherProps } = props;
+const CircleTriangleUpFill = ({ color = "currentColor", size = "24", ...otherProps }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -24,11 +23,6 @@ const CircleTriangleUpFill = props => {
 CircleTriangleUpFill.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
-};
-
-CircleTriangleUpFill.defaultProps = {
-  color: 'currentColor',
-  size: '24'
 };
 
 export default CircleTriangleUpFill;

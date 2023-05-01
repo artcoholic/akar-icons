@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const UnsplashFill = props => {
-  const { color, size, ...otherProps } = props;
+const UnsplashFill = ({ color = "currentColor", size = "24", ...otherProps }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -24,11 +23,6 @@ const UnsplashFill = props => {
 UnsplashFill.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
-};
-
-UnsplashFill.defaultProps = {
-  color: 'currentColor',
-  size: '24'
 };
 
 export default UnsplashFill;

@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const TiktokFill = props => {
-  const { color, size, ...otherProps } = props;
+const TiktokFill = ({ color = "currentColor", size = "24", ...otherProps }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -20,11 +19,6 @@ const TiktokFill = props => {
 TiktokFill.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
-};
-
-TiktokFill.defaultProps = {
-  color: 'currentColor',
-  size: '24'
 };
 
 export default TiktokFill;

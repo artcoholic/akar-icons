@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Search = props => {
-  const { color, size, ...otherProps } = props;
+const Search = ({ color = "currentColor", size = "24", ...otherProps }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -24,11 +23,6 @@ const Search = props => {
 Search.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
-};
-
-Search.defaultProps = {
-  color: 'currentColor',
-  size: '24'
 };
 
 export default Search;
