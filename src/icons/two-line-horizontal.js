@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const TwoLineHorizontal = props => {
-  const { color, size, ...otherProps } = props;
+const TwoLineHorizontal = ({ color = "currentColor", size = "24", ...otherProps }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -24,11 +23,6 @@ const TwoLineHorizontal = props => {
 TwoLineHorizontal.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
-};
-
-TwoLineHorizontal.defaultProps = {
-  color: 'currentColor',
-  size: '24'
 };
 
 export default TwoLineHorizontal;

@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Basket = props => {
-  const { color, size, ...otherProps } = props;
+const Basket = ({ color = "currentColor", size = "24", ...otherProps }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -28,11 +27,6 @@ const Basket = props => {
 Basket.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
-};
-
-Basket.defaultProps = {
-  color: 'currentColor',
-  size: '24'
 };
 
 export default Basket;

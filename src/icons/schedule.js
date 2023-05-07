@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Schedule = props => {
-  const { color, size, ...otherProps } = props;
+const Schedule = ({ color = "currentColor", size = "24", ...otherProps }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -29,11 +28,6 @@ const Schedule = props => {
 Schedule.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
-};
-
-Schedule.defaultProps = {
-  color: 'currentColor',
-  size: '24'
 };
 
 export default Schedule;

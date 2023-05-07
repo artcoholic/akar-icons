@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Leaf = props => {
-  const { color, size, ...otherProps } = props;
+const Leaf = ({ color = "currentColor", size = "24", ...otherProps }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -25,11 +24,6 @@ const Leaf = props => {
 Leaf.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
-};
-
-Leaf.defaultProps = {
-  color: 'currentColor',
-  size: '24'
 };
 
 export default Leaf;

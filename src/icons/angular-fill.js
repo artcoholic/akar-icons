@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const AngularFill = props => {
-  const { color, size, ...otherProps } = props;
+const AngularFill = ({ color = "currentColor", size = "24", ...otherProps }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -21,11 +20,6 @@ const AngularFill = props => {
 AngularFill.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
-};
-
-AngularFill.defaultProps = {
-  color: 'currentColor',
-  size: '24'
 };
 
 export default AngularFill;

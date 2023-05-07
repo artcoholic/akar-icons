@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const VueFill = props => {
-  const { color, size, ...otherProps } = props;
+const VueFill = ({ color = "currentColor", size = "24", ...otherProps }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -20,11 +19,6 @@ const VueFill = props => {
 VueFill.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
-};
-
-VueFill.defaultProps = {
-  color: 'currentColor',
-  size: '24'
 };
 
 export default VueFill;

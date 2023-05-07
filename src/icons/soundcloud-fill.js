@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const SoundcloudFill = props => {
-  const { color, size, ...otherProps } = props;
+const SoundcloudFill = ({ color = "currentColor", size = "24", ...otherProps }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -33,11 +32,6 @@ const SoundcloudFill = props => {
 SoundcloudFill.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
-};
-
-SoundcloudFill.defaultProps = {
-  color: 'currentColor',
-  size: '24'
 };
 
 export default SoundcloudFill;

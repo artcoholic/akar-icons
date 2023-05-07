@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const CreditCardAlt1 = props => {
-  const { color, size, ...otherProps } = props;
+const CreditCardAlt1 = ({ color = "currentColor", size = "24", ...otherProps }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -25,11 +24,6 @@ const CreditCardAlt1 = props => {
 CreditCardAlt1.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
-};
-
-CreditCardAlt1.defaultProps = {
-  color: 'currentColor',
-  size: '24'
 };
 
 export default CreditCardAlt1;

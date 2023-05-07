@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Location = props => {
-  const { color, size, ...otherProps } = props;
+const Location = ({ color = "currentColor", size = "24", ...otherProps }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -25,11 +24,6 @@ const Location = props => {
 Location.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
-};
-
-Location.defaultProps = {
-  color: 'currentColor',
-  size: '24'
 };
 
 export default Location;

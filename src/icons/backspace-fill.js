@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const BackspaceFill = props => {
-  const { color, size, ...otherProps } = props;
+const BackspaceFill = ({ color = "currentColor", size = "24", ...otherProps }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -24,11 +23,6 @@ const BackspaceFill = props => {
 BackspaceFill.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
-};
-
-BackspaceFill.defaultProps = {
-  color: 'currentColor',
-  size: '24'
 };
 
 export default BackspaceFill;

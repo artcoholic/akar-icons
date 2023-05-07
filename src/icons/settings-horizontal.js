@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const SettingsHorizontal = props => {
-  const { color, size, ...otherProps } = props;
+const SettingsHorizontal = ({ color = "currentColor", size = "24", ...otherProps }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -27,11 +26,6 @@ const SettingsHorizontal = props => {
 SettingsHorizontal.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
-};
-
-SettingsHorizontal.defaultProps = {
-  color: 'currentColor',
-  size: '24'
 };
 
 export default SettingsHorizontal;

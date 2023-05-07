@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Gear = props => {
-  const { color, size, ...otherProps } = props;
+const Gear = ({ color = "currentColor", size = "24", ...otherProps }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -25,11 +24,6 @@ const Gear = props => {
 Gear.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
-};
-
-Gear.defaultProps = {
-  color: 'currentColor',
-  size: '24'
 };
 
 export default Gear;

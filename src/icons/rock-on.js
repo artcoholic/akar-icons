@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const RockOn = props => {
-  const { color, size, ...otherProps } = props;
+const RockOn = ({ color = "currentColor", size = "24", ...otherProps }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -29,11 +28,6 @@ const RockOn = props => {
 RockOn.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
-};
-
-RockOn.defaultProps = {
-  color: 'currentColor',
-  size: '24'
 };
 
 export default RockOn;
