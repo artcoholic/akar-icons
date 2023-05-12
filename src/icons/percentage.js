@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Percentage = ({ color = "currentColor", size = "24", ...otherProps }) => {
+const Percentage = ({ color = 'currentColor', size = '24', ...otherProps }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -15,9 +15,9 @@ const Percentage = ({ color = "currentColor", size = "24", ...otherProps }) => {
       strokeLinejoin="round"
       {...otherProps}
     >
-      <path d="M6 21L18 3"></path>
-      <circle cx="7" cy="6" r="3"></circle>
-      <circle cx="17" cy="18" r="3"></circle>
+      <path d="M5 19L19 5"></path>
+      <circle cx="7" cy="7" r="3"></circle>
+      <circle cx="17" cy="17" r="3"></circle>
     </svg>
   );
 };

@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Dice6 = ({ color = "currentColor", size = "24", ...otherProps }) => {
+const Dice6 = ({ color = 'currentColor', size = '24', ...otherProps }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
