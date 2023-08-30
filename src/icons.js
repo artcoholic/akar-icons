@@ -387,6 +387,7 @@ export { default as MastodonFill } from './icons/mastodon-fill';
 export { default as TiktokFill } from './icons/tiktok-fill';
 export { default as UnsplashFill } from './icons/unsplash-fill';
 export { default as ProductHuntFill } from './icons/product-hunt-fill';
+export { default as YelpFill } from './icons/yelp-fill';
 export { default as Circle } from './icons/circle';
 export { default as CircleFill } from './icons/circle-fill';
 export { default as Triangle } from './icons/triangle';

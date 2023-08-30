@@ -396,6 +396,7 @@ export const MastodonFill: Icon;
 export const TiktokFill: Icon;
 export const UnsplashFill: Icon;
 export const ProductHuntFill: Icon;
+export const YelpFill: Icon;
 export const Circle: Icon;
 export const CircleFill: Icon;
 export const Triangle: Icon;
