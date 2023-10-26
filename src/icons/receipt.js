@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Reciept = ({ color = 'currentColor', size = '24', ...otherProps }) => {
+const Receipt = ({ color = 'currentColor', size = '24', ...otherProps }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -24,9 +24,9 @@ const Reciept = ({ color = 'currentColor', size = '24', ...otherProps }) => {
   );
 };
 
-Reciept.propTypes = {
+Receipt.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
 };
 
-export default Reciept;
+export default Receipt;

@@ -21,7 +21,7 @@ const PersonCross = ({
     >
       <circle cx="12" cy="7" r="5"></circle>
       <path d="M17 22H5.266a2 2 0 0 1-1.985-2.248l.39-3.124A3 3 0 0 1 6.649 14H7"></path>
-      <path d="M22 19l-5-5m5 0l-5 5"></path>
+      <path d="M21 18l-3-3m3 0l-3 3"></path>
     </svg>
   );
 };

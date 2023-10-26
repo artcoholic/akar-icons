@@ -17,8 +17,8 @@ const PersonAdd = ({ color = 'currentColor', size = '24', ...otherProps }) => {
     >
       <circle cx="12" cy="7" r="5"></circle>
       <path d="M17 22H5.266a2 2 0 0 1-1.985-2.248l.39-3.124A3 3 0 0 1 6.649 14H7"></path>
-      <path d="M19 13v6"></path>
-      <path d="M16 16h6"></path>
+      <path d="M19 14v4"></path>
+      <path d="M17 16h4"></path>
     </svg>
   );
 };

@@ -21,7 +21,7 @@ const PersonCheck = ({
     >
       <circle cx="12" cy="7" r="5"></circle>
       <path d="M17 22H5.266a2 2 0 0 1-1.985-2.248l.39-3.124A3 3 0 0 1 6.649 14H7"></path>
-      <path d="M16 16l2.25 2L22 14"></path>
+      <path d="M17 16.5l1.5 1.5 2.5-3"></path>
     </svg>
   );
 };
