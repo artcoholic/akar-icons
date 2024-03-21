@@ -431,3 +431,4 @@ export { default as YarnFill } from './icons/yarn-fill';
 export { default as DjangoFill } from './icons/django-fill';
 export { default as VscodeFill } from './icons/vscode-fill';
 export { default as TypescriptFill } from './icons/typescript-fill';
+export { default as GitlabFill } from './icons/gitlab-fill';

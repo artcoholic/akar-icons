@@ -440,3 +440,4 @@ export const YarnFill: Icon;
 export const DjangoFill: Icon;
 export const VscodeFill: Icon;
 export const TypescriptFill: Icon;
+export const GitlabFill: Icon;
